@@ -1,0 +1,241 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>个人中心</title>
+    <link href="/static/front/css/base.css" rel="stylesheet">
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script src="/static/front/js/jquery.js"></script>
+    <style>
+        /* 可以添加一些额外的样式 */
+        #loadMoreBtn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            background-color: #f0f0f0;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        #loadMoreBtn:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+<header>
+    {{template "front/header.html" .}}
+</header>
+
+<main>
+    <article>
+        <div class="search">
+            <form action="/front/main" method="get" id="searchForm">
+                <input name="keyword" id="keyboard" class="input_text"
+                       value="{{if .keyword}}{{.keyword}}{{else}}请输入关键字词{{end}}"
+                       style="color: rgb(153, 153, 153);"
+                       onfocus="if(this.value=='请输入关键字词'){this.style.color='#000';this.value=''}"
+                       onblur="if(this.value==''){this.style.color='#999';this.value='请输入关键字词'}"
+                       type="text">
+                <input type="submit" class="input_submit" value="搜索">
+            </form>
+        </div>
+
+        <div class="new_blog">
+            <ul class="blogs">
+                {{range .posts}}
+                <li>
+                    <a href="{{urlfor "IndexController.PostDetail"}}?id={{.Id}}">
+                    <i><img src="/{{.Cover}}" alt="标题图片"></i>
+                    <h2>{{.Title}}</h2>
+                    </a>
+                    <p class="blog_smalltext">{{.Desc}}</p>
+                    <p class="blog_info">
+                        <span>{{date .CreateTime "Y-m-d H:i:s"}}</span>
+                        <span>{{.Author.UserName}}</span>
+                        <span>{{.ReadNum}}</span>
+                        <span>{{.StarNum}}</span>
+                    </p>
+                </li>
+                {{end}}
+            </ul>
+
+            {{if .hasMore}}
+            <button id="loadMoreBtn">显示更多</button>
+            {{end}}
+        </div>
+    </article>
+
+    <aside>
+        <div class="paihang">
+            <h2 class="aside_title">个性签名</h2>
+            <ol start="1">
+                <li>
+                    <a class="ARead" href='javascript:void(0)'>
+                        每个人的生命里都一定会有这么一个人，他告诉我们什么是爱
+                    </a>
+                </li>
+            </ol>
+        </div>
+        <div class="links">
+            <h2 class="aside_title">友情链接</h2>
+            <ul>
+                <li><a href="https://www.bilibili.com/" target="_blank">哔哩哔哩</a></li>
+                <li><a href="https://www.baidu.com/" target="_blank">百度</a></li>
+            </ul>
+            <ul>
+                <li><a href='javascript:void(0)' target="_blank">Gitee代码仓库</a></li>
+            </ul>
+        </div>
+    </aside>
+</main>
+<!-- 看板娘开始 -->
+<link href='/static/ToCiY/pio.css' rel='stylesheet' type='text/css'/>
+<!-- 可选位置： left 或 right -->
+<div class="pio-container right">
+    <div class="pio-action"></div>
+    <!-- 高度和宽度根据每个模型的不同 进行调整 -->
+    <canvas id="pio" width="170" height="295"></canvas>
+</div>
+<script src='/static/ToCiY/l2d.js'></script>
+<script src='/static/ToCiY/pio.js'></script>
+<script>
+    // 事件委托：为所有现在和将来存在的.ARead元素添加鼠标悬停事件监听器
+    var pio = new Paul_Pio({
+        "mode": "draggable",
+        "touch": ["点击提示文字在kbn/pio.js中修改"],
+        "hidden": false, //手机端是否隐藏
+        "referer": "?欢迎来自 %t 的朋友~",
+        "content": {
+            "welcome": "?欢迎来到本站！",
+            "custom": [
+                // read类型示例
+                {
+                    "selector": ".ARead", // 这里假设页面中有类名为article-title的元素，用于read类型交互，你要替换成实际的选择器
+                    "type": "read",
+                },
+                // link类型示例
+                {
+                    "selector": ".ALink", // 假设页面中有类名为external-link的元素，用于link类型交互，按需替换
+                    "type": "link",
+                }
+            ]
+        },
+        // 可用参数：
+        // "leimu" "1" "2" "kangna" "qingye" "shawu" "xiaomai" "zhinai"
+
+        // 举例子：
+        // "model": ["https://cdn.jsdelivr.net/gh/xiaoyanu/file-test@2021.12.1/kbn/ 可修改参数位置 /model.json"],
+
+        "model": ["/static/ToCiY/xiaomai/model.json"],
+
+        "tips": true //如果设置为false则会优先显示welcome中的内容“欢迎~”
+    });
+</script>
+<!-- 看板娘结束 -->
+<footer>
+    {{template "front/footer.html" .}}
+</footer>
+
+<script>
+    $(document).ready(function() {
+        let currentPage = {{.currentPage}};
+        let isLoading = false;
+        let currentKeyword = ""; // 定义一个全局变量来保存当前关键词
+
+        // 初始化时加载文章
+        loadPosts("");
+
+        // 监听搜索框输入变化
+        $('#keyboard').on('input', function() {
+            let keyword = $(this).val().trim();
+            if (keyword === '') {
+                // 如果搜索框为空，则视为无关键词
+                currentKeyword = '';
+                loadPosts('');
+            }
+        });
+
+        // 提交表单时的行为
+        $('#searchForm').submit(function(event) {
+            event.preventDefault(); // 阻止默认提交行为
+            let keyword = $('#keyboard').val().trim();
+            if (keyword === '请输入关键字词') {
+                keyword = ''; // 如果是默认提示文本，则视为无关键词
+            }
+            currentKeyword = keyword; // 更新当前关键词
+            loadPosts(keyword);
+        });
+
+        // 加载文章的方法
+        function loadPosts(keyword) {
+            if (isLoading) return;
+
+            isLoading = true;
+            currentPage = 1; // 搜索时从第一页开始
+
+            $.ajax({
+                url: "/front/main",
+                type: "GET",
+                data: {
+                    page: currentPage,
+                    keyword: keyword || '', // 确保关键词为空字符串而非未定义
+                    _ajax: true // 标记为AJAX请求
+                },
+                success: function(response) {
+                    // 更新文章列表
+                    $(".blogs").html(response);
+
+                    // 检查是否还有更多文章可以加载
+                    if ($.trim(response) === '') {
+                        $("#loadMoreBtn").hide();
+                    } else {
+                        $("#loadMoreBtn").show();
+                    }
+
+                    isLoading = false;
+                },
+                error: function() {
+                    alert("加载文章失败");
+                    isLoading = false;
+                }
+            });
+        }
+
+        // AJAX 加载更多
+        $("#loadMoreBtn").click(function() {
+            if (isLoading) return;
+
+            isLoading = true;
+            currentPage++;
+
+            $.ajax({
+                url: "/front/main",
+                type: "GET",
+                data: {
+                    page: currentPage,
+                    keyword: currentKeyword, // 使用保存的当前关键词
+                    _ajax: true
+                },
+                success: function(response) {
+                    $(".blogs").append(response);
+
+                    if ($.trim(response) === '') {
+                        $("#loadMoreBtn").hide();
+                    }
+
+                    isLoading = false;
+                },
+                error: function() {
+                    alert("加载更多文章失败");
+                    isLoading = false;
+                }
+            });
+        });
+    });
+</script>
+
+</body>
+</html>

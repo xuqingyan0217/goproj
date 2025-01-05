@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>日记</title>
+	<meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- favicon-template.html -->
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/static/cms/css/font.css">
+	<link rel="stylesheet" href="/static/cms/css/xadmin.css">
+
+    <script type="text/javascript" src="/static/jquery.min.js"></script>
+    <script src="/static/cms/lib/layui/layui.js" charset="utf-8"></script>
+    <script type="text/javascript" src="/static/cms/js/xadmin.js"></script>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            flex: 1; /* 确保主要内容区域占据尽可能多的空间 */
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- 顶部开始 -->
+    <div class="container">
+        <div class="logo"><a href='{{urlfor "MainController.Get"}}'>主页面</a></div>
+        <div class="left_open">
+            <i title="展开左侧栏" class="iconfont">&#xe699;</i>
+        </div>
+
+        <ul class="layui-nav right" lay-filter="">
+          <li class="layui-nav-item to-index"><a href='{{urlfor "IndexController.Get"}}'>详细页</a></li>
+          <li class="layui-nav-item">
+              {{if compare .Flag false}}
+              <a href='{{urlfor "LoginController.Get"}}'>login</a>
+              {{else}}
+              <a href="javascript:;">{{.Username}}</a>
+              <dl class="layui-nav-child"> <!-- 二级菜单 -->
+                  <dd><a href='{{urlfor "IndexController.Get"}}'>详细页</a></dd>
+                  <dd><a>个人信息</a></dd>
+                  <dd><a href='{{urlfor "LogoutController.Logout"}}'>退出</a></dd>
+              </dl>
+              {{end}}
+          </li>
+        </ul>
+
+    </div>
+    <!-- 顶部结束 -->
+    <!-- 中部开始 -->
+     <!-- 左侧菜单开始 -->
+    <div class="left-nav">
+      <div id="side-nav">
+        <ul id="nav">
+            <li>
+                <a href="javascript:;">
+                    <i class="iconfont">&#xe6b8;</i>
+                    <cite>日记管理</cite>
+                    <i class="iconfont nav_right">&#xe697;</i>
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                        <a _href='{{urlfor "PostController.Get"}}'>
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>日记列表</cite>
+                        </a>
+                    </li >
+                </ul>
+            </li>
+
+        </ul>
+      </div>
+    </div>
+    <!-- <div class="x-slide_left"></div> -->
+    <!-- 左侧菜单结束 -->
+    <!-- 右侧主体开始 -->
+    <div class="page-content">
+        <div class="layui-tab tab" lay-filter="xbs_tab" lay-allowclose="false">
+          <ul class="layui-tab-title">
+            <li>我的桌面</li>
+          </ul>
+          <div class="layui-tab-content">
+            <div class="layui-tab-item layui-show">
+                <iframe src='{{urlfor "MainController.Welcome"}}' frameborder="0" scrolling="yes" class="x-iframe"></iframe>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="page-content-bg"></div>
+    <!-- 右侧主体结束 -->
+    <!-- 中部结束 -->
+    <!-- 底部开始 -->
+<!--    <div class="footer">-->
+<!--        <div class="copyright">Copyright ©2017 All Rights Reserved</div>  -->
+<!--    </div>-->
+
+    <!-- 看板娘开始 -->
+    <link href='/static/ToCiY/pio.css' rel='stylesheet' type='text/css'/>
+    <!-- 可选位置： left 或 right -->
+    <div class="pio-container right">
+        <div class="pio-action"></div>
+        <!-- 高度和宽度根据每个模型的不同 进行调整 -->
+        <canvas id="pio" width="170" height="295"></canvas>
+    </div>
+    <script src='/static/ToCiY/l2d.js'></script>
+    <script src='/static/ToCiY/pio.js'></script>
+    <script>
+        // 事件委托：为所有现在和将来存在的.ARead元素添加鼠标悬停事件监听器
+        var pio = new Paul_Pio({
+            "mode": "draggable",
+            "touch": ["点击提示文字在kbn/pio.js中修改"],
+            "hidden": false, //手机端是否隐藏
+            "referer": "?欢迎来自 %t 的朋友~",
+            "content": {
+                "welcome": "?欢迎来到本站！",
+                "custom": [
+                    // read类型示例
+                    {
+                        "selector": ".ARead", // 这里假设页面中有类名为article-title的元素，用于read类型交互，你要替换成实际的选择器
+                        "type": "read",
+                    },
+                    // link类型示例
+                    {
+                        "selector": ".ALink", // 假设页面中有类名为external-link的元素，用于link类型交互，按需替换
+                        "type": "link",
+                    }
+                ]
+            },
+            // 可用参数：
+            // "leimu" "1" "2" "kangna" "qingye" "shawu" "xiaomai" "zhinai"
+
+            // 举例子：
+            // "model": ["https://cdn.jsdelivr.net/gh/xiaoyanu/file-test@2021.12.1/kbn/ 可修改参数位置 /model.json"],
+
+            "model": ["/static/ToCiY/xiaomai/model.json"],
+
+            "tips": true //如果设置为false则会优先显示welcome中的内容“欢迎~”
+        });
+    </script>
+    <!-- 看板娘结束 -->
+    <footer>
+        {{template "front/footer.html" .}}
+    </footer>
+
+    <!-- 底部结束 -->
+
+</body>
+</html>
