@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎页面 - X-admin2.0</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- favicon-template.html -->
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/static/cms/css/font.css">
+    <link rel="stylesheet" href="/static/cms/css/xadmin.css">
+    <script type="text/javascript" src="/static/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/cms/lib/layui/layui.js" charset="utf-8"></script>
+    <script type="text/javascript" src="/static/cms/js/xadmin.js"></script>
+    <!-- 引入Masonry库和imagesLoaded插件 -->
+    <script src="/static/cms/js/masonry.js"></script>
+    <script src="/static/cms/js/imagesloaded.js"></script>
+    <style>
+        .layout-content-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            /* 初始化为Masonry容器 */
+            position: relative;
+        }
+
+        .card {
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out;
+            width: calc(33.333% - 40px); /* 假设每行有三张卡片，40px是左右间隔（gutter）*/
+            margin-bottom: 20px;
+        }
+
+        .card:hover {
+            transform: scale(1.02);
+        }
+
+        .cover-img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            height: auto;
+        }
+
+        .card-content {
+            padding: 0 10px;
+        }
+
+        .card-content h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .card-content p {
+            color: #777;
+            margin-bottom: 10px;
+        }
+
+        .card-actions {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 10px;
+            border-top: 1px solid #ccc;
+            margin-top: 10px;
+            padding-top: 10px;
+        }
+
+        .card-actions span {
+            color: #555;
+            font-size: 14px;
+        }
+
+        .card-actions a {
+            color: #01AAED;
+            margin-right: 10px;
+            text-decoration: none;
+        }
+
+        .card-actions a:hover {
+            color: #0099CC;
+        }
+    </style>
+</head>
+
+<body>
+<div class="x-body">
+    <div class="layout-content-container">
+        {{range.posts}}
+        <div class="card">
+            <img class="cover-img" src="/{{.Cover}}" alt="封面图">
+            <div class="card-content">
+                <h3>{{.Title}}</h3>
+                <p>{{.Desc}}</p>
+            </div>
+            <div class="card-actions">
+                <span>阅读数: {{.ReadNum}}</span>
+                <span>点赞数: {{.StarNum}}</span>
+                <span>作者: {{.Author.UserName}}</span>
+                <span>创建时间: {{date .CreateTime "Y-m-d H:i:s"}}</span>
+                {{if compare $.Flag false}}
+                <a title="编辑" onclick="showCustomAlert('请先登录')" href="javascript:;">
+                    <i class="layui-icon">&#xe642;</i>
+                </a>
+                <a title="删除" onclick="showCustomAlert('请先登录')" href="javascript:;">
+                    <i class="layui-icon">&#xe640;</i>
+                </a>
+                {{else}}
+                <a title="编辑" onclick="x_admin_show('编辑','{{urlfor "PostController.ToEdit"}}?id={{.Id}}',650,600)" href="javascript:;">
+                <i class="layui-icon">&#xe642;</i>
+                </a>
+                <a title="删除" href='{{urlfor "PostController.PostDelete"}}?id={{.Id}}'>
+                    <i class="layui-icon">&#xe640;</i>
+                </a>
+                {{end}}
+            </div>
+        </div>
+        {{end}}
+    </div>
+</div>
+<script>
+    function showCustomAlert(message) {
+        // 使用Layui的layer模块来显示弹框
+        layui.use('layer', function () {
+            var layer = layui.layer;
+
+            // 显示提示信息
+            layer.msg(message, {
+                time: 2000, // 自动关闭时间，单位毫秒
+                icon: 2 // 图标类型，2表示警告
+            });
+        });
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var elem = document.querySelector('.layout-content-container');
+        // 确保所有图片都加载完毕后再启动Masonry
+        imagesLoaded(elem, function () {
+            new Masonry(elem, {
+                itemSelector: '.card',
+                gutter: 20,
+                fitWidth: true
+            });
+        });
+    });
+</script>
+</body>
+
+</html>

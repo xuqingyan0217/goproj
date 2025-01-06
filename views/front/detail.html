@@ -1,0 +1,412 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>个人日记</title>
+    <link rel="stylesheet" href="/static/front/css/app-4.9.css">
+    <link href="/static/front/css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/cms/lib/layui/css/layui.css"> <!-- 引入Layui CSS -->
+    <!-- favicon-template.html -->
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="google" content="notranslate">
+    <script src="/static/front/js/jquery.js"></script>
+    <script src="/static/front/js/nav.js"></script>
+
+    <script src="/static/cms/lib/layui/layui.js"></script> <!-- 引入Layui JS -->
+    <style>
+        /* 日记标题样式 */
+        .container .display h1 {
+            font-size: 23px; /* 增大标题字体大小 */
+            color: #5bc0de; /* 更改标题颜色为更亮眼的蓝色调 */
+            margin-bottom: 20px;
+            text-align: left; /* 标题居中显示，可根据需求调整 */
+            border-bottom: 2px solid #92B8B1; /* 底部添加下划线，颜色与标题匹配，加粗一点 */
+            padding-bottom: 10px;
+            text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1); /* 添加文字阴影，让标题更立体 */
+            letter-spacing: 2px; /* 增加字母间距，更具设计感 */
+        }
+
+        /* 日记信息栏样式（创建时间、作者等） */
+        .blog_info {
+            font-size: 16px; /* 稍增大字体大小 */
+            color: #888; /* 更改信息栏文字颜色为灰色调 */
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between; /* 均匀分布各元素 */
+            flex-wrap: wrap; /* 允许换行 */
+            padding: 5px 0; /* 上下添加一点内边距，让分割线和文字更协调 */
+        }
+
+        .blog_info span {
+            margin-right: 15px;
+            transition: color 0.3s ease; /* 添加颜色过渡效果，鼠标悬停时更平滑变化 */
+        }
+
+        .blog_info span:hover {
+            color: #92B8B1; /* 鼠标悬停时信息文字变色，与标题颜色呼应 */
+        }
+
+        /* 日记内容主体样式 */
+        .content {
+            font-size: 15px; /* 增大正文字体大小 */
+            line-height: 1.8; /* 适当增大行间距，阅读更舒适 */
+            color: #333;
+            padding: 20px;
+            background-color: #f0f8ff; /* 更改背景色为淡蓝色，更清新的感觉 */
+            border-radius: 10px; /* 增大圆角效果，更圆润美观 */
+            /* 以下是新增样式，用于优化段落展示 */
+            text-align: justify; /* 让文本两端对齐，使段落看起来更规整 */
+            text-indent: 2em; /* 首行缩进 2 个字符，符合常规阅读习惯，增强段落感 */
+            margin-bottom: 20px; /* 底部添加一些外边距，避免和下方元素过于紧凑 */
+        }
+
+        .content p {
+            margin-top: 15px; /* 段落之间添加一定间距，区分不同段落 */
+            margin-bottom: 15px; /* 段落之间添加一定间距，区分不同段落 */
+        }
+
+        /*    评论*/
+        .comment-form textarea {
+            padding: 10px; /* 给文本域添加内边距，让输入文字与边框有距离 */
+            box-sizing: border-box; /* 确保内边距不会撑大元素尺寸 */
+        }
+    </style>
+</head>
+<body>
+<header>
+    {{template "front/header.html" .}}
+</header>
+<!--header end-->
+<main>
+    <p class="weizhi">您现在的位置是：
+        <a href='{{urlfor "IndexController.Get"}}' target="_blank">首页</a>><a href='{{urlfor "IndexController.PostDetail"}}' target="_blank">日记详情</a>
+    </p>
+    <article>
+        <div class="container">
+            <div class="display">
+                <h1>{{.post.Title}}</h1>
+                <p class="blog_info">
+                    <span>{{date .post.CreateTime "Y-m-d H:i:s"}}</span>
+                    <span>{{.post.Author.UserName}}</span>
+                    <span>{{.post.ReadNum}}</span>
+                    <span>{{.post.StarNum}}</span>
+                </p>
+                <div class="content">
+                    {{.post.Content}}
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="pinglun_box">
+
+                <h2>日记评论</h2>
+
+                <div class="bottom-area">
+                    <div id="comments" class="comments-area">
+                        <ol class="comment-list">
+                            {{range .comment_trees}}
+
+                            <li id="comment-20" class="comment even thread-even depth-1 parent">
+
+                                <!-- 一级评论 -->
+                                <article id="div-comment-20" class="comment-wrapper u-clearfix">
+                                    <!-- 头像 -->
+                                    <div class="comment-author-avatar">
+                                        <img alt='' src='/{{.Author.Cover}}' class='avatar avatar-96 photo'>
+                                    </div>
+
+                                    <div class="comment-content">
+                                        <!-- 作者 -->
+                                        <div class="comment-author-name vcard" itemprop="author">
+                                            <cite class="fn">
+                                                <a href='javascript:;' rel='external nofollow' class='url'>
+                                                    {{.Author.UserName}}
+                                                </a>
+                                            </cite>
+                                        </div>
+                                        <!-- 时间 -->
+                                        <div class="comment-metadata">
+                                            <time datetime="2019-11-02T16:46:39+08:00"
+                                                  itemprop="datePublished">
+                                                {{date .CreateTime "Y-m-d H:i:s"}}
+                                            </time>
+
+                                            <span style="margin-left: 520px;">
+                                            <input type="hidden"  value="{{.Author.UserName}}">
+                                            <input type="hidden"  value="{{.Id}}">
+                                          <a style="cursor: pointer;" class="reply">回复</a>
+                                        </span>
+                                        </div>
+
+                                        <!-- 评论内容 -->
+                                        <div class="comment-body" itemprop="comment">
+                                            <p>{{.Content}}</p>
+                                        </div>
+
+                                    </div>
+                                </article>
+
+                                <!-- 二级评论 -->
+                                {{range .Children}}
+                                <ol class="children">
+                                    <li class="comment byuser comment-author-aliwen bypostauthor odd alt depth-2">
+                                        <article class="comment-wrapper u-clearfix">
+                                            <!-- 头像 -->
+                                            <div class="comment-author-avatar vcard">
+                                                <img alt='' src='/{{.Author.Cover}}'  class='lazyload avatar avatar-96 photo '
+                                                     height='96' width='96'>
+                                            </div>
+
+                                            <div class="comment-content">
+                                                <!-- 作者 -->
+                                                <div class="comment-author-name vcard"
+                                                     itemprop="author">
+                                                    <cite class="fn">
+                                                        {{.Author.UserName}}
+                                                    </cite>
+                                                </div>
+                                                <!-- 时间 -->
+                                                <div class="comment-metadata">
+                                                    <time datetime="2019-11-08T16:36:35+08:00"
+                                                          itemprop="datePublished">
+                                                        {{date .CreateTime "Y-m-d H:i:s"}}
+                                                    </time>
+                                                </div>
+                                                <!-- 内容 -->
+                                                <div class="comment-body" itemprop="comment">
+                                                    <p>{{.Content}}</p>
+                                                </div>
+
+                                            </div>
+                                        </article>
+                                    </li>
+                                </ol>
+                                {{end}}
+                            </li>
+                            {{end}}
+                        </ol>
+
+
+                        <div class="comment-respond">
+                            <form class="comment-form" >
+
+                                <input type="hidden" id="post_id" value="{{.post.Id}}">
+                                <input type="hidden" id="pid" name="pid" value="">
+                                <p>
+                      <textarea id="content" name="content"
+                                rows="8" aria-required="true"></textarea>
+                                </p>
+                                <p class="form-submit">
+                                    <input type="button" id="comment_add"
+                                           class="button" value="发表评论">
+                                </p>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </article>
+    <!--article end-->
+
+    <aside>
+
+        <div class="paihang">
+            <h2 class="aside_title">个性签名</h2>
+            <ol start="1">
+                <li>
+                    <a href="javascript:;">
+                        每个人的生命里都一定会有这么一个人，他告诉我们什么是爱
+                    </a>
+                </li>
+            </ol>
+        </div>
+        <div class="links">
+            <h2 class="aside_title">友情链接</h2>
+            <ul>
+                <li><a href="https://www.bilibili.com/" target="_blank">bilibili</a></li>
+                <li><a href="https://www.baidu.com/" target="_blank">百度</a></li>
+            </ul>
+            <ul>
+                <li><a href='javascript:void(0)' target="_blank">Gitee代码仓库</a></li>
+            </ul>
+        </div>
+    </aside>
+    <!--aside end-->
+</main>
+
+<!-- 看板娘开始 -->
+<link href='/static/ToCiY/pio.css' rel='stylesheet' type='text/css'/>
+<!-- 可选位置： left 或 right -->
+<div class="pio-container right">
+    <div class="pio-action"></div>
+    <!-- 高度和宽度根据每个模型的不同 进行调整 -->
+    <canvas id="pio" width="170" height="295"></canvas>
+</div>
+<script src='/static/ToCiY/l2d.js'></script>
+<script src='/static/ToCiY/pio.js'></script>
+<script>
+    // 事件委托：为所有现在和将来存在的.ARead元素添加鼠标悬停事件监听器
+    var pio = new Paul_Pio({
+        "mode": "draggable",
+        "touch": ["点击提示文字在kbn/pio.js中修改"],
+        "hidden": false, //手机端是否隐藏
+        "referer": "?欢迎来自 %t 的朋友~",
+        "content": {
+            "welcome": "?欢迎来到本站！",
+            "custom": [
+                // read类型示例
+                {
+                    "selector": ".ARead", // 这里假设页面中有类名为article-title的元素，用于read类型交互，你要替换成实际的选择器
+                    "type": "read",
+                },
+                // link类型示例
+                {
+                    "selector": ".ALink", // 假设页面中有类名为external-link的元素，用于link类型交互，按需替换
+                    "type": "link",
+                }
+            ]
+        },
+        // 可用参数：
+        // "leimu" "1" "2" "kangna" "qingye" "shawu" "xiaomai" "zhinai"
+
+        // 举例子：
+        // "model": ["https://cdn.jsdelivr.net/gh/xiaoyanu/file-test@2021.12.1/kbn/ 可修改参数位置 /model.json"],
+
+        "model": ["/static/ToCiY/xiaomai/model.json"],
+
+        "tips": true //如果设置为false则会优先显示welcome中的内容“欢迎~”
+    });
+</script>
+<!-- 看板娘结束 -->
+<footer>
+    {{template "front/footer.html" .}}
+</footer>
+<!--footer end-->
+
+
+<script>
+    // 确保layui.use只调用一次，并且是在DOM完全加载之后
+    $(function() {
+        layui.use('layer', function(){
+            window.layer = layui.layer; // 将layer赋值给window对象，以便全局访问
+        });
+    });
+
+    function showCustomAlert(message, iconType, callback) {
+        if (typeof layer === 'undefined') {
+            console.error('Layer is not defined');
+            return;
+        }
+
+        // 定义默认图标类型为1（可根据实际常用情况调整默认值）
+        if (iconType === undefined) {
+            iconType = 1;
+        }
+
+        // 显示提示信息，并在关闭后执行回调
+        layer.msg(message, {
+            time: 1500, // 自动关闭时间，单位毫秒
+            icon: iconType,
+            end: function () {
+                if (typeof callback === 'function') {
+                    callback(); // 执行传入的回调函数
+                }
+            }
+        });
+    }
+
+    $(function() {
+        var comment_add = document.getElementById("comment_add");
+        comment_add.onclick = function (ev) {
+            ev.preventDefault(); // 防止默认行为（如果有的话）
+
+            var post_id = $("#post_id").val();
+            var pid = $("#pid").val();
+            var content = $("#content").val();
+            // 添加此处验证，判断评论内容是否为空
+            if (content.trim() === "") {
+                showCustomAlert("评论内容不能为空，请输入内容后再发表评论。", 2);
+                return; // 直接返回，阻止后续的请求发送等操作
+            }
+            $.ajax({
+                url:"{{urlfor "CommentController.Post"}}",
+                type:"POST",
+                data:{
+                    "post_id":post_id,
+                    "pid":pid,
+                    "content":content
+                },
+                success:function (data) {
+                    console.log('Response:', data); // 打印整个响应数据以进行调试
+
+                    if (data && typeof data["msg"] !== 'undefined') {
+                        if (data["code"] == 200) {
+                            showCustomAlert(data["msg"], 1, function() {
+                                window.location.reload(); // 在弹窗关闭后刷新页面
+                            }); // 替换alert
+                        } else {
+                            if (data["code"] == 401){
+                                window.location.href = "/cms";
+                            } else {
+                                showCustomAlert(data["msg"], 1); // 替换alert
+                            }
+                        }
+                    } else {
+                        console.error('Invalid response format:', data);
+                        showCustomAlert('未知错误',5);
+                    }
+                },
+                error:function (xhr, status, error) {
+                    console.error('AJAX Error:', status, error);
+                    showCustomAlert("请求失败，请重试。",5);
+                }
+            });
+        };
+
+        var replys = document.getElementsByClassName("reply");
+
+        for(var i=0;i<replys.length;i++){
+            replys[i].onclick = function (ev) {
+
+                var input_id_tag = this.previousElementSibling || this.previousSibling;
+                var comment_id = input_id_tag.value;
+                console.log(comment_id)
+                var input_username_tag = input_id_tag.previousElementSibling || input_id_tag.previousSibling;
+                console.log(input_username_tag)
+                var user_name = input_username_tag.value;
+                console.log(user_name)
+
+                var content = document.getElementById("content");
+                var pid = document.getElementById("pid");
+                placeCaretAtEnd(content);
+                content.value = "@" + user_name + " ";
+                pid.value = comment_id
+
+            }
+        }
+    });
+
+    function placeCaretAtEnd(el) { //传入光标要去的jq节点对象
+        el.focus();
+        if (typeof window.getSelection != "undefined" && typeof document.createRange != "undefined") {
+            var range = document.createRange();
+            range.selectNodeContents(el);
+            range.collapse(false);
+            var sel = window.getSelection();
+            sel.removeAllRanges();
+            sel.addRange(range);
+        } else if (typeof document.body.createTextRange != "undefined") {
+            var textRange = document.body.createTextRange();
+            textRange.moveToElementText(el);
+            textRange.collapse(false);
+            textRange.select();
+        }
+    }
+</script>
+</body>
+</html>
