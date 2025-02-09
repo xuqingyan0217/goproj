@@ -1,0 +1,36 @@
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8884","time":"2025-01-26T20:41:29+08:00"}
+{"level":"info","msg":"start keepalive lease 694d94a02674650c for etcd registry","time":"2025-01-26T20:41:30+08:00"}
+{"level":"info","msg":"paymentResult:transaction_id:\"109f1a80-fb21-41c7-8a67-ac6e12b4b690\"","time":"2025-01-26T20:43:24+08:00"}
+{"level":"warning","msg":"keep register get kitex/registry-etcd/checkout/127.0.0.1:8884 failed with err: context deadline exceeded","time":"2025-01-26T20:50:03+08:00"}
+{"level":"warning","msg":"keep register get kitex/registry-etcd/checkout/127.0.0.1:8884 failed with err: context deadline exceeded","time":"2025-01-26T20:50:16+08:00"}
+{"level":"warning","msg":"keep register get kitex/registry-etcd/checkout/127.0.0.1:8884 failed with err: context deadline exceeded","time":"2025-01-26T20:50:29+08:00"}
+{"level":"warning","msg":"keep register get kitex/registry-etcd/checkout/127.0.0.1:8884 failed with err: context deadline exceeded","time":"2025-01-26T20:50:42+08:00"}
+{"level":"warning","msg":"keep register get kitex/registry-etcd/checkout/127.0.0.1:8884 failed with err: context deadline exceeded","time":"2025-01-26T20:50:55+08:00"}
+{"level":"error","msg":"keep register service kitex/registry-etcd/checkout/127.0.0.1:8884 failed times:5","time":"2025-01-26T20:50:55+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8884","time":"2025-01-27T12:58:59+08:00"}
+{"level":"info","msg":"start keepalive lease 694d94a539dc9861 for etcd registry","time":"2025-01-27T12:59:00+08:00"}
+{"level":"info","msg":"paymentResult:transaction_id:\"2ce4a819-737b-40af-90a7-7f296c25f18d\"","time":"2025-01-27T13:07:19+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8884","time":"2025-01-30T10:27:02+08:00"}
+{"level":"info","msg":"start keepalive lease 694d94b505023210 for etcd registry","time":"2025-01-30T10:27:03+08:00"}
+{"level":"warning","msg":"keep register get kitex/registry-etcd/checkout/127.0.0.1:8884 failed with err: context deadline exceeded","time":"2025-01-30T11:50:36+08:00"}
+{"level":"warning","msg":"keep register get kitex/registry-etcd/checkout/127.0.0.1:8884 failed with err: context deadline exceeded","time":"2025-01-30T11:50:49+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8884","time":"2025-01-30T13:31:57+08:00"}
+{"level":"info","msg":"start keepalive lease 694d94b505023ddb for etcd registry","time":"2025-01-30T13:31:58+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8884","time":"2025-01-30T18:57:02+08:00"}
+{"level":"info","msg":"start keepalive lease 694d94b6672d0c5a for etcd registry","time":"2025-01-30T18:57:03+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8884","time":"2025-02-01T12:28:13+08:00"}
+{"level":"info","msg":"start keepalive lease 694d94bf8458cd9e for etcd registry","time":"2025-02-01T12:28:14+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8884","time":"2025-02-01T13:50:09+08:00"}
+{"level":"info","msg":"start keepalive lease 694d94bf8458ce97 for etcd registry","time":"2025-02-01T13:50:10+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8884","time":"2025-02-02T16:42:03+08:00"}
+{"level":"info","msg":"start keepalive lease 694d94c1cff1920a for etcd registry","time":"2025-02-02T16:42:04+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8884","time":"2025-02-02T17:18:24+08:00"}
+{"level":"info","msg":"start keepalive lease 694d94c1cff1927c for etcd registry","time":"2025-02-02T17:18:25+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8884","time":"2025-02-03T13:12:36+08:00"}
+{"level":"info","msg":"start keepalive lease 694d94c95414cf3a for etcd registry","time":"2025-02-03T13:12:37+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8084","time":"2025-02-03T14:30:39+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8084","time":"2025-02-03T15:24:27+08:00"}
+{"level":"info","msg":"start keepalive lease 694d94cab1c4d223 for etcd registry","time":"2025-02-03T15:24:28+08:00"}
+{"level":"info","msg":"paymentResult:","time":"2025-02-03T15:35:11+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8084","time":"2025-02-03T15:55:43+08:00"}
+{"level":"info","msg":"start keepalive lease 694d94cab1c4d43a for etcd registry","time":"2025-02-03T15:55:44+08:00"}

@@ -1,0 +1,1082 @@
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T11:42:38+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T11:42:38+08:00"}
+{"level":"info","msg":" {11:43:00} | 200 | 504.9µs | GET     | / ","time":"2025-01-24T11:43:00+08:00"}
+{"level":"info","msg":" {11:43:00} | 404 |      0s | GET     | /favicon.ico ","time":"2025-01-24T11:43:01+08:00"}
+{"level":"info","msg":" {11:43:16} | 200 |      0s | GET     | / ","time":"2025-01-24T11:43:16+08:00"}
+{"level":"info","msg":" {11:43:16} | 404 |      0s | GET     | /favicon.ico ","time":"2025-01-24T11:43:16+08:00"}
+{"level":"info","msg":" {11:44:11} | 200 | 3.2333ms | GET     | / ","time":"2025-01-24T11:44:12+08:00"}
+{"level":"info","msg":" {11:44:12} | 404 |      0s | GET     | /favicon.ico ","time":"2025-01-24T11:44:12+08:00"}
+{"level":"info","msg":"HERTZ: Received signal: interrupt\n","time":"2025-01-24T11:58:35+08:00"}
+{"level":"info","msg":"HERTZ: Begin graceful shutdown, wait at most num=5 seconds...","time":"2025-01-24T11:58:35+08:00"}
+{"level":"error","msg":"HERTZ: Error=accept tcp [::]:8080: use of closed network connection","time":"2025-01-24T11:58:35+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T12:07:35+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T12:07:35+08:00"}
+{"level":"info","msg":" {12:07:40} | 200 |      0s | GET     | / ","time":"2025-01-24T12:07:40+08:00"}
+{"level":"info","msg":" {12:07:40} | 404 |      0s | GET     | /favicon.ico ","time":"2025-01-24T12:07:40+08:00"}
+{"level":"info","msg":" {12:07:56} | 200 |      0s | GET     | / ","time":"2025-01-24T12:07:56+08:00"}
+{"level":"info","msg":" {12:07:56} | 404 |      0s | GET     | /favicon.ico ","time":"2025-01-24T12:07:56+08:00"}
+{"level":"info","msg":" {12:07:58} | 200 |      0s | GET     | / ","time":"2025-01-24T12:07:58+08:00"}
+{"level":"info","msg":" {12:07:58} | 404 |      0s | GET     | /favicon.ico ","time":"2025-01-24T12:07:58+08:00"}
+{"level":"info","msg":" {12:07:58} | 200 |      0s | GET     | / ","time":"2025-01-24T12:07:59+08:00"}
+{"level":"info","msg":" {12:07:59} | 404 |      0s | GET     | /favicon.ico ","time":"2025-01-24T12:07:59+08:00"}
+{"level":"info","msg":" {12:08:21} | 200 |      0s | GET     | / ","time":"2025-01-24T12:08:22+08:00"}
+{"level":"info","msg":" {12:08:22} | 404 |      0s | GET     | /favicon.ico ","time":"2025-01-24T12:08:22+08:00"}
+{"level":"info","msg":"HERTZ: Received signal: interrupt\n","time":"2025-01-24T12:08:25+08:00"}
+{"level":"info","msg":"HERTZ: Begin graceful shutdown, wait at most num=5 seconds...","time":"2025-01-24T12:08:25+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T12:08:36+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T12:08:36+08:00"}
+{"level":"info","msg":" {12:08:39} | 200 |      0s | GET     | / ","time":"2025-01-24T12:08:39+08:00"}
+{"level":"info","msg":" {12:08:39} | 404 |      0s | GET     | /favicon.ico ","time":"2025-01-24T12:08:39+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T12:41:25+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T12:41:25+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T12:42:50+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T12:42:50+08:00"}
+{"level":"info","msg":" {12:42:50} | 200 | 615.5µs | GET     | / ","time":"2025-01-24T12:42:50+08:00"}
+{"level":"info","msg":" {12:42:50} | 404 |      0s | GET     | /favicon.ico ","time":"2025-01-24T12:42:50+08:00"}
+{"level":"info","msg":"HERTZ: Received signal: interrupt\n","time":"2025-01-24T12:44:49+08:00"}
+{"level":"info","msg":"HERTZ: Begin graceful shutdown, wait at most num=5 seconds...","time":"2025-01-24T12:44:49+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T13:03:06+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T13:03:06+08:00"}
+{"level":"info","msg":" {13:03:11} | 200 |      0s | GET     | / ","time":"2025-01-24T13:03:11+08:00"}
+{"level":"info","msg":" {13:03:11} | 200 | 28.8151ms | GET     | /static/js/bootstrap.bundle.min.js ","time":"2025-01-24T13:03:11+08:00"}
+{"level":"info","msg":" {13:03:11} | 200 | 28.8151ms | GET     | /static/css/bootstrap.min.css ","time":"2025-01-24T13:03:11+08:00"}
+{"level":"info","msg":" {13:03:11} | 404 |      0s | GET     | /favicon.ico ","time":"2025-01-24T13:03:11+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T13:06:33+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T13:06:33+08:00"}
+{"level":"info","msg":" {13:06:35} | 200 | 577.7µs | GET     | / ","time":"2025-01-24T13:06:36+08:00"}
+{"level":"info","msg":" {13:06:35} | 304 | 23.7783ms | GET     | /static/css/bootstrap.min.css ","time":"2025-01-24T13:06:36+08:00"}
+{"level":"info","msg":" {13:06:35} | 304 | 23.7783ms | GET     | /static/js/bootstrap.bundle.min.js ","time":"2025-01-24T13:06:36+08:00"}
+{"level":"info","msg":" {13:06:36} | 404 |      0s | GET     | /favicon.ico ","time":"2025-01-24T13:06:36+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T13:11:11+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T13:11:11+08:00"}
+{"level":"info","msg":" {13:11:43} | 200 |   688µs | GET     | / ","time":"2025-01-24T13:11:43+08:00"}
+{"level":"info","msg":" {13:11:43} | 304 | 32.0835ms | GET     | /static/js/bootstrap.bundle.min.js ","time":"2025-01-24T13:11:43+08:00"}
+{"level":"info","msg":" {13:11:43} | 304 | 32.0835ms | GET     | /static/css/bootstrap.min.css ","time":"2025-01-24T13:11:43+08:00"}
+{"level":"info","msg":" {13:11:43} | 404 |      0s | GET     | /favicon.ico ","time":"2025-01-24T13:11:43+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T13:19:46+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T13:19:46+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T13:21:09+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T13:21:09+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T13:23:06+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T13:23:06+08:00"}
+{"level":"info","msg":" {13:23:06} | 404 |      0s | GET     | /favicon.ico ","time":"2025-01-24T13:23:06+08:00"}
+{"level":"info","msg":" {13:23:06} | 200 |      0s | GET     | / ","time":"2025-01-24T13:23:06+08:00"}
+{"level":"info","msg":" {13:23:06} | 404 |      0s | GET     | /favicon.ico ","time":"2025-01-24T13:23:06+08:00"}
+{"level":"info","msg":" {13:23:09} | 200 | 8.5636ms | GET     | / ","time":"2025-01-24T13:23:09+08:00"}
+{"level":"info","msg":" {13:23:09} | 404 |      0s | GET     | /favicon.ico ","time":"2025-01-24T13:23:09+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T13:27:06+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T13:27:06+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T13:34:01+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T13:34:01+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T13:37:51+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T13:37:51+08:00"}
+{"level":"info","msg":" {13:37:51} | 200 |      0s | GET     | / ","time":"2025-01-24T13:37:51+08:00"}
+{"level":"info","msg":" {13:37:51} | 304 | 24.9771ms | GET     | /static/image/logo.jpg ","time":"2025-01-24T13:37:51+08:00"}
+{"level":"info","msg":" {13:37:51} | 304 | 13.0749ms | GET     | /static/js/bootstrap.bundle.min.js ","time":"2025-01-24T13:37:51+08:00"}
+{"level":"info","msg":" {13:37:51} | 304 | 24.9771ms | GET     | /static/css/bootstrap.min.css ","time":"2025-01-24T13:37:51+08:00"}
+{"level":"info","msg":" {13:37:51} | 404 |      0s | GET     | /favicon.ico ","time":"2025-01-24T13:37:52+08:00"}
+{"level":"info","msg":" {13:37:54} | 200 |      0s | GET     | / ","time":"2025-01-24T13:37:54+08:00"}
+{"level":"info","msg":" {13:37:54} | 404 |      0s | GET     | /favicon.ico ","time":"2025-01-24T13:37:54+08:00"}
+{"level":"info","msg":" {13:38:00} | 200 |      0s | GET     | / ","time":"2025-01-24T13:38:01+08:00"}
+{"level":"info","msg":" {13:38:01} | 404 |      0s | GET     | /favicon.ico ","time":"2025-01-24T13:38:01+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T13:41:11+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T13:41:11+08:00"}
+{"level":"error","msg":"HERTZ: Cannot open file=\"./static/webfonts/fa-solid-900.woff2\", error=open ./static/webfonts/fa-solid-900.woff2: The system cannot find the path specified.","time":"2025-01-24T13:41:11+08:00"}
+{"level":"info","msg":" {13:41:11} | 404 | 744.3µs | GET     | /static/webfonts/fa-solid-900.woff2 ","time":"2025-01-24T13:41:11+08:00"}
+{"level":"error","msg":"HERTZ: Cannot open file=\"./static/webfonts/fa-solid-900.ttf\", error=open ./static/webfonts/fa-solid-900.ttf: The system cannot find the path specified.","time":"2025-01-24T13:41:11+08:00"}
+{"level":"info","msg":" {13:41:11} | 404 | 958.3µs | GET     | /static/webfonts/fa-solid-900.ttf ","time":"2025-01-24T13:41:11+08:00"}
+{"level":"info","msg":" {13:41:11} | 404 |      0s | GET     | /favicon.ico ","time":"2025-01-24T13:41:11+08:00"}
+{"level":"info","msg":" {13:41:12} | 200 |   781µs | GET     | / ","time":"2025-01-24T13:41:12+08:00"}
+{"level":"info","msg":" {13:41:12} | 404 |      0s | GET     | /favicon.ico ","time":"2025-01-24T13:41:13+08:00"}
+{"level":"info","msg":" {13:41:15} | 200 |      0s | GET     | / ","time":"2025-01-24T13:41:15+08:00"}
+{"level":"info","msg":" {13:41:15} | 404 |      0s | GET     | /favicon.ico ","time":"2025-01-24T13:41:15+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T13:45:57+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T13:45:57+08:00"}
+{"level":"info","msg":" {13:45:59} | 200 |   602µs | GET     | / ","time":"2025-01-24T13:45:59+08:00"}
+{"level":"info","msg":" {13:45:59} | 304 | 24.4255ms | GET     | /static/css/bootstrap.min.css ","time":"2025-01-24T13:45:59+08:00"}
+{"level":"info","msg":" {13:45:59} | 304 | 23.9189ms | GET     | /static/image/logo.jpg ","time":"2025-01-24T13:45:59+08:00"}
+{"level":"info","msg":" {13:45:59} | 304 | 23.2928ms | GET     | /static/js/bootstrap.bundle.min.js ","time":"2025-01-24T13:45:59+08:00"}
+{"level":"info","msg":" {13:45:59} | 404 |      0s | GET     | /favicon.ico ","time":"2025-01-24T13:45:59+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T13:48:21+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T13:48:21+08:00"}
+{"level":"info","msg":" {13:48:23} | 200 | 437.9µs | GET     | / ","time":"2025-01-24T13:48:23+08:00"}
+{"level":"info","msg":" {13:48:23} | 404 |      0s | GET     | /favicon.ico ","time":"2025-01-24T13:48:23+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T13:53:43+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T13:53:43+08:00"}
+{"level":"info","msg":" {13:53:44} | 200 |      0s | GET     | / ","time":"2025-01-24T13:53:45+08:00"}
+{"level":"info","msg":" {13:53:45} | 304 | 26.115ms | GET     | /static/css/bootstrap.min.css ","time":"2025-01-24T13:53:45+08:00"}
+{"level":"info","msg":" {13:53:45} | 304 | 26.115ms | GET     | /static/image/logo.jpg ","time":"2025-01-24T13:53:45+08:00"}
+{"level":"info","msg":" {13:53:45} | 304 | 25.4191ms | GET     | /static/js/bootstrap.bundle.min.js ","time":"2025-01-24T13:53:45+08:00"}
+{"level":"info","msg":" {13:53:45} | 404 |      0s | GET     | /favicon.ico ","time":"2025-01-24T13:53:45+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T13:56:42+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T13:56:42+08:00"}
+{"level":"info","msg":" {13:57:10} | 200 | 391.5µs | GET     | / ","time":"2025-01-24T13:57:10+08:00"}
+{"level":"info","msg":" {13:57:10} | 404 |      0s | GET     | /favicon.ico ","time":"2025-01-24T13:57:10+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T14:00:04+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T14:00:04+08:00"}
+{"level":"info","msg":" {14:00:04} | 200 | 879.3µs | GET     | / ","time":"2025-01-24T14:00:04+08:00"}
+{"level":"info","msg":" {14:00:04} | 304 | 26.5523ms | GET     | /static/image/logo.jpg ","time":"2025-01-24T14:00:04+08:00"}
+{"level":"info","msg":" {14:00:04} | 404 |      0s | GET     | /favicon.ico ","time":"2025-01-24T14:00:04+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T14:04:42+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T14:04:42+08:00"}
+{"level":"info","msg":" {14:04:46} | 200 |      0s | GET     | / ","time":"2025-01-24T14:04:46+08:00"}
+{"level":"info","msg":" {14:04:46} | 404 |      0s | GET     | /favicon.ico ","time":"2025-01-24T14:04:47+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T14:11:37+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T14:11:37+08:00"}
+{"level":"info","msg":" {14:11:37} | 200 |      0s | GET     | / ","time":"2025-01-24T14:11:37+08:00"}
+{"level":"info","msg":" {14:11:37} | 404 |      0s | GET     | /favicon.ico ","time":"2025-01-24T14:11:37+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T14:14:20+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T14:14:20+08:00"}
+{"level":"info","msg":" {14:14:20} | 200 |      0s | GET     | / ","time":"2025-01-24T14:14:20+08:00"}
+{"level":"info","msg":" {14:14:20} | 404 |      0s | GET     | /favicon.ico ","time":"2025-01-24T14:14:20+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T14:17:03+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T14:17:03+08:00"}
+{"level":"info","msg":" {14:17:07} | 200 | 772.5µs | GET     | / ","time":"2025-01-24T14:17:07+08:00"}
+{"level":"info","msg":" {14:17:07} | 304 | 26.6623ms | GET     | /static/image/logo.jpg ","time":"2025-01-24T14:17:07+08:00"}
+{"level":"info","msg":" {14:17:07} | 404 |      0s | GET     | /favicon.ico ","time":"2025-01-24T14:17:07+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T14:20:15+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T14:20:15+08:00"}
+{"level":"info","msg":" {14:21:08} | 200 |      0s | GET     | / ","time":"2025-01-24T14:21:08+08:00"}
+{"level":"info","msg":" {14:21:08} | 404 |      0s | GET     | /favicon.ico ","time":"2025-01-24T14:21:08+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T14:21:38+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T14:21:38+08:00"}
+{"level":"info","msg":" {14:21:38} | 200 |      0s | GET     | / ","time":"2025-01-24T14:21:38+08:00"}
+{"level":"info","msg":" {14:21:38} | 404 |      0s | GET     | /favicon.ico ","time":"2025-01-24T14:21:38+08:00"}
+{"level":"info","msg":" {14:21:38} | 404 |      0s | GET     | /favicon.ico ","time":"2025-01-24T14:21:38+08:00"}
+{"level":"info","msg":" {14:23:21} | 404 |      0s | GET     | /favicon.ico ","time":"2025-01-24T14:23:21+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T14:25:23+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T14:25:23+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T14:27:04+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T14:27:04+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T14:29:55+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T14:29:55+08:00"}
+{"level":"info","msg":" {14:30:37} | 200 | 853.2µs | GET     | / ","time":"2025-01-24T14:30:37+08:00"}
+{"level":"info","msg":" {14:30:37} | 404 |      0s | GET     | /... ","time":"2025-01-24T14:30:37+08:00"}
+{"level":"info","msg":" {14:30:37} | 304 | 53.7593ms | GET     | /static/css/bootstrap.min.css ","time":"2025-01-24T14:30:37+08:00"}
+{"level":"info","msg":" {14:30:37} | 304 | 53.7593ms | GET     | /static/image/logo.jpg ","time":"2025-01-24T14:30:37+08:00"}
+{"level":"info","msg":" {14:30:37} | 304 | 8.2803ms | GET     | /static/js/bootstrap.bundle.min.js ","time":"2025-01-24T14:30:37+08:00"}
+{"level":"info","msg":" {14:30:37} | 404 |      0s | GET     | /... ","time":"2025-01-24T14:30:37+08:00"}
+{"level":"info","msg":" {14:30:37} | 404 |      0s | GET     | /favicon.ico ","time":"2025-01-24T14:30:37+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T14:33:07+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T14:33:07+08:00"}
+{"level":"info","msg":" {14:33:07} | 200 | 505.6µs | GET     | / ","time":"2025-01-24T14:33:08+08:00"}
+{"level":"info","msg":" {14:33:07} | 200 | 24.6012ms | GET     | /static/css/bootstrap.min.css ","time":"2025-01-24T14:33:08+08:00"}
+{"level":"info","msg":" {14:33:07} | 200 | 22.7178ms | GET     | /static/image/t-shirt-1.jpeg ","time":"2025-01-24T14:33:08+08:00"}
+{"level":"info","msg":" {14:33:07} | 200 | 23.2989ms | GET     | /static/image/logo.jpg ","time":"2025-01-24T14:33:08+08:00"}
+{"level":"info","msg":" {14:33:07} | 200 | 459.3µs | GET     | /static/image/t-shirt-2.jpeg ","time":"2025-01-24T14:33:08+08:00"}
+{"level":"info","msg":" {14:33:07} | 200 |      0s | GET     | /static/js/bootstrap.bundle.min.js ","time":"2025-01-24T14:33:08+08:00"}
+{"level":"info","msg":" {14:33:08} | 404 |      0s | GET     | /favicon.ico ","time":"2025-01-24T14:33:08+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T14:35:52+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T14:35:52+08:00"}
+{"level":"info","msg":" {14:35:52} | 200 |      0s | GET     | / ","time":"2025-01-24T14:35:53+08:00"}
+{"level":"info","msg":" {14:35:53} | 404 |      0s | GET     | /favicon.ico ","time":"2025-01-24T14:35:53+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T14:43:17+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T14:43:17+08:00"}
+{"level":"info","msg":" {14:43:17} | 200 |      0s | GET     | / ","time":"2025-01-24T14:43:17+08:00"}
+{"level":"info","msg":" {14:43:17} | 404 |      0s | GET     | /favicon.ico ","time":"2025-01-24T14:43:18+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T14:49:45+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T14:49:45+08:00"}
+{"level":"info","msg":" {14:49:45} | 200 |      0s | GET     | / ","time":"2025-01-24T14:49:45+08:00"}
+{"level":"info","msg":" {14:49:45} | 304 | 25.3246ms | GET     | /static/css/bootstrap.min.css ","time":"2025-01-24T14:49:45+08:00"}
+{"level":"info","msg":" {14:49:45} | 304 |      0s | GET     | /static/js/bootstrap.bundle.min.js ","time":"2025-01-24T14:49:45+08:00"}
+{"level":"info","msg":" {14:49:45} | 404 |      0s | GET     | /favicon.ico ","time":"2025-01-24T14:49:45+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T14:57:10+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T14:57:10+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T15:01:31+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T15:01:31+08:00"}
+{"level":"info","msg":" {15:01:35} | 200 | 663.3µs | GET     | / ","time":"2025-01-24T15:01:35+08:00"}
+{"level":"info","msg":" {15:01:35} | 304 | 25.301ms | GET     | /static/image/t-shirt-1.jpeg ","time":"2025-01-24T15:01:35+08:00"}
+{"level":"info","msg":" {15:01:35} | 304 | 25.301ms | GET     | /static/image/logo.jpg ","time":"2025-01-24T15:01:35+08:00"}
+{"level":"info","msg":" {15:01:35} | 304 |   376µs | GET     | /static/image/t-shirt-2.jpeg ","time":"2025-01-24T15:01:35+08:00"}
+{"level":"info","msg":" {15:01:35} | 404 |      0s | GET     | /favicon.ico ","time":"2025-01-24T15:01:35+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T15:02:40+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T15:02:40+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T15:16:22+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T15:16:22+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T15:20:42+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T15:20:42+08:00"}
+{"level":"error","msg":"HERTZ: [Recovery] err=template: home.html:3:20: executing \"home.html\" at \u003c.\u003e: range can't iterate over \u003cnil\u003e\nstack=C:/Users/20723/go/pkg/mod/github.com/cloudwego/hertz@v0.9.5/pkg/app/context.go:1134 (0x1ae5a1b)\n\t(*RequestContext).Render: panic(err)\nC:/Users/20723/go/pkg/mod/github.com/cloudwego/hertz@v0.9.5/pkg/app/context.go:1168 (0x1ae5d3e)\n\t(*RequestContext).HTML: ctx.Render(code, instance)\nC:/Users/20723/Desktop/gomall/app/frontend/biz/handler/home/home_service.go:30 (0x1b67064)\n\tHome: c.HTML(consts.StatusOK, \"home.html\", resp)\nC:/Users/20723/go/pkg/mod/github.com/cloudwego/hertz@v0.9.5/pkg/app/context.go:833 (0x1ae462e)\n\t(*RequestContext).Next: ctx.handlers[ctx.index](c, ctx)\nC:/Users/20723/go/pkg/mod/github.com/cloudwego/hertz@v0.9.5/pkg/app/middlewares/server/recovery/recovery.go:50 (0x1aee6ae)\n\tRecovery.func1: ctx.Next(c)\nC:/Users/20723/go/pkg/mod/github.com/cloudwego/hertz@v0.9.5/pkg/app/context.go:833 (0x1ae462e)\n\t(*RequestContext).Next: ctx.handlers[ctx.index](c, ctx)\nC:/Users/20723/go/pkg/mod/github.com/hertz-contrib/logger/accesslog@v0.0.0-20241107070745-e4ce8c54dd97/accesslog.go:121 (0x1b1341c)\n\tnew.func3: c.Next(ctx)\nC:/Users/20723/go/pkg/mod/github.com/cloudwego/hertz@v0.9.5/pkg/app/context.go:833 (0x1ae462e)\n\t(*RequestContext).Next: ctx.handlers[ctx.index](c, ctx)\nC:/Users/20723/go/pkg/mod/github.com/hertz-contrib/gzip@v0.0.3/srv_middleware.go:78 (0x1b10ec9)\n\t(*gzipSrvMiddleware).SrvMiddleware: c.Next(ctx)\nC:/Users/20723/go/pkg/mod/github.com/cloudwego/hertz@v0.9.5/pkg/app/context.go:833 (0x1ae462e)\n\t(*RequestContext).Next: ctx.handlers[ctx.index](c, ctx)\nC:/Users/20723/go/pkg/mod/github.com/cloudwego/hertz@v0.9.5/pkg/route/engine.go:772 (0x1b0420e)\n\t(*Engine).ServeHTTP: ctx.Next(c)\nC:/Users/20723/go/pkg/mod/github.com/cloudwego/hertz@v0.9.5/pkg/protocol/http1/server.go:320 (0x1afe110)\n\tServer.Serve: s.Core.ServeHTTP(cc, ctx)\nC:/Users/20723/go/pkg/mod/github.com/cloudwego/hertz@v0.9.5/pkg/route/engine.go:540 (0x1b0217c)\n\t(*Engine).Serve: err = engine.protocolServers[suite.HTTP1].Serve(c, conn)\nC:/Users/20723/go/pkg/mod/github.com/cloudwego/hertz@v0.9.5/pkg/route/engine.go:431 (0x1b0163c)\n\t(*Engine).onData: err = engine.Serve(c, conn)\nC:/Program Files/Go/src/runtime/asm_amd64.s:1700 (0xc1cf00)\n\tgoexit: BYTE\t$0x90\t// NOP\n","time":"2025-01-24T15:20:44+08:00"}
+{"level":"info","msg":" {15:20:43} | 500 | 3.0316ms | GET     | / ","time":"2025-01-24T15:20:44+08:00"}
+{"level":"info","msg":" {15:20:44} | 404 |      0s | GET     | /favicon.ico ","time":"2025-01-24T15:20:44+08:00"}
+{"level":"error","msg":"HERTZ: [Recovery] err=template: home.html:3:20: executing \"home.html\" at \u003c.\u003e: range can't iterate over \u003cnil\u003e\nstack=C:/Users/20723/go/pkg/mod/github.com/cloudwego/hertz@v0.9.5/pkg/app/context.go:1134 (0x1ae5a1b)\n\t(*RequestContext).Render: panic(err)\nC:/Users/20723/go/pkg/mod/github.com/cloudwego/hertz@v0.9.5/pkg/app/context.go:1168 (0x1ae5d3e)\n\t(*RequestContext).HTML: ctx.Render(code, instance)\nC:/Users/20723/Desktop/gomall/app/frontend/biz/handler/home/home_service.go:30 (0x1b67064)\n\tHome: c.HTML(consts.StatusOK, \"home.html\", resp)\nC:/Users/20723/go/pkg/mod/github.com/cloudwego/hertz@v0.9.5/pkg/app/context.go:833 (0x1ae462e)\n\t(*RequestContext).Next: ctx.handlers[ctx.index](c, ctx)\nC:/Users/20723/go/pkg/mod/github.com/cloudwego/hertz@v0.9.5/pkg/app/middlewares/server/recovery/recovery.go:50 (0x1aee6ae)\n\tRecovery.func1: ctx.Next(c)\nC:/Users/20723/go/pkg/mod/github.com/cloudwego/hertz@v0.9.5/pkg/app/context.go:833 (0x1ae462e)\n\t(*RequestContext).Next: ctx.handlers[ctx.index](c, ctx)\nC:/Users/20723/go/pkg/mod/github.com/hertz-contrib/logger/accesslog@v0.0.0-20241107070745-e4ce8c54dd97/accesslog.go:121 (0x1b1341c)\n\tnew.func3: c.Next(ctx)\nC:/Users/20723/go/pkg/mod/github.com/cloudwego/hertz@v0.9.5/pkg/app/context.go:833 (0x1ae462e)\n\t(*RequestContext).Next: ctx.handlers[ctx.index](c, ctx)\nC:/Users/20723/go/pkg/mod/github.com/hertz-contrib/gzip@v0.0.3/srv_middleware.go:78 (0x1b10ec9)\n\t(*gzipSrvMiddleware).SrvMiddleware: c.Next(ctx)\nC:/Users/20723/go/pkg/mod/github.com/cloudwego/hertz@v0.9.5/pkg/app/context.go:833 (0x1ae462e)\n\t(*RequestContext).Next: ctx.handlers[ctx.index](c, ctx)\nC:/Users/20723/go/pkg/mod/github.com/cloudwego/hertz@v0.9.5/pkg/route/engine.go:772 (0x1b0420e)\n\t(*Engine).ServeHTTP: ctx.Next(c)\nC:/Users/20723/go/pkg/mod/github.com/cloudwego/hertz@v0.9.5/pkg/protocol/http1/server.go:320 (0x1afe110)\n\tServer.Serve: s.Core.ServeHTTP(cc, ctx)\nC:/Users/20723/go/pkg/mod/github.com/cloudwego/hertz@v0.9.5/pkg/route/engine.go:540 (0x1b0217c)\n\t(*Engine).Serve: err = engine.protocolServers[suite.HTTP1].Serve(c, conn)\nC:/Users/20723/go/pkg/mod/github.com/cloudwego/hertz@v0.9.5/pkg/route/engine.go:431 (0x1b0163c)\n\t(*Engine).onData: err = engine.Serve(c, conn)\nC:/Program Files/Go/src/runtime/asm_amd64.s:1700 (0xc1cf00)\n\tgoexit: BYTE\t$0x90\t// NOP\n","time":"2025-01-24T15:20:45+08:00"}
+{"level":"info","msg":" {15:20:44} | 500 | 2.7087ms | GET     | / ","time":"2025-01-24T15:20:45+08:00"}
+{"level":"info","msg":" {15:20:44} | 404 |      0s | GET     | /favicon.ico ","time":"2025-01-24T15:20:45+08:00"}
+{"level":"error","msg":"HERTZ: [Recovery] err=template: home.html:3:20: executing \"home.html\" at \u003c.\u003e: range can't iterate over \u003cnil\u003e\nstack=C:/Users/20723/go/pkg/mod/github.com/cloudwego/hertz@v0.9.5/pkg/app/context.go:1134 (0x1ae5a1b)\n\t(*RequestContext).Render: panic(err)\nC:/Users/20723/go/pkg/mod/github.com/cloudwego/hertz@v0.9.5/pkg/app/context.go:1168 (0x1ae5d3e)\n\t(*RequestContext).HTML: ctx.Render(code, instance)\nC:/Users/20723/Desktop/gomall/app/frontend/biz/handler/home/home_service.go:30 (0x1b67064)\n\tHome: c.HTML(consts.StatusOK, \"home.html\", resp)\nC:/Users/20723/go/pkg/mod/github.com/cloudwego/hertz@v0.9.5/pkg/app/context.go:833 (0x1ae462e)\n\t(*RequestContext).Next: ctx.handlers[ctx.index](c, ctx)\nC:/Users/20723/go/pkg/mod/github.com/cloudwego/hertz@v0.9.5/pkg/app/middlewares/server/recovery/recovery.go:50 (0x1aee6ae)\n\tRecovery.func1: ctx.Next(c)\nC:/Users/20723/go/pkg/mod/github.com/cloudwego/hertz@v0.9.5/pkg/app/context.go:833 (0x1ae462e)\n\t(*RequestContext).Next: ctx.handlers[ctx.index](c, ctx)\nC:/Users/20723/go/pkg/mod/github.com/hertz-contrib/logger/accesslog@v0.0.0-20241107070745-e4ce8c54dd97/accesslog.go:121 (0x1b1341c)\n\tnew.func3: c.Next(ctx)\nC:/Users/20723/go/pkg/mod/github.com/cloudwego/hertz@v0.9.5/pkg/app/context.go:833 (0x1ae462e)\n\t(*RequestContext).Next: ctx.handlers[ctx.index](c, ctx)\nC:/Users/20723/go/pkg/mod/github.com/hertz-contrib/gzip@v0.0.3/srv_middleware.go:78 (0x1b10ec9)\n\t(*gzipSrvMiddleware).SrvMiddleware: c.Next(ctx)\nC:/Users/20723/go/pkg/mod/github.com/cloudwego/hertz@v0.9.5/pkg/app/context.go:833 (0x1ae462e)\n\t(*RequestContext).Next: ctx.handlers[ctx.index](c, ctx)\nC:/Users/20723/go/pkg/mod/github.com/cloudwego/hertz@v0.9.5/pkg/route/engine.go:772 (0x1b0420e)\n\t(*Engine).ServeHTTP: ctx.Next(c)\nC:/Users/20723/go/pkg/mod/github.com/cloudwego/hertz@v0.9.5/pkg/protocol/http1/server.go:320 (0x1afe110)\n\tServer.Serve: s.Core.ServeHTTP(cc, ctx)\nC:/Users/20723/go/pkg/mod/github.com/cloudwego/hertz@v0.9.5/pkg/route/engine.go:540 (0x1b0217c)\n\t(*Engine).Serve: err = engine.protocolServers[suite.HTTP1].Serve(c, conn)\nC:/Users/20723/go/pkg/mod/github.com/cloudwego/hertz@v0.9.5/pkg/route/engine.go:431 (0x1b0163c)\n\t(*Engine).onData: err = engine.Serve(c, conn)\nC:/Program Files/Go/src/runtime/asm_amd64.s:1700 (0xc1cf00)\n\tgoexit: BYTE\t$0x90\t// NOP\n","time":"2025-01-24T15:20:45+08:00"}
+{"level":"info","msg":" {15:20:45} | 500 | 1.6226ms | GET     | / ","time":"2025-01-24T15:20:45+08:00"}
+{"level":"info","msg":" {15:20:45} | 404 |      0s | GET     | /favicon.ico ","time":"2025-01-24T15:20:45+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T15:22:51+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T15:22:51+08:00"}
+{"level":"info","msg":" {15:22:52} | 200 |      0s | GET     | / ","time":"2025-01-24T15:22:53+08:00"}
+{"level":"info","msg":" {15:22:53} | 404 |      0s | GET     | /favicon.ico ","time":"2025-01-24T15:22:53+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T15:29:04+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T15:29:04+08:00"}
+{"level":"info","msg":" {15:29:05} | 200 |      0s | GET     | / ","time":"2025-01-24T15:29:06+08:00"}
+{"level":"info","msg":" {15:29:06} | 404 |      0s | GET     | /favicon.ico ","time":"2025-01-24T15:29:06+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T15:34:02+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T15:34:02+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T15:36:59+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T15:36:59+08:00"}
+{"level":"info","msg":" {15:37:02} | 200 |      0s | GET     | / ","time":"2025-01-24T15:37:03+08:00"}
+{"level":"info","msg":" {15:37:02} | 304 | 21.594ms | GET     | /static/image/logo.jpg ","time":"2025-01-24T15:37:03+08:00"}
+{"level":"info","msg":" {15:37:02} | 304 | 19.7188ms | GET     | /static/image/t-shirt-1.jpeg ","time":"2025-01-24T15:37:03+08:00"}
+{"level":"info","msg":" {15:37:02} | 304 | 25.978ms | GET     | /static/css/bootstrap.min.css ","time":"2025-01-24T15:37:03+08:00"}
+{"level":"info","msg":" {15:37:02} | 304 |   332µs | GET     | /static/image/t-shirt-2.jpeg ","time":"2025-01-24T15:37:03+08:00"}
+{"level":"info","msg":" {15:37:02} | 304 |      0s | GET     | /static/image/t-shirt.jpeg ","time":"2025-01-24T15:37:03+08:00"}
+{"level":"info","msg":" {15:37:02} | 304 |      0s | GET     | /static/image/notebook.jpeg ","time":"2025-01-24T15:37:03+08:00"}
+{"level":"info","msg":" {15:37:03} | 200 | 9.5148ms | GET     | /static/image/favicon.ico ","time":"2025-01-24T15:37:03+08:00"}
+{"level":"info","msg":" {15:37:05} | 200 | 553.2µs | GET     | / ","time":"2025-01-24T15:37:06+08:00"}
+{"level":"info","msg":" {15:37:09} | 200 | 3.583ms | GET     | / ","time":"2025-01-24T15:37:09+08:00"}
+{"level":"info","msg":" {15:37:09} | 304 |      0s | GET     | /static/image/favicon.ico ","time":"2025-01-24T15:37:09+08:00"}
+{"level":"info","msg":" {15:37:21} | 200 |      0s | GET     | / ","time":"2025-01-24T15:37:21+08:00"}
+{"level":"info","msg":" {15:37:21} | 304 |      0s | GET     | /static/image/favicon.ico ","time":"2025-01-24T15:37:21+08:00"}
+{"level":"info","msg":" {15:37:24} | 200 | 1.2636ms | GET     | / ","time":"2025-01-24T15:37:24+08:00"}
+{"level":"info","msg":"HERTZ: Received signal: interrupt\n","time":"2025-01-24T15:38:16+08:00"}
+{"level":"info","msg":"HERTZ: Begin graceful shutdown, wait at most num=5 seconds...","time":"2025-01-24T15:38:16+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T20:07:18+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T20:07:18+08:00"}
+{"level":"info","msg":" {20:07:42} | 200 | 8.5639ms | GET     | / ","time":"2025-01-24T20:07:42+08:00"}
+{"level":"info","msg":" {20:07:42} | 304 | 76.2707ms | GET     | /static/css/bootstrap.min.css ","time":"2025-01-24T20:07:42+08:00"}
+{"level":"info","msg":" {20:07:42} | 304 | 77.9506ms | GET     | /static/image/t-shirt-1.jpeg ","time":"2025-01-24T20:07:42+08:00"}
+{"level":"info","msg":" {20:07:42} | 304 | 79.6152ms | GET     | /static/image/logo.jpg ","time":"2025-01-24T20:07:42+08:00"}
+{"level":"info","msg":" {20:07:42} | 304 |      0s | GET     | /static/image/notebook.jpeg ","time":"2025-01-24T20:07:42+08:00"}
+{"level":"info","msg":" {20:07:42} | 304 | 815.6µs | GET     | /static/image/t-shirt-2.jpeg ","time":"2025-01-24T20:07:42+08:00"}
+{"level":"info","msg":" {20:07:42} | 304 | 505.4µs | GET     | /static/js/bootstrap.bundle.min.js ","time":"2025-01-24T20:07:42+08:00"}
+{"level":"info","msg":" {20:07:42} | 304 |      0s | GET     | /static/image/t-shirt.jpeg ","time":"2025-01-24T20:07:42+08:00"}
+{"level":"info","msg":" {20:07:43} | 304 | 456.1µs | GET     | /static/image/favicon.ico ","time":"2025-01-24T20:07:43+08:00"}
+{"level":"info","msg":" {20:07:44} | 404 |      0s | GET     | /sign-in ","time":"2025-01-24T20:07:44+08:00"}
+{"level":"info","msg":" {20:08:15} | 404 |      0s | GET     | /sign-in ","time":"2025-01-24T20:08:15+08:00"}
+{"level":"info","msg":" {20:08:16} | 404 |      0s | GET     | /sign-in ","time":"2025-01-24T20:08:16+08:00"}
+{"level":"info","msg":" {20:08:49} | 200 |      0s | GET     | / ","time":"2025-01-24T20:08:49+08:00"}
+{"level":"info","msg":" {20:08:58} | 404 |      0s | GET     | /sign-in ","time":"2025-01-24T20:08:58+08:00"}
+{"level":"info","msg":"HERTZ: Received signal: interrupt\n","time":"2025-01-24T20:09:06+08:00"}
+{"level":"info","msg":"HERTZ: Begin graceful shutdown, wait at most num=5 seconds...","time":"2025-01-24T20:09:06+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T20:09:11+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T20:09:11+08:00"}
+{"level":"info","msg":"HERTZ: Received signal: interrupt\n","time":"2025-01-24T20:13:41+08:00"}
+{"level":"info","msg":"HERTZ: Begin graceful shutdown, wait at most num=5 seconds...","time":"2025-01-24T20:13:41+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T20:13:59+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T20:13:59+08:00"}
+{"level":"info","msg":" {20:14:07} | 200 |      0s | GET     | / ","time":"2025-01-24T20:14:08+08:00"}
+{"level":"info","msg":" {20:14:09} | 200 |      0s | GET     | /sign-in ","time":"2025-01-24T20:14:10+08:00"}
+{"level":"info","msg":" {20:14:09} | 404 |      0s | GET     | /favicon.ico ","time":"2025-01-24T20:14:10+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T20:20:33+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T20:20:33+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T20:25:10+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T20:25:10+08:00"}
+{"level":"info","msg":" {20:25:10} | 200 |      0s | GET     | /sign-in ","time":"2025-01-24T20:25:10+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T20:26:29+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T20:26:29+08:00"}
+{"level":"info","msg":" {20:26:29} | 200 | 507.5µs | GET     | /sign-in ","time":"2025-01-24T20:26:29+08:00"}
+{"level":"info","msg":" {20:26:31} | 200 |      0s | GET     | /sign-in ","time":"2025-01-24T20:26:32+08:00"}
+{"level":"info","msg":" {20:26:32} | 200 |      0s | GET     | /sign-in ","time":"2025-01-24T20:26:32+08:00"}
+{"level":"info","msg":" {20:26:33} | 200 |      0s | GET     | /sign-in ","time":"2025-01-24T20:26:34+08:00"}
+{"level":"info","msg":" {20:26:36} | 200 |      0s | GET     | /sign-in ","time":"2025-01-24T20:26:36+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T20:33:30+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T20:33:30+08:00"}
+{"level":"info","msg":" {20:33:29} | 200 | 572.7µs | GET     | /sign-in ","time":"2025-01-24T20:33:30+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T20:35:29+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T20:35:29+08:00"}
+{"level":"info","msg":" {20:36:16} | 200 |      0s | GET     | /sign-in ","time":"2025-01-24T20:36:17+08:00"}
+{"level":"info","msg":" {20:36:16} | 304 | 42.9835ms | GET     | /static/image/favicon.ico ","time":"2025-01-24T20:36:17+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T20:41:55+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T20:41:55+08:00"}
+{"level":"info","msg":" {20:42:25} | 200 | 585.4µs | GET     | /sign-in ","time":"2025-01-24T20:42:25+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T20:44:37+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T20:44:37+08:00"}
+{"level":"info","msg":" {20:44:47} | 200 |   514µs | GET     | /sign-in ","time":"2025-01-24T20:44:47+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T20:47:34+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T20:47:34+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T20:48:39+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T20:48:39+08:00"}
+{"level":"info","msg":" {20:49:16} | 200 | 423.8µs | GET     | /sign-in ","time":"2025-01-24T20:49:16+08:00"}
+{"level":"info","msg":" {20:49:16} | 304 | 58.565ms | GET     | /static/image/logo.jpg ","time":"2025-01-24T20:49:16+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T20:54:35+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=[::]:8080","time":"2025-01-24T20:54:35+08:00"}
+{"level":"info","msg":"HERTZ: Received signal: interrupt\n","time":"2025-01-24T21:12:14+08:00"}
+{"level":"info","msg":"HERTZ: Begin graceful shutdown, wait at most num=5 seconds...","time":"2025-01-24T21:12:14+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T21:27:36+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-24T21:27:36+08:00"}
+{"level":"info","msg":" {21:27:43} | 200 |   691µs | GET     | /sign-in ","time":"2025-01-24T21:27:43+08:00"}
+{"level":"info","msg":" {21:27:43} | 304 | 39.2135ms | GET     | /static/css/bootstrap.min.css ","time":"2025-01-24T21:27:44+08:00"}
+{"level":"info","msg":" {21:27:43} | 304 | 47.7286ms | GET     | /static/js/bootstrap.bundle.min.js ","time":"2025-01-24T21:27:44+08:00"}
+{"level":"info","msg":" {21:27:43} | 304 |      0s | GET     | /static/image/favicon.ico ","time":"2025-01-24T21:27:44+08:00"}
+{"level":"info","msg":" {21:27:46} | 200 | 503.9µs | POST    | /auth/login ","time":"2025-01-24T21:27:46+08:00"}
+{"level":"info","msg":" {21:27:46} | 404 |      0s | GET     | /favicon.ico ","time":"2025-01-24T21:27:46+08:00"}
+{"level":"info","msg":" {21:27:56} | 200 | 932.9µs | GET     | / ","time":"2025-01-24T21:27:57+08:00"}
+{"level":"info","msg":" {21:27:57} | 304 |      0s | GET     | /static/image/t-shirt-1.jpeg ","time":"2025-01-24T21:27:57+08:00"}
+{"level":"info","msg":" {21:27:57} | 304 |      0s | GET     | /static/image/t-shirt-2.jpeg ","time":"2025-01-24T21:27:57+08:00"}
+{"level":"info","msg":" {21:27:57} | 304 | 786.2µs | GET     | /static/image/t-shirt.jpeg ","time":"2025-01-24T21:27:57+08:00"}
+{"level":"info","msg":" {21:27:57} | 304 |      0s | GET     | /static/image/notebook.jpeg ","time":"2025-01-24T21:27:57+08:00"}
+{"level":"info","msg":" {21:28:00} | 200 |      0s | GET     | /sign-in ","time":"2025-01-24T21:28:00+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T21:35:45+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-24T21:35:45+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T21:48:12+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-24T21:48:12+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T21:58:52+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-24T21:58:52+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T22:05:16+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-24T22:05:16+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-24T22:09:06+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-24T22:09:06+08:00"}
+{"level":"info","msg":" {22:09:08} | 200 | 619.1µs | GET     | / ","time":"2025-01-24T22:09:08+08:00"}
+{"level":"info","msg":" {22:09:08} | 304 | 33.5378ms | GET     | /static/image/favicon.ico ","time":"2025-01-24T22:09:09+08:00"}
+{"level":"info","msg":"HERTZ: Received signal: interrupt\n","time":"2025-01-24T22:09:59+08:00"}
+{"level":"info","msg":"HERTZ: Begin graceful shutdown, wait at most num=5 seconds...","time":"2025-01-24T22:09:59+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T08:56:06+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T08:56:06+08:00"}
+{"level":"info","msg":" {08:56:06} | 200 | 2.225ms | GET     | /sign-up ","time":"2025-01-25T08:56:06+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T08:57:27+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T08:57:27+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T09:01:32+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T09:01:32+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T09:03:54+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T09:03:54+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T09:08:06+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T09:08:06+08:00"}
+{"level":"info","msg":" {09:08:10} | 200 |      0s | GET     | /sign-in ","time":"2025-01-25T09:08:10+08:00"}
+{"level":"info","msg":" {09:08:12} | 200 |      0s | GET     | /sign-up ","time":"2025-01-25T09:08:13+08:00"}
+{"level":"info","msg":" {09:08:14} | 302 | 3.2354ms | POST    | /auth/register ","time":"2025-01-25T09:08:15+08:00"}
+{"level":"info","msg":" {09:08:14} | 200 |      0s | GET     | /sign-in ","time":"2025-01-25T09:08:15+08:00"}
+{"level":"info","msg":" {09:08:16} | 302 | 3.2668ms | POST    | /auth/login ","time":"2025-01-25T09:08:16+08:00"}
+{"level":"info","msg":" {09:08:16} | 200 | 2.6314ms | GET     | / ","time":"2025-01-25T09:08:16+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T09:20:10+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T09:20:10+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T09:21:47+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T09:21:47+08:00"}
+{"level":"info","msg":" {09:21:47} | 200 | 3.2419ms | GET     | / ","time":"2025-01-25T09:21:47+08:00"}
+{"level":"info","msg":" {09:21:47} | 304 | 40.9343ms | GET     | /static/image/favicon.ico ","time":"2025-01-25T09:21:47+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T09:23:58+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T09:23:58+08:00"}
+{"level":"info","msg":" {09:23:58} | 200 | 619.6µs | GET     | / ","time":"2025-01-25T09:23:58+08:00"}
+{"level":"info","msg":" {09:24:06} | 200 |      0s | GET     | / ","time":"2025-01-25T09:24:06+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T09:25:56+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T09:25:56+08:00"}
+{"level":"info","msg":" {09:25:56} | 200 | 1.9316ms | GET     | / ","time":"2025-01-25T09:25:56+08:00"}
+{"level":"info","msg":" {09:29:24} | 200 | 676.6µs | GET     | / ","time":"2025-01-25T09:29:24+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T09:33:39+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T09:33:39+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T09:36:04+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T09:36:04+08:00"}
+{"level":"error","msg":"HERTZ: Cannot open file=\"./static/js/bootstrap.bundle.min.js.map\", error=open ./static/js/bootstrap.bundle.min.js.map: The system cannot find the file specified.","time":"2025-01-25T09:36:22+08:00"}
+{"level":"info","msg":" {09:36:21} | 404 | 611.6µs | GET     | /static/js/bootstrap.bundle.min.js.map ","time":"2025-01-25T09:36:22+08:00"}
+{"level":"error","msg":"HERTZ: Cannot open file=\"./static/css/bootstrap.min.css.map\", error=open ./static/css/bootstrap.min.css.map: The system cannot find the file specified.","time":"2025-01-25T09:36:22+08:00"}
+{"level":"info","msg":" {09:36:21} | 404 |      0s | GET     | /static/css/bootstrap.min.css.map ","time":"2025-01-25T09:36:22+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T09:39:05+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T09:39:05+08:00"}
+{"level":"error","msg":"HERTZ: Cannot open file=\"./static/js/bootstrap.bundle.min.js.map\", error=open ./static/js/bootstrap.bundle.min.js.map: The system cannot find the file specified.","time":"2025-01-25T09:39:07+08:00"}
+{"level":"info","msg":" {09:39:07} | 404 | 507.9µs | GET     | /static/js/bootstrap.bundle.min.js.map ","time":"2025-01-25T09:39:07+08:00"}
+{"level":"error","msg":"HERTZ: Cannot open file=\"./static/css/bootstrap.min.css.map\", error=open ./static/css/bootstrap.min.css.map: The system cannot find the file specified.","time":"2025-01-25T09:39:07+08:00"}
+{"level":"info","msg":" {09:39:07} | 404 |      0s | GET     | /static/css/bootstrap.min.css.map ","time":"2025-01-25T09:39:07+08:00"}
+{"level":"error","msg":"HERTZ: Cannot open file=\"./static/css/bootstrap.min.css.map\", error=open ./static/css/bootstrap.min.css.map: The system cannot find the file specified.","time":"2025-01-25T09:39:07+08:00"}
+{"level":"info","msg":" {09:39:07} | 404 |      0s | GET     | /static/css/bootstrap.min.css.map ","time":"2025-01-25T09:39:07+08:00"}
+{"level":"error","msg":"HERTZ: Cannot open file=\"./static/css/bootstrap.min.css.map\", error=open ./static/css/bootstrap.min.css.map: The system cannot find the file specified.","time":"2025-01-25T09:41:21+08:00"}
+{"level":"info","msg":" {09:41:21} | 404 | 1.2069ms | GET     | /static/css/bootstrap.min.css.map ","time":"2025-01-25T09:41:21+08:00"}
+{"level":"error","msg":"HERTZ: Cannot open file=\"./static/css/bootstrap.min.css.map\", error=open ./static/css/bootstrap.min.css.map: The system cannot find the file specified.","time":"2025-01-25T09:41:21+08:00"}
+{"level":"info","msg":" {09:41:21} | 404 | 670.5µs | GET     | /static/css/bootstrap.min.css.map ","time":"2025-01-25T09:41:21+08:00"}
+{"level":"error","msg":"HERTZ: Cannot open file=\"./static/css/bootstrap.min.css.map\", error=open ./static/css/bootstrap.min.css.map: The system cannot find the file specified.","time":"2025-01-25T09:41:23+08:00"}
+{"level":"info","msg":" {09:41:22} | 404 |      0s | GET     | /static/css/bootstrap.min.css.map ","time":"2025-01-25T09:41:23+08:00"}
+{"level":"error","msg":"HERTZ: Cannot open file=\"./static/css/bootstrap.min.css.map\", error=open ./static/css/bootstrap.min.css.map: The system cannot find the file specified.","time":"2025-01-25T09:41:23+08:00"}
+{"level":"info","msg":" {09:41:23} | 404 |      0s | GET     | /static/css/bootstrap.min.css.map ","time":"2025-01-25T09:41:23+08:00"}
+{"level":"error","msg":"HERTZ: Cannot open file=\"./static/css/bootstrap.min.css.map\", error=open ./static/css/bootstrap.min.css.map: The system cannot find the file specified.","time":"2025-01-25T09:41:23+08:00"}
+{"level":"info","msg":" {09:41:23} | 404 |      0s | GET     | /static/css/bootstrap.min.css.map ","time":"2025-01-25T09:41:23+08:00"}
+{"level":"info","msg":" {09:41:56} | 200 | 4.6713ms | GET     | / ","time":"2025-01-25T09:41:56+08:00"}
+{"level":"error","msg":"HERTZ: Cannot open file=\"./static/js/bootstrap.bundle.min.js.map\", error=open ./static/js/bootstrap.bundle.min.js.map: The system cannot find the file specified.","time":"2025-01-25T09:42:01+08:00"}
+{"level":"info","msg":" {09:42:01} | 404 |      0s | GET     | /static/js/bootstrap.bundle.min.js.map ","time":"2025-01-25T09:42:01+08:00"}
+{"level":"error","msg":"HERTZ: Cannot open file=\"./static/css/bootstrap.min.css.map\", error=open ./static/css/bootstrap.min.css.map: The system cannot find the file specified.","time":"2025-01-25T09:42:01+08:00"}
+{"level":"info","msg":" {09:42:01} | 404 | 1.0225ms | GET     | /static/css/bootstrap.min.css.map ","time":"2025-01-25T09:42:01+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T09:45:04+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T09:45:04+08:00"}
+{"level":"info","msg":" {09:45:04} | 200 |      0s | GET     | / ","time":"2025-01-25T09:45:04+08:00"}
+{"level":"error","msg":"HERTZ: Cannot open file=\"./static/css/bootstrap.min.css.map\", error=open ./static/css/bootstrap.min.css.map: The system cannot find the file specified.","time":"2025-01-25T09:45:04+08:00"}
+{"level":"info","msg":" {09:45:04} | 404 |      0s | GET     | /static/css/bootstrap.min.css.map ","time":"2025-01-25T09:45:04+08:00"}
+{"level":"error","msg":"HERTZ: Cannot open file=\"./static/js/bootstrap.bundle.min.js.map\", error=open ./static/js/bootstrap.bundle.min.js.map: The system cannot find the file specified.","time":"2025-01-25T09:45:04+08:00"}
+{"level":"info","msg":" {09:45:04} | 404 |      0s | GET     | /static/js/bootstrap.bundle.min.js.map ","time":"2025-01-25T09:45:04+08:00"}
+{"level":"info","msg":" {09:48:02} | 200 | 11.8422ms | GET     | / ","time":"2025-01-25T09:48:02+08:00"}
+{"level":"error","msg":"HERTZ: Cannot open file=\"./static/css/bootstrap.min.css.map\", error=open ./static/css/bootstrap.min.css.map: The system cannot find the file specified.","time":"2025-01-25T09:48:02+08:00"}
+{"level":"info","msg":" {09:48:02} | 404 |      0s | GET     | /static/css/bootstrap.min.css.map ","time":"2025-01-25T09:48:02+08:00"}
+{"level":"error","msg":"HERTZ: Cannot open file=\"./static/js/bootstrap.bundle.min.js.map\", error=open ./static/js/bootstrap.bundle.min.js.map: The system cannot find the file specified.","time":"2025-01-25T09:48:02+08:00"}
+{"level":"info","msg":" {09:48:02} | 404 |      0s | GET     | /static/js/bootstrap.bundle.min.js.map ","time":"2025-01-25T09:48:02+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T09:51:49+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T09:51:49+08:00"}
+{"level":"info","msg":" {09:51:49} | 200 |      0s | GET     | / ","time":"2025-01-25T09:51:49+08:00"}
+{"level":"error","msg":"HERTZ: Cannot open file=\"./static/css/bootstrap.min.css.map\", error=open ./static/css/bootstrap.min.css.map: The system cannot find the file specified.","time":"2025-01-25T09:51:49+08:00"}
+{"level":"info","msg":" {09:51:49} | 404 | 506.8µs | GET     | /static/css/bootstrap.min.css.map ","time":"2025-01-25T09:51:49+08:00"}
+{"level":"error","msg":"HERTZ: Cannot open file=\"./static/js/bootstrap.bundle.min.js.map\", error=open ./static/js/bootstrap.bundle.min.js.map: The system cannot find the file specified.","time":"2025-01-25T09:51:49+08:00"}
+{"level":"info","msg":" {09:51:49} | 404 |      0s | GET     | /static/js/bootstrap.bundle.min.js.map ","time":"2025-01-25T09:51:49+08:00"}
+{"level":"info","msg":" {09:53:06} | 200 |      0s | GET     | / ","time":"2025-01-25T09:53:06+08:00"}
+{"level":"error","msg":"HERTZ: Cannot open file=\"./static/css/bootstrap.min.css.map\", error=open ./static/css/bootstrap.min.css.map: The system cannot find the file specified.","time":"2025-01-25T09:53:06+08:00"}
+{"level":"info","msg":" {09:53:06} | 404 |      0s | GET     | /static/css/bootstrap.min.css.map ","time":"2025-01-25T09:53:06+08:00"}
+{"level":"error","msg":"HERTZ: Cannot open file=\"./static/js/bootstrap.bundle.min.js.map\", error=open ./static/js/bootstrap.bundle.min.js.map: The system cannot find the file specified.","time":"2025-01-25T09:53:06+08:00"}
+{"level":"info","msg":" {09:53:06} | 404 |      0s | GET     | /static/js/bootstrap.bundle.min.js.map ","time":"2025-01-25T09:53:06+08:00"}
+{"level":"info","msg":" {09:53:33} | 200 |      0s | GET     | / ","time":"2025-01-25T09:53:33+08:00"}
+{"level":"error","msg":"HERTZ: Cannot open file=\"./static/css/bootstrap.min.css.map\", error=open ./static/css/bootstrap.min.css.map: The system cannot find the file specified.","time":"2025-01-25T09:53:33+08:00"}
+{"level":"info","msg":" {09:53:33} | 404 | 345.3µs | GET     | /static/css/bootstrap.min.css.map ","time":"2025-01-25T09:53:33+08:00"}
+{"level":"error","msg":"HERTZ: Cannot open file=\"./static/js/bootstrap.bundle.min.js.map\", error=open ./static/js/bootstrap.bundle.min.js.map: The system cannot find the file specified.","time":"2025-01-25T09:53:33+08:00"}
+{"level":"info","msg":" {09:53:33} | 404 |      0s | GET     | /static/js/bootstrap.bundle.min.js.map ","time":"2025-01-25T09:53:33+08:00"}
+{"level":"info","msg":" {09:53:49} | 200 |      0s | GET     | / ","time":"2025-01-25T09:53:49+08:00"}
+{"level":"error","msg":"HERTZ: Cannot open file=\"./static/css/bootstrap.min.css.map\", error=open ./static/css/bootstrap.min.css.map: The system cannot find the file specified.","time":"2025-01-25T09:53:49+08:00"}
+{"level":"info","msg":" {09:53:49} | 404 |      0s | GET     | /static/css/bootstrap.min.css.map ","time":"2025-01-25T09:53:49+08:00"}
+{"level":"error","msg":"HERTZ: Cannot open file=\"./static/js/bootstrap.bundle.min.js.map\", error=open ./static/js/bootstrap.bundle.min.js.map: The system cannot find the file specified.","time":"2025-01-25T09:53:49+08:00"}
+{"level":"info","msg":" {09:53:49} | 404 |      0s | GET     | /static/js/bootstrap.bundle.min.js.map ","time":"2025-01-25T09:53:49+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T09:57:38+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T09:57:38+08:00"}
+{"level":"info","msg":" {09:57:39} | 200 | 588.3µs | GET     | / ","time":"2025-01-25T09:57:39+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T10:01:32+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T10:01:32+08:00"}
+{"level":"info","msg":" {10:01:32} | 200 | 630.9µs | GET     | / ","time":"2025-01-25T10:01:32+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T10:04:42+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T10:04:42+08:00"}
+{"level":"info","msg":" {10:04:42} | 200 | 730.4µs | GET     | / ","time":"2025-01-25T10:04:42+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T10:06:04+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T10:06:04+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T10:08:10+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T10:08:10+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T10:13:12+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T10:13:12+08:00"}
+{"level":"info","msg":" {10:13:12} | 200 | 538.6µs | GET     | / ","time":"2025-01-25T10:13:12+08:00"}
+{"level":"info","msg":" {10:13:39} | 200 | 12.6919ms | GET     | / ","time":"2025-01-25T10:13:39+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T10:14:30+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T10:14:30+08:00"}
+{"level":"info","msg":" {10:14:30} | 200 | 614.4µs | GET     | / ","time":"2025-01-25T10:14:30+08:00"}
+{"level":"info","msg":" {10:14:31} | 200 |      0s | GET     | / ","time":"2025-01-25T10:14:31+08:00"}
+{"level":"info","msg":" {10:14:32} | 200 |      0s | GET     | / ","time":"2025-01-25T10:14:32+08:00"}
+{"level":"info","msg":" {10:14:32} | 200 | 572.7µs | GET     | / ","time":"2025-01-25T10:14:32+08:00"}
+{"level":"info","msg":" {10:14:33} | 200 |      0s | GET     | / ","time":"2025-01-25T10:14:33+08:00"}
+{"level":"info","msg":" {10:14:34} | 404 |      0s | POST    | /auth/logout ","time":"2025-01-25T10:14:34+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T10:16:39+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T10:16:39+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T10:19:14+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T10:19:14+08:00"}
+{"level":"info","msg":" {10:20:16} | 200 |      0s | GET     | / ","time":"2025-01-25T10:20:16+08:00"}
+{"level":"info","msg":" {10:20:19} | 302 | 3.1704ms | POST    | /auth/logout ","time":"2025-01-25T10:20:20+08:00"}
+{"level":"info","msg":" {10:20:19} | 200 |      0s | GET     | / ","time":"2025-01-25T10:20:20+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T10:23:30+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T10:23:30+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T10:26:43+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T10:26:43+08:00"}
+{"level":"info","msg":" {10:26:43} | 200 | 546.4µs | GET     | /sign-in ","time":"2025-01-25T10:26:43+08:00"}
+{"level":"info","msg":" {10:26:47} | 200 |      0s | GET     | /sign-in ","time":"2025-01-25T10:26:47+08:00"}
+{"level":"info","msg":" {10:26:49} | 302 | 6.2647ms | POST    | /auth/login ","time":"2025-01-25T10:26:49+08:00"}
+{"level":"info","msg":" {10:26:49} | 200 | 3.3617ms | GET     | / ","time":"2025-01-25T10:26:49+08:00"}
+{"level":"info","msg":" {10:26:52} | 302 | 3.6206ms | POST    | /auth/logout ","time":"2025-01-25T10:26:52+08:00"}
+{"level":"info","msg":" {10:26:52} | 200 | 1.2826ms | GET     | / ","time":"2025-01-25T10:26:52+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T10:32:17+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T10:32:17+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T10:40:57+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T10:40:57+08:00"}
+{"level":"error","msg":"HERTZ: Cannot open file=\"./static/js/bootstrap.bundle.min.js.map\", error=open ./static/js/bootstrap.bundle.min.js.map: The system cannot find the file specified.","time":"2025-01-25T10:43:04+08:00"}
+{"level":"info","msg":" {10:43:04} | 404 |      0s | GET     | /static/js/bootstrap.bundle.min.js.map ","time":"2025-01-25T10:43:04+08:00"}
+{"level":"error","msg":"HERTZ: Cannot open file=\"./static/css/bootstrap.min.css.map\", error=open ./static/css/bootstrap.min.css.map: The system cannot find the file specified.","time":"2025-01-25T10:43:04+08:00"}
+{"level":"info","msg":" {10:43:04} | 404 |      0s | GET     | /static/css/bootstrap.min.css.map ","time":"2025-01-25T10:43:04+08:00"}
+{"level":"info","msg":" {10:43:35} | 200 |      0s | GET     | /sign-in ","time":"2025-01-25T10:43:36+08:00"}
+{"level":"error","msg":"HERTZ: Cannot open file=\"./static/css/bootstrap.min.css.map\", error=open ./static/css/bootstrap.min.css.map: The system cannot find the file specified.","time":"2025-01-25T10:43:36+08:00"}
+{"level":"info","msg":" {10:43:36} | 404 |      0s | GET     | /static/css/bootstrap.min.css.map ","time":"2025-01-25T10:43:36+08:00"}
+{"level":"error","msg":"HERTZ: Cannot open file=\"./static/js/bootstrap.bundle.min.js.map\", error=open ./static/js/bootstrap.bundle.min.js.map: The system cannot find the file specified.","time":"2025-01-25T10:43:36+08:00"}
+{"level":"info","msg":" {10:43:36} | 404 |      0s | GET     | /static/js/bootstrap.bundle.min.js.map ","time":"2025-01-25T10:43:36+08:00"}
+{"level":"info","msg":" {10:44:19} | 200 |      0s | GET     | /sign-in ","time":"2025-01-25T10:44:19+08:00"}
+{"level":"error","msg":"HERTZ: Cannot open file=\"./static/js/bootstrap.bundle.min.js.map\", error=open ./static/js/bootstrap.bundle.min.js.map: The system cannot find the file specified.","time":"2025-01-25T10:44:21+08:00"}
+{"level":"info","msg":" {10:44:21} | 404 |      0s | GET     | /static/js/bootstrap.bundle.min.js.map ","time":"2025-01-25T10:44:21+08:00"}
+{"level":"error","msg":"HERTZ: Cannot open file=\"./static/css/bootstrap.min.css.map\", error=open ./static/css/bootstrap.min.css.map: The system cannot find the file specified.","time":"2025-01-25T10:44:21+08:00"}
+{"level":"info","msg":" {10:44:21} | 404 |      0s | GET     | /static/css/bootstrap.min.css.map ","time":"2025-01-25T10:44:21+08:00"}
+{"level":"error","msg":"HERTZ: Cannot open file=\"./static/css/bootstrap.min.css.map\", error=open ./static/css/bootstrap.min.css.map: The system cannot find the file specified.","time":"2025-01-25T10:44:21+08:00"}
+{"level":"info","msg":" {10:44:21} | 404 |      0s | GET     | /static/css/bootstrap.min.css.map ","time":"2025-01-25T10:44:21+08:00"}
+{"level":"info","msg":" {10:44:33} | 200 |      0s | GET     | /sign-in ","time":"2025-01-25T10:44:34+08:00"}
+{"level":"error","msg":"HERTZ: Cannot open file=\"./static/css/bootstrap.min.css.map\", error=open ./static/css/bootstrap.min.css.map: The system cannot find the file specified.","time":"2025-01-25T10:44:34+08:00"}
+{"level":"info","msg":" {10:44:33} | 404 |      0s | GET     | /static/css/bootstrap.min.css.map ","time":"2025-01-25T10:44:34+08:00"}
+{"level":"error","msg":"HERTZ: Cannot open file=\"./static/js/bootstrap.bundle.min.js.map\", error=open ./static/js/bootstrap.bundle.min.js.map: The system cannot find the file specified.","time":"2025-01-25T10:44:34+08:00"}
+{"level":"info","msg":" {10:44:33} | 404 |      0s | GET     | /static/js/bootstrap.bundle.min.js.map ","time":"2025-01-25T10:44:34+08:00"}
+{"level":"info","msg":" {10:45:23} | 200 |      0s | GET     | /sign-up ","time":"2025-01-25T10:45:23+08:00"}
+{"level":"error","msg":"HERTZ: Cannot open file=\"./static/css/bootstrap.min.css.map\", error=open ./static/css/bootstrap.min.css.map: The system cannot find the file specified.","time":"2025-01-25T10:45:24+08:00"}
+{"level":"info","msg":" {10:45:23} | 404 |      0s | GET     | /static/css/bootstrap.min.css.map ","time":"2025-01-25T10:45:24+08:00"}
+{"level":"error","msg":"HERTZ: Cannot open file=\"./static/js/bootstrap.bundle.min.js.map\", error=open ./static/js/bootstrap.bundle.min.js.map: The system cannot find the file specified.","time":"2025-01-25T10:45:24+08:00"}
+{"level":"info","msg":" {10:45:23} | 404 | 4.602ms | GET     | /static/js/bootstrap.bundle.min.js.map ","time":"2025-01-25T10:45:24+08:00"}
+{"level":"info","msg":" {10:45:40} | 200 |      0s | GET     | /sign-in ","time":"2025-01-25T10:45:40+08:00"}
+{"level":"error","msg":"HERTZ: Cannot open file=\"./static/css/bootstrap.min.css.map\", error=open ./static/css/bootstrap.min.css.map: The system cannot find the file specified.","time":"2025-01-25T10:45:40+08:00"}
+{"level":"info","msg":" {10:45:40} | 404 | 1.1722ms | GET     | /static/css/bootstrap.min.css.map ","time":"2025-01-25T10:45:40+08:00"}
+{"level":"error","msg":"HERTZ: Cannot open file=\"./static/js/bootstrap.bundle.min.js.map\", error=open ./static/js/bootstrap.bundle.min.js.map: The system cannot find the file specified.","time":"2025-01-25T10:45:40+08:00"}
+{"level":"info","msg":" {10:45:40} | 404 | 1.1882ms | GET     | /static/js/bootstrap.bundle.min.js.map ","time":"2025-01-25T10:45:40+08:00"}
+{"level":"info","msg":" {10:48:49} | 200 |      0s | GET     | /sign-up ","time":"2025-01-25T10:48:50+08:00"}
+{"level":"error","msg":"HERTZ: Cannot open file=\"./static/css/bootstrap.min.css.map\", error=open ./static/css/bootstrap.min.css.map: The system cannot find the file specified.","time":"2025-01-25T10:48:50+08:00"}
+{"level":"info","msg":" {10:48:50} | 404 | 1.001ms | GET     | /static/css/bootstrap.min.css.map ","time":"2025-01-25T10:48:50+08:00"}
+{"level":"error","msg":"HERTZ: Cannot open file=\"./static/js/bootstrap.bundle.min.js.map\", error=open ./static/js/bootstrap.bundle.min.js.map: The system cannot find the file specified.","time":"2025-01-25T10:48:50+08:00"}
+{"level":"info","msg":" {10:48:50} | 404 |      0s | GET     | /static/js/bootstrap.bundle.min.js.map ","time":"2025-01-25T10:48:50+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T10:53:07+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T10:53:07+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T10:56:48+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T10:56:48+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T11:00:57+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T11:00:57+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T11:05:02+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T11:05:02+08:00"}
+{"level":"info","msg":" {11:05:46} | 200 |      0s | GET     | /sign-up ","time":"2025-01-25T11:05:47+08:00"}
+{"level":"info","msg":" {11:05:46} | 304 | 55.9066ms | GET     | /static/css/bootstrap.min.css ","time":"2025-01-25T11:05:47+08:00"}
+{"level":"info","msg":" {11:05:46} | 304 | 53.6651ms | GET     | /static/image/logo.jpg ","time":"2025-01-25T11:05:47+08:00"}
+{"level":"info","msg":" {11:05:47} | 304 | 39.8061ms | GET     | /static/js/bootstrap.bundle.min.js ","time":"2025-01-25T11:05:47+08:00"}
+{"level":"info","msg":" {11:05:49} | 200 | 3.011ms | GET     | / ","time":"2025-01-25T11:05:49+08:00"}
+{"level":"info","msg":" {11:05:49} | 304 | 15.868ms | GET     | /static/image/t-shirt-1.jpeg ","time":"2025-01-25T11:05:49+08:00"}
+{"level":"info","msg":" {11:05:49} | 304 |      0s | GET     | /static/image/t-shirt-2.jpeg ","time":"2025-01-25T11:05:49+08:00"}
+{"level":"info","msg":" {11:05:49} | 304 | 963.2µs | GET     | /static/image/notebook.jpeg ","time":"2025-01-25T11:05:49+08:00"}
+{"level":"info","msg":" {11:05:49} | 304 | 504.9µs | GET     | /static/image/t-shirt.jpeg ","time":"2025-01-25T11:05:49+08:00"}
+{"level":"info","msg":" {11:05:51} | 200 |      0s | GET     | /sign-in ","time":"2025-01-25T11:05:52+08:00"}
+{"level":"info","msg":" {11:05:53} | 302 | 3.4607ms | POST    | /auth/login ","time":"2025-01-25T11:05:54+08:00"}
+{"level":"info","msg":" {11:05:53} | 200 | 2.1334ms | GET     | / ","time":"2025-01-25T11:05:54+08:00"}
+{"level":"info","msg":" {11:06:03} | 302 | 8.7427ms | POST    | /auth/logout ","time":"2025-01-25T11:06:03+08:00"}
+{"level":"info","msg":" {11:06:03} | 200 | 3.824ms | GET     | / ","time":"2025-01-25T11:06:03+08:00"}
+{"level":"info","msg":" {11:06:06} | 200 |      0s | GET     | /sign-in ","time":"2025-01-25T11:06:06+08:00"}
+{"level":"info","msg":" {11:06:07} | 302 | 13.991ms | POST    | /auth/login ","time":"2025-01-25T11:06:08+08:00"}
+{"level":"info","msg":" {11:06:07} | 200 | 3.8771ms | GET     | / ","time":"2025-01-25T11:06:08+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T11:09:18+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T11:09:18+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T11:10:32+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T11:10:32+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T11:18:11+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T11:18:11+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T11:22:30+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T11:22:30+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T11:24:26+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T11:24:26+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T11:26:20+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T11:26:20+08:00"}
+{"level":"info","msg":" {11:28:02} | 200 | 4.8404ms | GET     | / ","time":"2025-01-25T11:28:03+08:00"}
+{"level":"info","msg":" {11:28:03} | 304 | 38.645ms | GET     | /static/image/favicon.ico ","time":"2025-01-25T11:28:03+08:00"}
+{"level":"info","msg":" {11:28:04} | 302 | 6.2631ms | POST    | /auth/logout ","time":"2025-01-25T11:28:05+08:00"}
+{"level":"info","msg":" {11:28:04} | 200 | 2.5297ms | GET     | / ","time":"2025-01-25T11:28:05+08:00"}
+{"level":"info","msg":" {11:28:05} | 200 | 3.1965ms | GET     | /sign-in ","time":"2025-01-25T11:28:05+08:00"}
+{"level":"info","msg":" {11:28:06} | 302 | 4.5499ms | POST    | /auth/login ","time":"2025-01-25T11:28:06+08:00"}
+{"level":"info","msg":" {11:28:06} | 200 | 2.8176ms | GET     | / ","time":"2025-01-25T11:28:07+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T11:35:34+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T11:35:34+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T11:39:24+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T11:39:24+08:00"}
+{"level":"info","msg":" {11:39:24} | 200 | 4.6148ms | GET     | / ","time":"2025-01-25T11:39:24+08:00"}
+{"level":"info","msg":" {11:39:26} | 200 | 505.4µs | GET     | /about ","time":"2025-01-25T11:39:26+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T11:40:46+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T11:40:46+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T11:43:11+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T11:43:11+08:00"}
+{"level":"info","msg":" {11:43:46} | 200 | 6.1735ms | GET     | / ","time":"2025-01-25T11:43:47+08:00"}
+{"level":"info","msg":" {11:43:48} | 200 | 1.8806ms | GET     | /about ","time":"2025-01-25T11:43:49+08:00"}
+{"level":"info","msg":" {11:43:49} | 200 | 3.599ms | GET     | / ","time":"2025-01-25T11:43:50+08:00"}
+{"level":"info","msg":" {11:43:51} | 302 | 7.1808ms | POST    | /auth/logout ","time":"2025-01-25T11:43:51+08:00"}
+{"level":"info","msg":" {11:43:51} | 200 | 3.3574ms | GET     | / ","time":"2025-01-25T11:43:51+08:00"}
+{"level":"info","msg":" {11:43:52} | 302 | 2.1712ms | GET     | /about ","time":"2025-01-25T11:43:52+08:00"}
+{"level":"info","msg":" {11:43:52} | 200 | 3.8201ms | GET     | /sign-in ","time":"2025-01-25T11:43:52+08:00"}
+{"level":"info","msg":" {11:44:03} | 302 | 7.2825ms | POST    | /auth/login ","time":"2025-01-25T11:44:03+08:00"}
+{"level":"info","msg":" {11:44:03} | 200 | 2.8892ms | GET     | / ","time":"2025-01-25T11:44:03+08:00"}
+{"level":"info","msg":" {11:44:04} | 200 | 1.3857ms | GET     | /about ","time":"2025-01-25T11:44:04+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T11:50:03+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T11:50:03+08:00"}
+{"level":"info","msg":" {11:50:03} | 200 | 2.4439ms | GET     | /about ","time":"2025-01-25T11:50:03+08:00"}
+{"level":"info","msg":" {11:50:06} | 200 | 3.4672ms | GET     | /about ","time":"2025-01-25T11:50:07+08:00"}
+{"level":"info","msg":" {11:50:07} | 200 | 2.0963ms | GET     | /about ","time":"2025-01-25T11:50:08+08:00"}
+{"level":"info","msg":" {11:50:08} | 200 | 1.2245ms | GET     | / ","time":"2025-01-25T11:50:09+08:00"}
+{"level":"info","msg":" {11:50:11} | 302 | 3.1476ms | POST    | /auth/logout ","time":"2025-01-25T11:50:12+08:00"}
+{"level":"info","msg":" {11:50:11} | 200 |   1.8ms | GET     | / ","time":"2025-01-25T11:50:12+08:00"}
+{"level":"info","msg":" {11:50:13} | 302 | 2.113ms | GET     | /about ","time":"2025-01-25T11:50:13+08:00"}
+{"level":"info","msg":" {11:50:13} | 200 | 1.6701ms | GET     | /sign-in ","time":"2025-01-25T11:50:13+08:00"}
+{"level":"info","msg":" {11:50:16} | 302 | 7.0374ms | POST    | /auth/login ","time":"2025-01-25T11:50:16+08:00"}
+{"level":"info","msg":" {11:50:16} | 200 | 3.6863ms | GET     | /about ","time":"2025-01-25T11:50:16+08:00"}
+{"level":"info","msg":" {11:50:29} | 200 | 2.3546ms | GET     | / ","time":"2025-01-25T11:50:29+08:00"}
+{"level":"info","msg":" {11:50:30} | 302 | 4.8518ms | POST    | /auth/logout ","time":"2025-01-25T11:50:30+08:00"}
+{"level":"info","msg":" {11:50:30} | 200 | 1.8808ms | GET     | / ","time":"2025-01-25T11:50:30+08:00"}
+{"level":"info","msg":" {11:50:31} | 200 | 1.3614ms | GET     | /sign-in ","time":"2025-01-25T11:50:32+08:00"}
+{"level":"info","msg":" {11:50:32} | 302 | 3.4244ms | POST    | /auth/login ","time":"2025-01-25T11:50:33+08:00"}
+{"level":"info","msg":" {11:50:32} | 200 | 1.3322ms | GET     | / ","time":"2025-01-25T11:50:33+08:00"}
+{"level":"info","msg":" {11:52:55} | 200 | 1.8185ms | GET     | /about ","time":"2025-01-25T11:52:55+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T11:56:11+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T11:56:11+08:00"}
+{"level":"info","msg":" {12:01:40} | 200 | 8.2232ms | GET     | / ","time":"2025-01-25T12:01:40+08:00"}
+{"level":"info","msg":" {12:01:41} | 302 | 5.9659ms | POST    | /auth/logout ","time":"2025-01-25T12:01:41+08:00"}
+{"level":"info","msg":" {12:01:41} | 200 | 1.9778ms | GET     | / ","time":"2025-01-25T12:01:41+08:00"}
+{"level":"info","msg":" {12:01:43} | 302 | 2.8015ms | GET     | /about ","time":"2025-01-25T12:01:43+08:00"}
+{"level":"info","msg":" {12:01:43} | 200 | 3.5388ms | GET     | /sign-in ","time":"2025-01-25T12:01:43+08:00"}
+{"level":"info","msg":" {12:01:44} | 302 | 6.7951ms | POST    | /auth/login ","time":"2025-01-25T12:01:44+08:00"}
+{"level":"info","msg":" {12:01:44} | 200 | 2.6965ms | GET     | /about ","time":"2025-01-25T12:01:44+08:00"}
+{"level":"info","msg":" {12:01:48} | 200 | 3.3456ms | GET     | / ","time":"2025-01-25T12:01:48+08:00"}
+{"level":"info","msg":" {12:01:50} | 302 | 8.5583ms | POST    | /auth/logout ","time":"2025-01-25T12:01:50+08:00"}
+{"level":"info","msg":" {12:01:50} | 200 | 3.3663ms | GET     | / ","time":"2025-01-25T12:01:50+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T12:02:37+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T12:02:37+08:00"}
+{"level":"info","msg":" {12:02:37} | 200 | 1.6648ms | GET     | / ","time":"2025-01-25T12:02:37+08:00"}
+{"level":"info","msg":" {12:02:40} | 200 | 1.3238ms | GET     | /about ","time":"2025-01-25T12:02:40+08:00"}
+{"level":"info","msg":" {12:02:47} | 200 | 1.8433ms | GET     | / ","time":"2025-01-25T12:02:47+08:00"}
+{"level":"info","msg":" {12:03:08} | 200 | 2.6093ms | GET     | /sign-in ","time":"2025-01-25T12:03:08+08:00"}
+{"level":"info","msg":" {12:03:09} | 302 | 3.0764ms | POST    | /auth/login ","time":"2025-01-25T12:03:09+08:00"}
+{"level":"info","msg":" {12:03:09} | 200 | 1.5605ms | GET     | / ","time":"2025-01-25T12:03:09+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T12:04:25+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T12:04:25+08:00"}
+{"level":"info","msg":" {12:04:30} | 200 | 2.9831ms | GET     | /sign-in ","time":"2025-01-25T12:04:30+08:00"}
+{"level":"info","msg":" {12:04:33} | 200 | 1.4251ms | GET     | /sign-in ","time":"2025-01-25T12:04:33+08:00"}
+{"level":"info","msg":" {12:04:36} | 200 |   504µs | GET     | / ","time":"2025-01-25T12:04:36+08:00"}
+{"level":"info","msg":" {12:04:37} | 200 | 1.8642ms | GET     | /sign-in ","time":"2025-01-25T12:04:38+08:00"}
+{"level":"info","msg":" {12:04:40} | 200 | 1.2857ms | GET     | / ","time":"2025-01-25T12:04:41+08:00"}
+{"level":"info","msg":" {12:05:50} | 200 | 4.7548ms | GET     | /about ","time":"2025-01-25T12:05:50+08:00"}
+{"level":"info","msg":" {12:05:51} | 200 | 1.4155ms | GET     | / ","time":"2025-01-25T12:05:51+08:00"}
+{"level":"info","msg":" {12:06:01} | 200 |   777µs | GET     | /sign-in ","time":"2025-01-25T12:06:02+08:00"}
+{"level":"info","msg":" {12:06:02} | 302 | 5.8797ms | POST    | /auth/login ","time":"2025-01-25T12:06:03+08:00"}
+{"level":"info","msg":" {12:06:02} | 200 | 3.1848ms | GET     | / ","time":"2025-01-25T12:06:03+08:00"}
+{"level":"info","msg":" {12:06:04} | 200 | 2.0984ms | GET     | /about ","time":"2025-01-25T12:06:04+08:00"}
+{"level":"info","msg":" {12:06:06} | 200 | 1.9843ms | GET     | /sign-in ","time":"2025-01-25T12:06:06+08:00"}
+{"level":"info","msg":" {12:06:07} | 302 | 3.2996ms | POST    | /auth/login ","time":"2025-01-25T12:06:08+08:00"}
+{"level":"info","msg":" {12:06:07} | 200 | 2.2509ms | GET     | / ","time":"2025-01-25T12:06:08+08:00"}
+{"level":"info","msg":" {12:06:08} | 200 | 2.5851ms | GET     | /about ","time":"2025-01-25T12:06:09+08:00"}
+{"level":"info","msg":" {12:06:14} | 200 | 4.7055ms | GET     | / ","time":"2025-01-25T12:06:15+08:00"}
+{"level":"info","msg":"HERTZ: Received signal: interrupt\n","time":"2025-01-25T12:43:25+08:00"}
+{"level":"info","msg":"HERTZ: Begin graceful shutdown, wait at most num=5 seconds...","time":"2025-01-25T12:43:25+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T15:02:57+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T15:02:57+08:00"}
+{"level":"info","msg":" {15:03:36} | 200 | 3.6599ms | GET     | / ","time":"2025-01-25T15:03:36+08:00"}
+{"level":"info","msg":" {15:03:36} | 304 | 30.6727ms | GET     | /static/image/logo.jpg ","time":"2025-01-25T15:03:37+08:00"}
+{"level":"info","msg":" {15:03:36} | 304 | 30.6727ms | GET     | /static/css/bootstrap.min.css ","time":"2025-01-25T15:03:37+08:00"}
+{"level":"info","msg":" {15:03:36} | 304 | 1.3568ms | GET     | /static/image/t-shirt-1.jpeg ","time":"2025-01-25T15:03:37+08:00"}
+{"level":"info","msg":" {15:03:36} | 304 | 3.5323ms | GET     | /static/image/t-shirt-2.jpeg ","time":"2025-01-25T15:03:37+08:00"}
+{"level":"info","msg":" {15:03:36} | 304 | 4.2575ms | GET     | /static/image/notebook.jpeg ","time":"2025-01-25T15:03:37+08:00"}
+{"level":"info","msg":" {15:03:36} | 304 | 4.5546ms | GET     | /static/image/t-shirt.jpeg ","time":"2025-01-25T15:03:37+08:00"}
+{"level":"info","msg":" {15:03:36} | 304 | 5.2521ms | GET     | /static/js/bootstrap.bundle.min.js ","time":"2025-01-25T15:03:37+08:00"}
+{"level":"info","msg":" {15:03:36} | 304 | 1.8185ms | GET     | /static/image/favicon.ico ","time":"2025-01-25T15:03:37+08:00"}
+{"level":"info","msg":" {15:03:47} | 302 | 3.6139ms | POST    | /auth/logout ","time":"2025-01-25T15:03:48+08:00"}
+{"level":"info","msg":" {15:03:47} | 200 | 1.6577ms | GET     | / ","time":"2025-01-25T15:03:48+08:00"}
+{"level":"info","msg":" {15:03:49} | 200 | 4.7302ms | GET     | / ","time":"2025-01-25T15:03:49+08:00"}
+{"level":"info","msg":" {15:03:51} | 200 | 1.6016ms | GET     | / ","time":"2025-01-25T15:03:51+08:00"}
+{"level":"info","msg":" {15:03:54} | 200 | 4.8664ms | GET     | /sign-in ","time":"2025-01-25T15:03:54+08:00"}
+{"level":"info","msg":" {15:03:56} | 200 | 12.1071ms | POST    | /auth/login ","time":"2025-01-25T15:03:56+08:00"}
+{"level":"info","msg":" {15:03:56} | 404 | 3.574ms | GET     | /favicon.ico ","time":"2025-01-25T15:03:56+08:00"}
+{"level":"info","msg":" {15:04:02} | 200 | 3.1969ms | GET     | /sign-up ","time":"2025-01-25T15:04:02+08:00"}
+{"level":"info","msg":" {15:04:23} | 302 | 74.2642ms | POST    | /auth/register ","time":"2025-01-25T15:04:23+08:00"}
+{"level":"info","msg":" {15:04:23} | 200 | 2.4279ms | GET     | /sign-in ","time":"2025-01-25T15:04:23+08:00"}
+{"level":"info","msg":" {15:04:31} | 302 | 68.9522ms | POST    | /auth/login ","time":"2025-01-25T15:04:31+08:00"}
+{"level":"info","msg":" {15:04:31} | 200 | 4.8786ms | GET     | / ","time":"2025-01-25T15:04:31+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T15:10:55+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T15:10:55+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T15:17:18+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T15:17:19+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T15:19:32+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T15:19:32+08:00"}
+{"level":"info","msg":" {15:20:04} | 302 | 9.6206ms | POST    | /auth/logout ","time":"2025-01-25T15:20:05+08:00"}
+{"level":"info","msg":" {15:20:04} | 200 | 3.5318ms | GET     | / ","time":"2025-01-25T15:20:05+08:00"}
+{"level":"info","msg":" {15:20:07} | 200 | 3.8271ms | GET     | /sign-in ","time":"2025-01-25T15:20:08+08:00"}
+{"level":"info","msg":" {15:20:10} | 200 | 1.0496ms | GET     | /sign-up ","time":"2025-01-25T15:20:10+08:00"}
+{"level":"info","msg":" {15:20:33} | 302 | 81.7039ms | POST    | /auth/register ","time":"2025-01-25T15:20:33+08:00"}
+{"level":"info","msg":" {15:20:33} | 200 | 2.1667ms | GET     | /sign-in ","time":"2025-01-25T15:20:33+08:00"}
+{"level":"info","msg":" {15:20:39} | 302 | 65.5943ms | POST    | /auth/login ","time":"2025-01-25T15:20:39+08:00"}
+{"level":"info","msg":" {15:20:39} | 200 | 3.2566ms | GET     | / ","time":"2025-01-25T15:20:39+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T15:24:18+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T15:24:18+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T15:31:44+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T15:31:44+08:00"}
+{"level":"info","msg":"HERTZ: Received signal: interrupt\n","time":"2025-01-25T15:36:57+08:00"}
+{"level":"info","msg":"HERTZ: Begin graceful shutdown, wait at most num=5 seconds...","time":"2025-01-25T15:36:57+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T22:34:14+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T22:34:14+08:00"}
+{"level":"info","msg":" {22:35:09} | 200 | 9.5333ms | GET     | / ","time":"2025-01-25T22:35:09+08:00"}
+{"level":"info","msg":" {22:35:09} | 304 | 41.8875ms | GET     | /static/image/logo.jpg ","time":"2025-01-25T22:35:09+08:00"}
+{"level":"info","msg":" {22:35:09} | 304 | 43.4372ms | GET     | /static/css/bootstrap.min.css ","time":"2025-01-25T22:35:09+08:00"}
+{"level":"info","msg":" {22:35:09} | 304 | 54.2144ms | GET     | /static/js/bootstrap.bundle.min.js ","time":"2025-01-25T22:35:09+08:00"}
+{"level":"info","msg":" {22:35:11} | 200 | 4.3611ms | GET     | / ","time":"2025-01-25T22:35:11+08:00"}
+{"level":"info","msg":" {22:35:11} | 304 | 13.1966ms | GET     | /static/image/favicon.ico ","time":"2025-01-25T22:35:12+08:00"}
+{"level":"info","msg":" {22:39:19} | 200 | 16.2313ms | GET     | / ","time":"2025-01-25T22:39:19+08:00"}
+{"level":"info","msg":" {22:39:19} | 304 | 1.5121ms | GET     | /static/image/t-shirt.jpeg ","time":"2025-01-25T22:39:19+08:00"}
+{"level":"info","msg":" {22:39:20} | 200 | 3.0681ms | GET     | /static/image/mouse-pad.jpeg ","time":"2025-01-25T22:39:20+08:00"}
+{"level":"info","msg":" {22:39:20} | 200 | 3.6072ms | GET     | /static/image/sweatshirt.jpeg ","time":"2025-01-25T22:39:20+08:00"}
+{"level":"info","msg":" {22:39:20} | 304 | 2.5022ms | GET     | /static/image/t-shirt-2.jpeg ","time":"2025-01-25T22:39:20+08:00"}
+{"level":"info","msg":" {22:39:20} | 304 | 4.5852ms | GET     | /static/image/t-shirt-1.jpeg ","time":"2025-01-25T22:39:20+08:00"}
+{"level":"info","msg":" {22:39:20} | 304 | 1.6303ms | GET     | /static/image/notebook.jpeg ","time":"2025-01-25T22:39:20+08:00"}
+{"level":"info","msg":" {22:41:43} | 200 | 8.6299ms | GET     | / ","time":"2025-01-25T22:41:43+08:00"}
+{"level":"info","msg":" {22:42:47} | 200 | 7.3532ms | GET     | / ","time":"2025-01-25T22:42:47+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T22:50:07+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T22:50:07+08:00"}
+{"level":"info","msg":" {22:50:10} | 200 | 21.8101ms | GET     | / ","time":"2025-01-25T22:50:10+08:00"}
+{"level":"info","msg":" {22:50:12} | 200 | 14.6969ms | GET     | /category/t-shirt ","time":"2025-01-25T22:50:12+08:00"}
+{"level":"info","msg":" {22:50:14} | 200 | 9.848ms | GET     | /category/sticker ","time":"2025-01-25T22:50:14+08:00"}
+{"level":"info","msg":" {22:50:16} | 200 | 4.4291ms | GET     | /category/t-shirt ","time":"2025-01-25T22:50:17+08:00"}
+{"level":"info","msg":" {22:50:19} | 200 | 5.3614ms | GET     | /category/sticker ","time":"2025-01-25T22:50:19+08:00"}
+{"level":"info","msg":" {22:50:21} | 200 | 3.7465ms | GET     | /product ","time":"2025-01-25T22:50:21+08:00"}
+{"level":"info","msg":" {22:50:24} | 200 | 3.1379ms | GET     | /product ","time":"2025-01-25T22:50:25+08:00"}
+{"level":"info","msg":" {22:50:29} | 200 | 3.3079ms | GET     | /product ","time":"2025-01-25T22:50:29+08:00"}
+{"level":"info","msg":" {22:50:43} | 200 | 4.5121ms | GET     | /search ","time":"2025-01-25T22:50:43+08:00"}
+{"level":"info","msg":" {22:50:50} | 200 | 10.9482ms | GET     | / ","time":"2025-01-25T22:50:50+08:00"}
+{"level":"info","msg":" {22:50:59} | 200 | 13.1114ms | GET     | /category/t-shirt ","time":"2025-01-25T22:50:59+08:00"}
+{"level":"info","msg":" {22:51:00} | 200 | 3.0398ms | GET     | /product ","time":"2025-01-25T22:51:00+08:00"}
+{"level":"info","msg":" {22:51:03} | 200 | 5.7856ms | GET     | / ","time":"2025-01-25T22:51:03+08:00"}
+{"level":"info","msg":" {22:51:13} | 200 | 4.3664ms | GET     | /category/t-shirt ","time":"2025-01-25T22:51:13+08:00"}
+{"level":"info","msg":" {22:51:21} | 200 | 3.5888ms | GET     | /product ","time":"2025-01-25T22:51:22+08:00"}
+{"level":"info","msg":" {22:51:29} | 200 | 6.1702ms | GET     | / ","time":"2025-01-25T22:51:29+08:00"}
+{"level":"info","msg":" {22:51:37} | 200 | 3.2989ms | GET     | /search ","time":"2025-01-25T22:51:37+08:00"}
+{"level":"info","msg":" {22:51:48} | 200 | 3.9656ms | GET     | /search ","time":"2025-01-25T22:51:48+08:00"}
+{"level":"info","msg":" {22:51:53} | 200 | 2.8069ms | GET     | /product ","time":"2025-01-25T22:51:53+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T22:53:00+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T22:53:00+08:00"}
+{"level":"info","msg":" {22:53:02} | 200 | 8.8745ms | GET     | /product ","time":"2025-01-25T22:53:03+08:00"}
+{"level":"info","msg":" {22:53:06} | 200 | 5.6742ms | GET     | / ","time":"2025-01-25T22:53:07+08:00"}
+{"level":"info","msg":" {22:53:12} | 200 | 9.5643ms | GET     | /search ","time":"2025-01-25T22:53:12+08:00"}
+{"level":"info","msg":" {22:53:23} | 200 | 2.1528ms | GET     | /product ","time":"2025-01-25T22:53:23+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-25T22:54:33+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-25T22:54:33+08:00"}
+{"level":"info","msg":" {22:54:36} | 200 | 4.7978ms | GET     | /search ","time":"2025-01-25T22:54:36+08:00"}
+{"level":"info","msg":" {22:54:37} | 200 | 2.5239ms | GET     | /search ","time":"2025-01-25T22:54:37+08:00"}
+{"level":"info","msg":" {22:54:39} | 200 | 2.3348ms | GET     | / ","time":"2025-01-25T22:54:39+08:00"}
+{"level":"info","msg":" {22:54:44} | 200 | 10.3263ms | GET     | /search ","time":"2025-01-25T22:54:44+08:00"}
+{"level":"info","msg":" {22:54:46} | 200 | 6.9783ms | GET     | / ","time":"2025-01-25T22:54:46+08:00"}
+{"level":"info","msg":" {22:54:53} | 200 | 9.9929ms | GET     | /search ","time":"2025-01-25T22:54:53+08:00"}
+{"level":"info","msg":" {22:58:16} | 200 | 15.3537ms | GET     | /category/t-shirt ","time":"2025-01-25T22:58:16+08:00"}
+{"level":"info","msg":" {22:58:20} | 200 | 4.0211ms | GET     | /category/sticker ","time":"2025-01-25T22:58:20+08:00"}
+{"level":"info","msg":" {22:58:44} | 200 | 8.9594ms | GET     | /search ","time":"2025-01-25T22:58:45+08:00"}
+{"level":"info","msg":" {22:59:02} | 200 | 10.2591ms | GET     | /product ","time":"2025-01-25T22:59:02+08:00"}
+{"level":"info","msg":"HERTZ: Received signal: interrupt\n","time":"2025-01-25T23:00:24+08:00"}
+{"level":"info","msg":"HERTZ: Begin graceful shutdown, wait at most num=5 seconds...","time":"2025-01-25T23:00:24+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-26T13:20:26+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-26T13:20:26+08:00"}
+{"level":"info","msg":" {13:20:51} | 200 | 21.1974ms | GET     | / ","time":"2025-01-26T13:20:51+08:00"}
+{"level":"info","msg":" {13:20:52} | 304 | 45.1747ms | GET     | /static/css/bootstrap.min.css ","time":"2025-01-26T13:20:52+08:00"}
+{"level":"info","msg":" {13:20:52} | 304 | 43.7206ms | GET     | /static/image/logo.jpg ","time":"2025-01-26T13:20:52+08:00"}
+{"level":"info","msg":" {13:20:52} | 304 | 2.0264ms | GET     | /static/image/t-shirt.jpeg ","time":"2025-01-26T13:20:52+08:00"}
+{"level":"info","msg":" {13:20:52} | 304 | 3.0599ms | GET     | /static/image/sweatshirt.jpeg ","time":"2025-01-26T13:20:52+08:00"}
+{"level":"info","msg":" {13:20:52} | 304 | 2.568ms | GET     | /static/image/t-shirt-1.jpeg ","time":"2025-01-26T13:20:52+08:00"}
+{"level":"info","msg":" {13:20:52} | 304 | 12.0439ms | GET     | /static/image/t-shirt-2.jpeg ","time":"2025-01-26T13:20:52+08:00"}
+{"level":"info","msg":" {13:20:52} | 304 | 1.0542ms | GET     | /static/image/notebook.jpeg ","time":"2025-01-26T13:20:52+08:00"}
+{"level":"info","msg":" {13:20:52} | 304 | 1.1491ms | GET     | /static/image/mouse-pad.jpeg ","time":"2025-01-26T13:20:52+08:00"}
+{"level":"info","msg":" {13:20:52} | 304 | 53.9593ms | GET     | /static/js/bootstrap.bundle.min.js ","time":"2025-01-26T13:20:52+08:00"}
+{"level":"info","msg":" {13:20:55} | 200 | 6.5139ms | GET     | /cart ","time":"2025-01-26T13:20:55+08:00"}
+{"level":"info","msg":"HERTZ: Received signal: interrupt\n","time":"2025-01-26T13:25:36+08:00"}
+{"level":"info","msg":"HERTZ: Begin graceful shutdown, wait at most num=5 seconds...","time":"2025-01-26T13:25:36+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-26T13:27:55+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-26T13:27:55+08:00"}
+{"level":"info","msg":" {13:28:06} | 200 | 7.9674ms | GET     | /cart ","time":"2025-01-26T13:28:06+08:00"}
+{"level":"info","msg":" {13:28:06} | 304 | 36.5655ms | GET     | /static/image/favicon.ico ","time":"2025-01-26T13:28:07+08:00"}
+{"level":"info","msg":" {13:28:08} | 200 | 6.8232ms | GET     | / ","time":"2025-01-26T13:28:08+08:00"}
+{"level":"info","msg":" {13:28:11} | 200 | 14.0709ms | GET     | /category/t-shirt ","time":"2025-01-26T13:28:12+08:00"}
+{"level":"info","msg":" {13:28:12} | 200 | 3.5404ms | GET     | /product ","time":"2025-01-26T13:28:12+08:00"}
+{"level":"info","msg":" {13:28:15} | 404 | 2.0796ms | POST    | /cart ","time":"2025-01-26T13:28:16+08:00"}
+{"level":"info","msg":" {13:28:19} | 200 |  4.17ms | GET     | /cart ","time":"2025-01-26T13:28:20+08:00"}
+{"level":"info","msg":" {13:28:28} | 200 | 7.7057ms | GET     | / ","time":"2025-01-26T13:28:28+08:00"}
+{"level":"info","msg":" {13:28:54} | 200 | 9.4938ms | GET     | /cart ","time":"2025-01-26T13:28:55+08:00"}
+{"level":"info","msg":" {13:29:01} | 200 | 7.0663ms | GET     | / ","time":"2025-01-26T13:29:01+08:00"}
+{"level":"info","msg":" {13:29:04} | 302 | 13.8364ms | POST    | /auth/logout ","time":"2025-01-26T13:29:05+08:00"}
+{"level":"info","msg":" {13:29:04} | 200 | 30.8017ms | GET     | / ","time":"2025-01-26T13:29:05+08:00"}
+{"level":"info","msg":" {13:29:06} | 200 | 3.537ms | GET     | /sign-in ","time":"2025-01-26T13:29:06+08:00"}
+{"level":"info","msg":" {13:29:12} | 302 | 87.2725ms | POST    | /auth/login ","time":"2025-01-26T13:29:13+08:00"}
+{"level":"info","msg":" {13:29:12} | 200 | 14.7538ms | GET     | / ","time":"2025-01-26T13:29:13+08:00"}
+{"level":"info","msg":" {13:29:15} | 200 | 12.6331ms | GET     | /cart ","time":"2025-01-26T13:29:16+08:00"}
+{"level":"info","msg":" {13:30:47} | 404 | 2.7085ms | GET     | /checkout ","time":"2025-01-26T13:30:47+08:00"}
+{"level":"info","msg":" {13:30:52} | 200 | 10.1319ms | GET     | / ","time":"2025-01-26T13:30:52+08:00"}
+{"level":"info","msg":" {13:30:59} | 302 | 2.4463ms | POST    | /auth/logout ","time":"2025-01-26T13:30:59+08:00"}
+{"level":"info","msg":" {13:30:59} | 200 | 5.6978ms | GET     | / ","time":"2025-01-26T13:30:59+08:00"}
+{"level":"info","msg":" {13:31:01} | 200 | 12.5051ms | GET     | /cart ","time":"2025-01-26T13:31:01+08:00"}
+{"level":"info","msg":" {13:31:02} | 200 | 12.3592ms | GET     | / ","time":"2025-01-26T13:31:02+08:00"}
+{"level":"info","msg":" {13:31:08} | 200 | 8.6926ms | GET     | / ","time":"2025-01-26T13:31:08+08:00"}
+{"level":"info","msg":" {13:31:11} | 200 | 1.5418ms | GET     | /sign-in ","time":"2025-01-26T13:31:11+08:00"}
+{"level":"info","msg":" {13:31:12} | 200 | 7.0397ms | POST    | /auth/login ","time":"2025-01-26T13:31:12+08:00"}
+{"level":"info","msg":" {13:31:12} | 404 | 1.3466ms | GET     | /favicon.ico ","time":"2025-01-26T13:31:12+08:00"}
+{"level":"info","msg":" {13:31:16} | 200 | 4.8632ms | GET     | / ","time":"2025-01-26T13:31:16+08:00"}
+{"level":"info","msg":" {13:31:17} | 200 | 7.6472ms | GET     | /cart ","time":"2025-01-26T13:31:17+08:00"}
+{"level":"info","msg":" {13:31:28} | 200 | 9.0519ms | GET     | / ","time":"2025-01-26T13:31:28+08:00"}
+{"level":"info","msg":" {13:31:35} | 200 | 8.1173ms | GET     | /category/t-shirt ","time":"2025-01-26T13:31:35+08:00"}
+{"level":"info","msg":" {13:31:35} | 200 | 4.0216ms | GET     | / ","time":"2025-01-26T13:31:36+08:00"}
+{"level":"info","msg":" {13:31:37} | 200 | 16.2711ms | GET     | /cart ","time":"2025-01-26T13:31:37+08:00"}
+{"level":"info","msg":" {13:32:01} | 200 | 1.4576ms | GET     | /sign-in ","time":"2025-01-26T13:32:01+08:00"}
+{"level":"info","msg":" {13:32:10} | 302 | 70.0083ms | POST    | /auth/login ","time":"2025-01-26T13:32:10+08:00"}
+{"level":"info","msg":" {13:32:10} | 200 | 2.619ms | GET     | / ","time":"2025-01-26T13:32:10+08:00"}
+{"level":"info","msg":" {13:32:13} | 200 | 20.5889ms | GET     | /cart ","time":"2025-01-26T13:32:14+08:00"}
+{"level":"info","msg":" {13:32:15} | 200 | 4.3821ms | GET     | / ","time":"2025-01-26T13:32:15+08:00"}
+{"level":"info","msg":" {13:32:16} | 302 | 3.7279ms | POST    | /auth/logout ","time":"2025-01-26T13:32:17+08:00"}
+{"level":"info","msg":" {13:32:16} | 200 | 5.8376ms | GET     | / ","time":"2025-01-26T13:32:17+08:00"}
+{"level":"info","msg":" {13:32:17} | 200 | 7.7217ms | GET     | /cart ","time":"2025-01-26T13:32:18+08:00"}
+{"level":"info","msg":" {13:32:23} | 200 | 10.0769ms | GET     | / ","time":"2025-01-26T13:32:23+08:00"}
+{"level":"info","msg":"HERTZ: Received signal: interrupt\n","time":"2025-01-26T13:36:21+08:00"}
+{"level":"info","msg":"HERTZ: Begin graceful shutdown, wait at most num=5 seconds...","time":"2025-01-26T13:36:21+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-26T14:01:59+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-26T14:01:59+08:00"}
+{"level":"info","msg":" {14:02:15} | 200 | 30.9076ms | GET     | / ","time":"2025-01-26T14:02:15+08:00"}
+{"level":"info","msg":" {14:02:18} | 200 | 9.034ms | GET     | /cart ","time":"2025-01-26T14:02:18+08:00"}
+{"level":"info","msg":" {14:02:22} | 200 | 3.8874ms | GET     | / ","time":"2025-01-26T14:02:22+08:00"}
+{"level":"info","msg":" {14:02:26} | 200 | 1.5359ms | GET     | /sign-in ","time":"2025-01-26T14:02:27+08:00"}
+{"level":"info","msg":" {14:02:33} | 302 | 72.4048ms | POST    | /auth/login ","time":"2025-01-26T14:02:33+08:00"}
+{"level":"info","msg":" {14:02:33} | 200 | 5.8887ms | GET     | / ","time":"2025-01-26T14:02:33+08:00"}
+{"level":"info","msg":" {14:02:36} | 200 | 5.9925ms | GET     | / ","time":"2025-01-26T14:02:36+08:00"}
+{"level":"info","msg":" {14:02:38} | 200 | 7.6993ms | GET     | /cart ","time":"2025-01-26T14:02:38+08:00"}
+{"level":"info","msg":" {14:02:42} | 200 | 8.5812ms | GET     | /category/t-shirt ","time":"2025-01-26T14:02:42+08:00"}
+{"level":"info","msg":" {14:02:45} | 200 | 4.1215ms | GET     | /product ","time":"2025-01-26T14:02:45+08:00"}
+{"level":"info","msg":" {14:02:46} | 302 | 12.4919ms | POST    | /cart ","time":"2025-01-26T14:02:46+08:00"}
+{"level":"info","msg":" {14:02:46} | 200 | 12.1133ms | GET     | /cart ","time":"2025-01-26T14:02:46+08:00"}
+{"level":"info","msg":" {14:03:02} | 302 | 3.3384ms | POST    | /auth/logout ","time":"2025-01-26T14:03:02+08:00"}
+{"level":"info","msg":" {14:03:02} | 200 | 4.8636ms | GET     | / ","time":"2025-01-26T14:03:02+08:00"}
+{"level":"info","msg":" {14:03:04} | 200 | 5.1453ms | GET     | / ","time":"2025-01-26T14:03:04+08:00"}
+{"level":"info","msg":" {14:03:05} | 200 | 13.0495ms | GET     | /cart ","time":"2025-01-26T14:03:05+08:00"}
+{"level":"info","msg":" {14:03:29} | 200 | 505.6µs | GET     | /sign-in ","time":"2025-01-26T14:03:29+08:00"}
+{"level":"info","msg":" {14:03:31} | 200 | 13.4081ms | GET     | / ","time":"2025-01-26T14:03:31+08:00"}
+{"level":"info","msg":" {14:03:32} | 200 | 950.5µs | GET     | /sign-in ","time":"2025-01-26T14:03:32+08:00"}
+{"level":"info","msg":" {14:03:37} | 302 | 70.9686ms | POST    | /auth/login ","time":"2025-01-26T14:03:37+08:00"}
+{"level":"info","msg":" {14:03:37} | 200 | 6.1517ms | GET     | / ","time":"2025-01-26T14:03:37+08:00"}
+{"level":"info","msg":" {14:03:41} | 200 | 11.3322ms | GET     | /cart ","time":"2025-01-26T14:03:41+08:00"}
+{"level":"info","msg":" {14:03:46} | 200 | 6.9304ms | GET     | / ","time":"2025-01-26T14:03:46+08:00"}
+{"level":"info","msg":" {14:03:51} | 200 | 5.9017ms | GET     | /category/t-shirt ","time":"2025-01-26T14:03:51+08:00"}
+{"level":"info","msg":" {14:03:52} | 200 | 2.7866ms | GET     | /product ","time":"2025-01-26T14:03:52+08:00"}
+{"level":"info","msg":" {14:03:53} | 302 | 10.2427ms | POST    | /cart ","time":"2025-01-26T14:03:54+08:00"}
+{"level":"info","msg":" {14:03:53} | 200 | 4.8252ms | GET     | /cart ","time":"2025-01-26T14:03:54+08:00"}
+{"level":"info","msg":" {14:03:58} | 200 | 10.3016ms | GET     | / ","time":"2025-01-26T14:03:58+08:00"}
+{"level":"info","msg":" {14:03:59} | 200 | 14.3807ms | GET     | /cart ","time":"2025-01-26T14:03:59+08:00"}
+{"level":"info","msg":" {14:04:03} | 200 | 5.9314ms | GET     | / ","time":"2025-01-26T14:04:04+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-26T14:05:35+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-26T14:05:35+08:00"}
+{"level":"info","msg":" {14:05:50} | 200 | 10.3403ms | GET     | / ","time":"2025-01-26T14:05:50+08:00"}
+{"level":"info","msg":" {14:05:52} | 200 | 9.2558ms | GET     | /cart ","time":"2025-01-26T14:05:52+08:00"}
+{"level":"info","msg":" {14:07:03} | 200 | 8.2292ms | GET     | /cart ","time":"2025-01-26T14:07:03+08:00"}
+{"level":"info","msg":" {14:07:05} | 200 | 8.2772ms | GET     | / ","time":"2025-01-26T14:07:06+08:00"}
+{"level":"info","msg":" {14:07:07} | 200 | 4.5259ms | GET     | /about ","time":"2025-01-26T14:07:07+08:00"}
+{"level":"info","msg":" {14:07:09} | 200 | 6.2109ms | GET     | / ","time":"2025-01-26T14:07:09+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-26T14:10:20+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-26T14:10:20+08:00"}
+{"level":"info","msg":" {14:10:28} | 200 | 38.0746ms | GET     | / ","time":"2025-01-26T14:10:28+08:00"}
+{"level":"info","msg":" {14:10:30} | 200 | 9.759ms | GET     | / ","time":"2025-01-26T14:10:30+08:00"}
+{"level":"info","msg":" {14:10:31} | 200 | 3.309ms | GET     | /about ","time":"2025-01-26T14:10:31+08:00"}
+{"level":"info","msg":" {14:10:35} | 200 | 6.3305ms | GET     | / ","time":"2025-01-26T14:10:35+08:00"}
+{"level":"info","msg":" {14:10:36} | 200 | 1.833ms | GET     | /about ","time":"2025-01-26T14:10:36+08:00"}
+{"level":"info","msg":" {14:10:37} | 200 | 16.3958ms | GET     | / ","time":"2025-01-26T14:10:37+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-26T14:13:36+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-26T14:13:36+08:00"}
+{"level":"info","msg":" {14:13:41} | 200 | 2.7455ms | GET     | /about ","time":"2025-01-26T14:13:41+08:00"}
+{"level":"info","msg":" {14:13:43} | 200 | 1.5683ms | GET     | /about ","time":"2025-01-26T14:13:43+08:00"}
+{"level":"info","msg":" {14:13:43} | 200 | 1.4369ms | GET     | /about ","time":"2025-01-26T14:13:43+08:00"}
+{"level":"info","msg":" {14:13:44} | 200 | 10.6348ms | GET     | /about ","time":"2025-01-26T14:13:44+08:00"}
+{"level":"info","msg":" {14:13:46} | 200 | 13.1519ms | GET     | / ","time":"2025-01-26T14:13:46+08:00"}
+{"level":"info","msg":" {14:13:47} | 200 | 2.103ms | GET     | /about ","time":"2025-01-26T14:13:47+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-26T14:20:17+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-26T14:20:17+08:00"}
+{"level":"info","msg":" {14:20:18} | 200 | 2.0646ms | GET     | /about ","time":"2025-01-26T14:20:18+08:00"}
+{"level":"info","msg":" {14:20:19} | 200 | 1.6258ms | GET     | /about ","time":"2025-01-26T14:20:19+08:00"}
+{"level":"info","msg":" {14:20:19} | 200 | 9.548ms | GET     | / ","time":"2025-01-26T14:20:20+08:00"}
+{"level":"info","msg":" {14:20:21} | 200 | 869.9µs | GET     | /about ","time":"2025-01-26T14:20:21+08:00"}
+{"level":"info","msg":" {14:20:27} | 200 | 6.0798ms | GET     | /cart ","time":"2025-01-26T14:20:28+08:00"}
+{"level":"info","msg":" {14:20:30} | 200 | 3.5824ms | GET     | /about ","time":"2025-01-26T14:20:30+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-26T14:22:10+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-26T14:22:10+08:00"}
+{"level":"info","msg":" {14:22:12} | 200 | 2.5433ms | GET     | /about ","time":"2025-01-26T14:22:12+08:00"}
+{"level":"info","msg":" {14:22:13} | 200 | 1.5803ms | GET     | /about ","time":"2025-01-26T14:22:13+08:00"}
+{"level":"info","msg":" {14:22:14} | 200 | 2.0504ms | GET     | /about ","time":"2025-01-26T14:22:14+08:00"}
+{"level":"info","msg":" {14:22:14} | 200 | 1.9696ms | GET     | /about ","time":"2025-01-26T14:22:14+08:00"}
+{"level":"info","msg":" {14:22:14} | 200 | 1.6187ms | GET     | /about ","time":"2025-01-26T14:22:14+08:00"}
+{"level":"info","msg":" {14:22:14} | 200 | 558.5µs | GET     | /about ","time":"2025-01-26T14:22:15+08:00"}
+{"level":"info","msg":" {14:22:15} | 200 | 2.3718ms | GET     | /about ","time":"2025-01-26T14:22:15+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-26T14:24:29+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-26T14:24:29+08:00"}
+{"level":"info","msg":" {14:24:30} | 200 | 9.7963ms | GET     | /about ","time":"2025-01-26T14:24:30+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-26T14:26:30+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-26T14:26:30+08:00"}
+{"level":"info","msg":" {14:26:32} | 200 | 2.3257ms | GET     | /about ","time":"2025-01-26T14:26:32+08:00"}
+{"level":"info","msg":" {14:26:33} | 200 | 1.7385ms | GET     | /about ","time":"2025-01-26T14:26:33+08:00"}
+{"level":"info","msg":" {14:26:34} | 200 | 1.8639ms | GET     | /about ","time":"2025-01-26T14:26:34+08:00"}
+{"level":"info","msg":" {14:26:34} | 200 | 1.9448ms | GET     | /about ","time":"2025-01-26T14:26:35+08:00"}
+{"level":"info","msg":" {14:26:34} | 200 | 1.5002ms | GET     | /about ","time":"2025-01-26T14:26:35+08:00"}
+{"level":"info","msg":" {14:26:35} | 200 |   619µs | GET     | /about ","time":"2025-01-26T14:26:35+08:00"}
+{"level":"info","msg":" {14:26:35} | 200 | 503.7µs | GET     | /about ","time":"2025-01-26T14:26:35+08:00"}
+{"level":"info","msg":" {14:26:36} | 200 | 10.0829ms | GET     | /cart ","time":"2025-01-26T14:26:36+08:00"}
+{"level":"info","msg":" {14:26:38} | 200 | 8.3976ms | GET     | / ","time":"2025-01-26T14:26:38+08:00"}
+{"level":"info","msg":" {14:26:39} | 200 | 1.4312ms | GET     | /about ","time":"2025-01-26T14:26:40+08:00"}
+{"level":"info","msg":" {14:26:40} | 200 | 24.1885ms | GET     | / ","time":"2025-01-26T14:26:41+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-26T14:30:37+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-26T14:30:37+08:00"}
+{"level":"info","msg":" {14:30:37} | 200 | 13.0535ms | GET     | / ","time":"2025-01-26T14:30:37+08:00"}
+{"level":"info","msg":" {14:30:39} | 200 | 2.6277ms | GET     | /about ","time":"2025-01-26T14:30:39+08:00"}
+{"level":"info","msg":" {14:30:40} | 200 | 12.4994ms | GET     | / ","time":"2025-01-26T14:30:40+08:00"}
+{"level":"info","msg":" {14:30:41} | 200 | 6.1278ms | GET     | /about ","time":"2025-01-26T14:30:41+08:00"}
+{"level":"info","msg":" {14:30:44} | 200 | 5.7343ms | GET     | / ","time":"2025-01-26T14:30:45+08:00"}
+{"level":"info","msg":" {14:30:48} | 302 | 11.5133ms | POST    | /auth/logout ","time":"2025-01-26T14:30:48+08:00"}
+{"level":"info","msg":" {14:30:48} | 200 | 15.3672ms | GET     | / ","time":"2025-01-26T14:30:48+08:00"}
+{"level":"info","msg":" {14:30:49} | 200 | 14.7634ms | GET     | /cart ","time":"2025-01-26T14:30:49+08:00"}
+{"level":"info","msg":" {14:31:00} | 200 | 6.2181ms | GET     | / ","time":"2025-01-26T14:31:00+08:00"}
+{"level":"info","msg":" {14:34:19} | 200 | 6.4327ms | GET     | / ","time":"2025-01-26T14:34:19+08:00"}
+{"level":"info","msg":" {14:35:03} | 200 | 1.382ms | GET     | /sign-in ","time":"2025-01-26T14:35:03+08:00"}
+{"level":"info","msg":" {14:35:09} | 302 | 68.6773ms | POST    | /auth/login ","time":"2025-01-26T14:35:09+08:00"}
+{"level":"info","msg":" {14:35:09} | 200 | 11.4161ms | GET     | / ","time":"2025-01-26T14:35:09+08:00"}
+{"level":"info","msg":" {14:35:48} | 200 | 14.5416ms | GET     | /category/t-shirt ","time":"2025-01-26T14:35:48+08:00"}
+{"level":"info","msg":" {14:35:52} | 200 | 4.2853ms | GET     | /product ","time":"2025-01-26T14:35:52+08:00"}
+{"level":"info","msg":" {14:36:04} | 302 | 17.1325ms | POST    | /cart ","time":"2025-01-26T14:36:04+08:00"}
+{"level":"info","msg":" {14:36:04} | 200 | 8.0721ms | GET     | /cart ","time":"2025-01-26T14:36:04+08:00"}
+{"level":"info","msg":" {14:36:20} | 200 | 9.7581ms | GET     | /cart ","time":"2025-01-26T14:36:21+08:00"}
+{"level":"info","msg":" {14:36:22} | 200 | 12.3221ms | GET     | / ","time":"2025-01-26T14:36:22+08:00"}
+{"level":"info","msg":" {14:36:23} | 200 | 13.0994ms | GET     | /cart ","time":"2025-01-26T14:36:24+08:00"}
+{"level":"info","msg":" {14:36:25} | 200 | 2.8529ms | GET     | /about ","time":"2025-01-26T14:36:25+08:00"}
+{"level":"info","msg":" {14:36:59} | 302 | 7.266ms | POST    | /auth/logout ","time":"2025-01-26T14:37:00+08:00"}
+{"level":"info","msg":" {14:36:59} | 200 | 4.969ms | GET     | / ","time":"2025-01-26T14:37:00+08:00"}
+{"level":"info","msg":" {14:37:26} | 200 | 15.6668ms | GET     | /cart ","time":"2025-01-26T14:37:27+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-26T14:41:08+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-26T14:41:08+08:00"}
+{"level":"info","msg":" {14:41:10} | 200 | 1.8914ms | GET     | /cart ","time":"2025-01-26T14:41:11+08:00"}
+{"level":"info","msg":" {14:41:12} | 200 | 14.0466ms | GET     | / ","time":"2025-01-26T14:41:12+08:00"}
+{"level":"info","msg":" {14:41:13} | 200 |  3.33ms | GET     | /cart ","time":"2025-01-26T14:41:14+08:00"}
+{"level":"info","msg":" {14:41:17} | 200 | 14.3969ms | GET     | / ","time":"2025-01-26T14:41:17+08:00"}
+{"level":"info","msg":" {14:42:42} | 200 | 1.8992ms | GET     | /about ","time":"2025-01-26T14:42:42+08:00"}
+{"level":"info","msg":" {14:42:44} | 200 | 9.5114ms | GET     | / ","time":"2025-01-26T14:42:44+08:00"}
+{"level":"info","msg":" {14:42:47} | 200 | 8.3601ms | GET     | /category/t-shirt ","time":"2025-01-26T14:42:47+08:00"}
+{"level":"info","msg":" {14:42:48} | 200 | 4.8698ms | GET     | /category/sticker ","time":"2025-01-26T14:42:48+08:00"}
+{"level":"info","msg":" {14:42:53} | 200 | 8.6564ms | GET     | / ","time":"2025-01-26T14:42:53+08:00"}
+{"level":"info","msg":" {14:43:01} | 200 | 4.5063ms | GET     | /search ","time":"2025-01-26T14:43:01+08:00"}
+{"level":"info","msg":" {14:43:04} | 200 | 5.5697ms | GET     | /cart ","time":"2025-01-26T14:43:04+08:00"}
+{"level":"info","msg":" {14:43:05} | 200 | 7.023ms | GET     | / ","time":"2025-01-26T14:43:06+08:00"}
+{"level":"info","msg":" {14:43:13} | 200 | 11.0757ms | GET     | / ","time":"2025-01-26T14:43:13+08:00"}
+{"level":"info","msg":" {14:43:16} | 200 | 4.9454ms | GET     | /sign-in ","time":"2025-01-26T14:43:16+08:00"}
+{"level":"info","msg":" {14:43:22} | 302 | 82.1328ms | POST    | /auth/login ","time":"2025-01-26T14:43:22+08:00"}
+{"level":"info","msg":" {14:43:22} | 200 | 9.0624ms | GET     | / ","time":"2025-01-26T14:43:22+08:00"}
+{"level":"info","msg":" {14:43:26} | 200 | 5.1224ms | GET     | /about ","time":"2025-01-26T14:43:26+08:00"}
+{"level":"info","msg":" {14:43:28} | 200 | 8.0032ms | GET     | /cart ","time":"2025-01-26T14:43:28+08:00"}
+{"level":"info","msg":"HERTZ: Received signal: interrupt\n","time":"2025-01-26T14:43:41+08:00"}
+{"level":"info","msg":"HERTZ: Begin graceful shutdown, wait at most num=5 seconds...","time":"2025-01-26T14:43:41+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-26T20:41:13+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-26T20:41:13+08:00"}
+{"level":"info","msg":" {20:41:42} | 200 | 16.5469ms | GET     | / ","time":"2025-01-26T20:41:43+08:00"}
+{"level":"info","msg":" {20:41:42} | 304 | 66.3796ms | GET     | /static/image/logo.jpg ","time":"2025-01-26T20:41:43+08:00"}
+{"level":"info","msg":" {20:41:42} | 304 | 66.3796ms | GET     | /static/css/bootstrap.min.css ","time":"2025-01-26T20:41:43+08:00"}
+{"level":"info","msg":" {20:41:42} | 304 | 2.0002ms | GET     | /static/image/t-shirt.jpeg ","time":"2025-01-26T20:41:43+08:00"}
+{"level":"info","msg":" {20:41:42} | 304 | 2.848ms | GET     | /static/image/sweatshirt.jpeg ","time":"2025-01-26T20:41:43+08:00"}
+{"level":"info","msg":" {20:41:42} | 304 | 3.3831ms | GET     | /static/image/t-shirt-1.jpeg ","time":"2025-01-26T20:41:43+08:00"}
+{"level":"info","msg":" {20:41:42} | 304 | 16.0781ms | GET     | /static/image/t-shirt-2.jpeg ","time":"2025-01-26T20:41:43+08:00"}
+{"level":"info","msg":" {20:41:42} | 304 | 1.9225ms | GET     | /static/image/notebook.jpeg ","time":"2025-01-26T20:41:43+08:00"}
+{"level":"info","msg":" {20:41:42} | 304 | 1.4561ms | GET     | /static/image/mouse-pad.jpeg ","time":"2025-01-26T20:41:43+08:00"}
+{"level":"info","msg":" {20:41:42} | 304 | 50.023ms | GET     | /static/js/bootstrap.bundle.min.js ","time":"2025-01-26T20:41:43+08:00"}
+{"level":"info","msg":" {20:41:46} | 200 | 10.2704ms | GET     | /cart ","time":"2025-01-26T20:41:46+08:00"}
+{"level":"info","msg":" {20:41:57} | 200 | 9.3975ms | GET     | /checkout ","time":"2025-01-26T20:41:57+08:00"}
+{"level":"info","msg":" {20:42:04} | 302 | 2.9809ms | POST    | /auth/logout ","time":"2025-01-26T20:42:05+08:00"}
+{"level":"info","msg":" {20:42:04} | 200 | 4.6764ms | GET     | / ","time":"2025-01-26T20:42:05+08:00"}
+{"level":"info","msg":" {20:42:06} | 302 | 2.3046ms | GET     | /cart ","time":"2025-01-26T20:42:06+08:00"}
+{"level":"info","msg":" {20:42:06} | 200 | 5.9909ms | GET     | /sign-in ","time":"2025-01-26T20:42:06+08:00"}
+{"level":"info","msg":" {20:42:09} | 200 | 1.7069ms | GET     | /sign-up ","time":"2025-01-26T20:42:09+08:00"}
+{"level":"info","msg":" {20:42:28} | 302 | 76.4136ms | POST    | /auth/register ","time":"2025-01-26T20:42:28+08:00"}
+{"level":"info","msg":" {20:42:28} | 200 | 9.3493ms | GET     | /sign-in ","time":"2025-01-26T20:42:28+08:00"}
+{"level":"info","msg":" {20:42:35} | 302 | 75.5452ms | POST    | /auth/login ","time":"2025-01-26T20:42:35+08:00"}
+{"level":"info","msg":" {20:42:35} | 200 | 8.2584ms | GET     | / ","time":"2025-01-26T20:42:35+08:00"}
+{"level":"info","msg":" {20:42:37} | 200 | 11.4766ms | GET     | /cart ","time":"2025-01-26T20:42:37+08:00"}
+{"level":"info","msg":" {20:42:40} | 200 | 5.7264ms | GET     | / ","time":"2025-01-26T20:42:40+08:00"}
+{"level":"info","msg":" {20:42:42} | 200 | 8.5776ms | GET     | /category/t-shirt ","time":"2025-01-26T20:42:42+08:00"}
+{"level":"info","msg":" {20:42:44} | 200 | 7.8624ms | GET     | /product ","time":"2025-01-26T20:42:44+08:00"}
+{"level":"info","msg":" {20:42:46} | 302 | 13.7137ms | POST    | /cart ","time":"2025-01-26T20:42:46+08:00"}
+{"level":"info","msg":" {20:42:46} | 200 | 9.5682ms | GET     | /cart ","time":"2025-01-26T20:42:46+08:00"}
+{"level":"info","msg":" {20:42:47} | 200 | 5.1892ms | GET     | / ","time":"2025-01-26T20:42:47+08:00"}
+{"level":"info","msg":" {20:42:49} | 200 | 6.0293ms | GET     | /category/sticker ","time":"2025-01-26T20:42:49+08:00"}
+{"level":"info","msg":" {20:42:52} | 200 | 9.6054ms | GET     | /product ","time":"2025-01-26T20:42:52+08:00"}
+{"level":"info","msg":" {20:42:53} | 302 | 7.6888ms | POST    | /cart ","time":"2025-01-26T20:42:53+08:00"}
+{"level":"info","msg":" {20:42:53} | 200 | 10.4869ms | GET     | /cart ","time":"2025-01-26T20:42:53+08:00"}
+{"level":"info","msg":" {20:42:56} | 200 | 6.2551ms | GET     | / ","time":"2025-01-26T20:42:56+08:00"}
+{"level":"info","msg":" {20:42:56} | 200 | 9.7677ms | GET     | /about ","time":"2025-01-26T20:42:57+08:00"}
+{"level":"info","msg":" {20:42:58} | 200 | 11.4024ms | GET     | / ","time":"2025-01-26T20:42:58+08:00"}
+{"level":"info","msg":" {20:43:00} | 200 | 13.0311ms | GET     | /cart ","time":"2025-01-26T20:43:00+08:00"}
+{"level":"info","msg":" {20:43:13} | 200 | 8.7628ms | GET     | /checkout ","time":"2025-01-26T20:43:13+08:00"}
+{"level":"info","msg":" {20:43:24} | 200 | 27.0952ms | POST    | /checkout/waiting ","time":"2025-01-26T20:43:24+08:00"}
+{"level":"info","msg":" {20:43:29} | 200 | 4.3629ms | GET     | /checkout/result ","time":"2025-01-26T20:43:29+08:00"}
+{"level":"info","msg":" {20:43:33} | 404 | 4.4249ms | GET     | /order ","time":"2025-01-26T20:43:33+08:00"}
+{"level":"info","msg":" {20:43:37} | 200 | 11.3267ms | GET     | / ","time":"2025-01-26T20:43:37+08:00"}
+{"level":"info","msg":" {20:43:39} | 200 | 12.3562ms | GET     | /cart ","time":"2025-01-26T20:43:39+08:00"}
+{"level":"info","msg":" {20:43:40} | 200 | 6.0245ms | GET     | / ","time":"2025-01-26T20:43:40+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-26T21:04:03+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-26T21:04:03+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-27T12:59:17+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-27T12:59:17+08:00"}
+{"level":"info","msg":" {12:59:41} | 200 | 15.352ms | GET     | / ","time":"2025-01-27T12:59:42+08:00"}
+{"level":"info","msg":" {12:59:41} | 304 | 66.5498ms | GET     | /static/image/t-shirt.jpeg ","time":"2025-01-27T12:59:42+08:00"}
+{"level":"info","msg":" {12:59:41} | 304 | 66.5498ms | GET     | /static/css/bootstrap.min.css ","time":"2025-01-27T12:59:42+08:00"}
+{"level":"info","msg":" {12:59:41} | 304 | 1.0005ms | GET     | /static/image/logo.jpg ","time":"2025-01-27T12:59:42+08:00"}
+{"level":"info","msg":" {12:59:41} | 304 | 4.9125ms | GET     | /static/image/notebook.jpeg ","time":"2025-01-27T12:59:42+08:00"}
+{"level":"info","msg":" {12:59:41} | 304 | 4.9125ms | GET     | /static/image/t-shirt-2.jpeg ","time":"2025-01-27T12:59:42+08:00"}
+{"level":"info","msg":" {12:59:41} | 304 | 3.9536ms | GET     | /static/image/t-shirt-1.jpeg ","time":"2025-01-27T12:59:42+08:00"}
+{"level":"info","msg":" {12:59:41} | 304 | 5.1919ms | GET     | /static/image/sweatshirt.jpeg ","time":"2025-01-27T12:59:42+08:00"}
+{"level":"info","msg":" {12:59:42} | 304 | 2.537ms | GET     | /static/image/mouse-pad.jpeg ","time":"2025-01-27T12:59:42+08:00"}
+{"level":"info","msg":" {12:59:42} | 304 | 50.0007ms | GET     | /static/js/bootstrap.bundle.min.js ","time":"2025-01-27T12:59:42+08:00"}
+{"level":"info","msg":" {13:00:18} | 302 | 3.4745ms | GET     | /cart ","time":"2025-01-27T13:00:18+08:00"}
+{"level":"info","msg":" {13:00:18} | 200 | 5.2041ms | GET     | /sign-in ","time":"2025-01-27T13:00:18+08:00"}
+{"level":"info","msg":" {13:00:36} | 302 | 71.9655ms | POST    | /auth/login ","time":"2025-01-27T13:00:36+08:00"}
+{"level":"info","msg":" {13:00:36} | 200 | 21.0238ms | GET     | /cart ","time":"2025-01-27T13:00:36+08:00"}
+{"level":"info","msg":" {13:01:23} | 200 | 9.7906ms | GET     | / ","time":"2025-01-27T13:01:24+08:00"}
+{"level":"info","msg":" {13:01:24} | 200 | 11.3193ms | GET     | /category/t-shirt ","time":"2025-01-27T13:01:25+08:00"}
+{"level":"info","msg":" {13:01:26} | 200 | 7.8399ms | GET     | /category/sticker ","time":"2025-01-27T13:01:26+08:00"}
+{"level":"info","msg":" {13:01:37} | 200 | 9.5241ms | GET     | / ","time":"2025-01-27T13:01:38+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-01-27T13:03:16+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-01-27T13:03:16+08:00"}
+{"level":"info","msg":" {13:03:52} | 200 | 10.8067ms | GET     | / ","time":"2025-01-27T13:03:52+08:00"}
+{"level":"info","msg":" {13:03:52} | 304 | 44.4476ms | GET     | /static/image/favicon.ico ","time":"2025-01-27T13:03:52+08:00"}
+{"level":"info","msg":" {13:03:54} | 200 | 20.6591ms | GET     | /order ","time":"2025-01-27T13:03:54+08:00"}
+{"level":"info","msg":" {13:04:53} | 200 | 9.5261ms | GET     | /cart ","time":"2025-01-27T13:04:53+08:00"}
+{"level":"info","msg":" {13:04:55} | 200 | 5.9286ms | GET     | /about ","time":"2025-01-27T13:04:56+08:00"}
+{"level":"info","msg":" {13:04:57} | 200 | 13.788ms | GET     | /cart ","time":"2025-01-27T13:04:57+08:00"}
+{"level":"info","msg":" {13:05:52} | 200 | 7.6188ms | GET     | /checkout ","time":"2025-01-27T13:05:53+08:00"}
+{"level":"info","msg":" {13:07:19} | 200 | 49.3803ms | POST    | /checkout/waiting ","time":"2025-01-27T13:07:19+08:00"}
+{"level":"info","msg":" {13:07:24} | 200 | 6.3292ms | GET     | /checkout/result ","time":"2025-01-27T13:07:25+08:00"}
+{"level":"info","msg":" {13:08:00} | 200 | 18.1227ms | GET     | /order ","time":"2025-01-27T13:08:00+08:00"}
+{"level":"info","msg":" {13:10:22} | 200 | 10.3976ms | GET     | /search ","time":"2025-01-27T13:10:23+08:00"}
+{"level":"info","msg":" {13:10:27} | 302 | 5.258ms | POST    | /auth/logout ","time":"2025-01-27T13:10:27+08:00"}
+{"level":"info","msg":" {13:10:27} | 200 | 12.4353ms | GET     | / ","time":"2025-01-27T13:10:27+08:00"}
+{"level":"info","msg":" {13:10:29} | 200 | 4.116ms | GET     | /category/t-shirt ","time":"2025-01-27T13:10:30+08:00"}
+{"level":"info","msg":" {13:10:31} | 302 |   526µs | GET     | /cart ","time":"2025-01-27T13:10:31+08:00"}
+{"level":"info","msg":" {13:10:31} | 200 | 5.5209ms | GET     | /sign-in ","time":"2025-01-27T13:10:31+08:00"}
+{"level":"info","msg":"HERTZ: Received signal: interrupt\n","time":"2025-01-27T13:11:34+08:00"}
+{"level":"info","msg":"HERTZ: Begin graceful shutdown, wait at most num=5 seconds...","time":"2025-01-27T13:11:34+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-02-01T13:49:40+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-02-01T13:49:40+08:00"}
+{"level":"info","msg":" {13:51:15} | 200 | 10.0579ms | GET     | / ","time":"2025-02-01T13:51:16+08:00"}
+{"level":"info","msg":" {13:51:15} | 304 | 28.2184ms | GET     | /static/image/logo.jpg ","time":"2025-02-01T13:51:16+08:00"}
+{"level":"info","msg":" {13:51:15} | 304 | 28.2184ms | GET     | /static/css/bootstrap.min.css ","time":"2025-02-01T13:51:16+08:00"}
+{"level":"info","msg":" {13:51:15} | 304 | 1.7413ms | GET     | /static/image/t-shirt.jpeg ","time":"2025-02-01T13:51:16+08:00"}
+{"level":"info","msg":" {13:51:16} | 304 | 2.6253ms | GET     | /static/image/sweatshirt.jpeg ","time":"2025-02-01T13:51:16+08:00"}
+{"level":"info","msg":" {13:51:16} | 304 | 2.6253ms | GET     | /static/image/t-shirt-1.jpeg ","time":"2025-02-01T13:51:16+08:00"}
+{"level":"info","msg":" {13:51:16} | 304 | 3.4769ms | GET     | /static/js/bootstrap.bundle.min.js ","time":"2025-02-01T13:51:16+08:00"}
+{"level":"info","msg":" {13:51:16} | 304 | 4.1951ms | GET     | /static/image/t-shirt-2.jpeg ","time":"2025-02-01T13:51:16+08:00"}
+{"level":"info","msg":" {13:51:16} | 304 | 1.8403ms | GET     | /static/image/notebook.jpeg ","time":"2025-02-01T13:51:16+08:00"}
+{"level":"info","msg":" {13:51:16} | 304 | 2.6322ms | GET     | /static/image/mouse-pad.jpeg ","time":"2025-02-01T13:51:16+08:00"}
+{"level":"info","msg":" {13:51:19} | 200 | 2.1777ms | GET     | /sign-in ","time":"2025-02-01T13:51:19+08:00"}
+{"level":"info","msg":" {13:51:25} | 302 | 125.4595ms | POST    | /auth/login ","time":"2025-02-01T13:51:25+08:00"}
+{"level":"info","msg":" {13:51:25} | 200 | 32.601ms | GET     | / ","time":"2025-02-01T13:51:25+08:00"}
+{"level":"info","msg":" {13:51:30} | 200 | 8.2469ms | GET     | /cart ","time":"2025-02-01T13:51:30+08:00"}
+{"level":"info","msg":" {13:51:33} | 200 | 18.3334ms | GET     | /order ","time":"2025-02-01T13:51:34+08:00"}
+{"level":"info","msg":" {14:10:43} | 200 | 12.8413ms | GET     | /cart ","time":"2025-02-01T14:10:43+08:00"}
+{"level":"info","msg":" {14:10:47} | 200 | 12.0339ms | GET     | /order ","time":"2025-02-01T14:10:48+08:00"}
+{"level":"info","msg":" {14:13:16} | 200 | 6.5833ms | GET     | /cart ","time":"2025-02-01T14:13:17+08:00"}
+{"level":"info","msg":" {14:22:12} | 200 | 36.4232ms | GET     | /cart ","time":"2025-02-01T14:22:12+08:00"}
+{"level":"info","msg":" {14:22:12} | 304 | 35.0337ms | GET     | /static/image/favicon.ico ","time":"2025-02-01T14:22:12+08:00"}
+{"level":"info","msg":" {14:22:14} | 200 | 13.9935ms | GET     | /cart ","time":"2025-02-01T14:22:14+08:00"}
+{"level":"info","msg":" {14:22:26} | 200 | 16.7293ms | GET     | /order ","time":"2025-02-01T14:22:27+08:00"}
+{"level":"info","msg":" {15:19:24} | 200 | 41.4104ms | GET     | /order ","time":"2025-02-01T15:19:24+08:00"}
+{"level":"info","msg":"HERTZ: Received signal: interrupt\n","time":"2025-02-01T15:28:13+08:00"}
+{"level":"info","msg":"HERTZ: Begin graceful shutdown, wait at most num=5 seconds...","time":"2025-02-01T15:28:13+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-02-03T13:13:04+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8088","time":"2025-02-03T13:13:04+08:00"}
+{"level":"info","msg":"HERTZ: Received signal: interrupt\n","time":"2025-02-03T13:19:24+08:00"}
+{"level":"info","msg":"HERTZ: Begin graceful shutdown, wait at most num=5 seconds...","time":"2025-02-03T13:19:24+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-02-03T14:26:34+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8088","time":"2025-02-03T14:26:34+08:00"}
+{"level":"info","msg":"HERTZ: Received signal: interrupt\n","time":"2025-02-03T14:33:44+08:00"}
+{"level":"info","msg":"HERTZ: Begin graceful shutdown, wait at most num=5 seconds...","time":"2025-02-03T14:33:44+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-02-03T15:24:20+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8088","time":"2025-02-03T15:24:20+08:00"}
+{"level":"info","msg":"HERTZ: Received signal: interrupt\n","time":"2025-02-03T15:25:27+08:00"}
+{"level":"info","msg":"HERTZ: Begin graceful shutdown, wait at most num=5 seconds...","time":"2025-02-03T15:25:27+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-02-03T15:26:52+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-02-03T15:26:52+08:00"}
+{"level":"info","msg":" {15:26:56} | 200 | 7.4527ms | GET     | / ","time":"2025-02-03T15:26:56+08:00"}
+{"level":"info","msg":" {15:26:56} | 304 | 35.0434ms | GET     | /static/image/logo.jpg ","time":"2025-02-03T15:26:56+08:00"}
+{"level":"info","msg":" {15:26:56} | 304 | 36.0653ms | GET     | /static/css/bootstrap.min.css ","time":"2025-02-03T15:26:56+08:00"}
+{"level":"info","msg":" {15:26:56} | 304 | 1.6449ms | GET     | /static/image/t-shirt.jpeg ","time":"2025-02-03T15:26:56+08:00"}
+{"level":"info","msg":" {15:26:56} | 304 | 3.3861ms | GET     | /static/image/t-shirt-1.jpeg ","time":"2025-02-03T15:26:56+08:00"}
+{"level":"info","msg":" {15:26:56} | 304 | 2.3876ms | GET     | /static/image/sweatshirt.jpeg ","time":"2025-02-03T15:26:56+08:00"}
+{"level":"info","msg":" {15:26:56} | 304 | 14.5185ms | GET     | /static/image/t-shirt-2.jpeg ","time":"2025-02-03T15:26:56+08:00"}
+{"level":"info","msg":" {15:26:56} | 304 | 13.88ms | GET     | /static/image/mouse-pad.jpeg ","time":"2025-02-03T15:26:56+08:00"}
+{"level":"info","msg":" {15:26:56} | 304 | 1.7375ms | GET     | /static/image/notebook.jpeg ","time":"2025-02-03T15:26:56+08:00"}
+{"level":"info","msg":" {15:26:56} | 304 | 58.7104ms | GET     | /static/js/bootstrap.bundle.min.js ","time":"2025-02-03T15:26:56+08:00"}
+{"level":"info","msg":" {15:26:56} | 304 | 11.1423ms | GET     | /static/image/favicon.ico ","time":"2025-02-03T15:26:57+08:00"}
+{"level":"info","msg":" {15:27:01} | 200 | 11.9467ms | GET     | /cart ","time":"2025-02-03T15:27:02+08:00"}
+{"level":"info","msg":"HERTZ: Using network library=standard","time":"2025-02-03T15:31:20+08:00"}
+{"level":"info","msg":"HERTZ: HTTP server listening on address=127.0.0.1:8080","time":"2025-02-03T15:31:20+08:00"}
+{"level":"info","msg":" {15:32:36} | 200 | 15.9169ms | GET     | /category/t-shirt ","time":"2025-02-03T15:32:36+08:00"}
+{"level":"info","msg":" {15:32:39} | 200 | 8.1044ms | GET     | /product ","time":"2025-02-03T15:32:39+08:00"}
+{"level":"info","msg":" {15:32:40} | 302 | 25.974ms | POST    | /cart ","time":"2025-02-03T15:32:41+08:00"}
+{"level":"info","msg":" {15:32:40} | 200 | 11.6294ms | GET     | /cart ","time":"2025-02-03T15:32:41+08:00"}
+{"level":"info","msg":" {15:34:47} | 200 | 5.6769ms | GET     | /about ","time":"2025-02-03T15:34:47+08:00"}
+{"level":"info","msg":" {15:34:49} | 200 | 16.8661ms | GET     | / ","time":"2025-02-03T15:34:49+08:00"}
+{"level":"info","msg":" {15:34:51} | 200 | 16.6981ms | GET     | /search ","time":"2025-02-03T15:34:52+08:00"}
+{"level":"info","msg":" {15:34:54} | 200 | 16.9073ms | GET     | /cart ","time":"2025-02-03T15:34:54+08:00"}
+{"level":"info","msg":" {15:35:03} | 200 | 10.7573ms | GET     | /checkout ","time":"2025-02-03T15:35:04+08:00"}
+{"level":"info","msg":" {15:35:10} | 200 | 61.5009ms | POST    | /checkout/waiting ","time":"2025-02-03T15:35:11+08:00"}
+{"level":"info","msg":" {15:35:15} | 200 | 4.4239ms | GET     | /checkout/result ","time":"2025-02-03T15:35:16+08:00"}
+{"level":"info","msg":" {15:35:19} | 200 | 22.6523ms | GET     | /order ","time":"2025-02-03T15:35:19+08:00"}
+{"level":"info","msg":" {15:35:29} | 200 | 23.695ms | GET     | /order ","time":"2025-02-03T15:35:29+08:00"}
+{"level":"info","msg":" {15:35:30} | 302 | 7.632ms | POST    | /auth/logout ","time":"2025-02-03T15:35:31+08:00"}
+{"level":"info","msg":" {15:35:30} | 200 | 8.7371ms | GET     | / ","time":"2025-02-03T15:35:31+08:00"}
+{"level":"info","msg":"HERTZ: Received signal: interrupt\n","time":"2025-02-03T15:59:12+08:00"}
+{"level":"info","msg":"HERTZ: Begin graceful shutdown, wait at most num=5 seconds...","time":"2025-02-03T15:59:12+08:00"}

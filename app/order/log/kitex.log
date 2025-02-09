@@ -1,0 +1,57 @@
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8885","time":"2025-01-27T09:46:10+08:00"}
+{"level":"info","msg":"start keepalive lease 694d94a539dc9809 for etcd registry","time":"2025-01-27T09:46:11+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8885","time":"2025-01-27T10:30:02+08:00"}
+{"level":"info","msg":"start keepalive lease 694d94a539dc980e for etcd registry","time":"2025-01-27T10:30:03+08:00"}
+{"level":"error","msg":"KITEX: processing gRPC request error, remoteAddr=127.0.0.1:63750, error=biz error: Error 1406 (22001): Data too long for column 'user_currency' at row 1","time":"2025-01-27T10:32:30+08:00"}
+{"level":"error","msg":"KITEX: processing gRPC request error, remoteAddr=127.0.0.1:63750, error=biz error: Error 1366 (HY000): Incorrect string value: '\\xE5\\x90\\x89\\xE6\\x9E\\x97...' for column 'street_address' at row 1","time":"2025-01-27T10:33:06+08:00"}
+{"level":"error","msg":"KITEX: processing gRPC request error, remoteAddr=127.0.0.1:63750, error=biz error: Error 1366 (HY000): Incorrect string value: '\\xE5\\x8D\\x97\\xE6\\xB2\\x99...' for column 'city' at row 1","time":"2025-01-27T10:33:36+08:00"}
+{"level":"error","msg":"KITEX: processing gRPC request error, remoteAddr=127.0.0.1:63750, error=biz error: Error 1265 (01000): Data truncated for column 'order_id_refer' at row 1","time":"2025-01-27T10:34:28+08:00"}
+{"level":"error","msg":"KITEX: processing gRPC request error, remoteAddr=127.0.0.1:63750, error=biz error: Error 1264 (22003): Out of range value for column 'user_id' at row 1","time":"2025-01-27T10:37:09+08:00"}
+{"level":"error","msg":"KITEX: processing gRPC request error, remoteAddr=127.0.0.1:63750, error=biz error: Error 1265 (01000): Data truncated for column 'order_id_refer' at row 1","time":"2025-01-27T10:40:52+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8885","time":"2025-01-27T10:49:24+08:00"}
+{"level":"info","msg":"start keepalive lease 694d94a539dc9838 for etcd registry","time":"2025-01-27T10:49:25+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8885","time":"2025-01-27T10:50:03+08:00"}
+{"level":"info","msg":"start keepalive lease 694d94a539dc983c for etcd registry","time":"2025-01-27T10:50:04+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8885","time":"2025-01-27T12:59:04+08:00"}
+{"level":"info","msg":"start keepalive lease 694d94a539dc9864 for etcd registry","time":"2025-01-27T12:59:05+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8885","time":"2025-01-30T10:27:03+08:00"}
+{"level":"info","msg":"start keepalive lease 694d94b505023213 for etcd registry","time":"2025-01-30T10:27:04+08:00"}
+{"level":"warning","msg":"keep register get kitex/registry-etcd/order/127.0.0.1:8885 failed with err: context deadline exceeded","time":"2025-01-30T11:50:38+08:00"}
+{"level":"warning","msg":"keep register get kitex/registry-etcd/order/127.0.0.1:8885 failed with err: context deadline exceeded","time":"2025-01-30T11:50:51+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8885","time":"2025-01-30T13:32:00+08:00"}
+{"level":"info","msg":"start keepalive lease 694d94b505023de2 for etcd registry","time":"2025-01-30T13:32:01+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8885","time":"2025-01-30T18:57:06+08:00"}
+{"level":"info","msg":"start keepalive lease 694d94b6672d0c5d for etcd registry","time":"2025-01-30T18:57:07+08:00"}
+{"level":"warning","msg":"keep register get kitex/registry-etcd/order/127.0.0.1:8885 failed with err: context deadline exceeded","time":"2025-01-30T19:19:10+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8885","time":"2025-01-30T20:13:38+08:00"}
+{"level":"info","msg":"start keepalive lease 694d94b6672d10d3 for etcd registry","time":"2025-01-30T20:13:39+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8885","time":"2025-02-01T11:20:03+08:00"}
+{"level":"info","msg":"start keepalive lease 694d94bf8458cd04 for etcd registry","time":"2025-02-01T11:20:04+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8885","time":"2025-02-01T12:28:16+08:00"}
+{"level":"info","msg":"start keepalive lease 694d94bf8458cda2 for etcd registry","time":"2025-02-01T12:28:17+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8885","time":"2025-02-01T13:50:20+08:00"}
+{"level":"info","msg":"start keepalive lease 694d94bf8458ce9c for etcd registry","time":"2025-02-01T13:50:22+08:00"}
+{"level":"error","msg":"KITEX: processing request error, remoteService=, remoteAddr=127.0.0.1:53375, error=biz error: Error 1366 (HY000): Incorrect string value: '\\xE5\\xA7\\x9A\\xE9\\x9B\\x86...' for column 'street_address' at row 1","time":"2025-02-01T13:50:53+08:00"}
+{"level":"error","msg":"KITEX: processing request error, remoteService=, remoteAddr=127.0.0.1:53482, error=biz error: Error 1366 (HY000): Incorrect string value: '\\xE5\\xA7\\x9A\\xE9\\x9B\\x86...' for column 'street_address' at row 1","time":"2025-02-01T13:59:43+08:00"}
+{"level":"error","msg":"KITEX: processing request error, remoteService=, remoteAddr=127.0.0.1:53499, error=biz error: Error 1366 (HY000): Incorrect string value: '\\xE5\\xA7\\x9A\\xE9\\x9B\\x86...' for column 'street_address' at row 1","time":"2025-02-01T14:01:22+08:00"}
+{"level":"error","msg":"KITEX: processing request error, remoteService=, remoteAddr=127.0.0.1:53517, error=biz error: Error 1366 (HY000): Incorrect string value: '\\xE5\\xA7\\x9A\\xE9\\x9B\\x86...' for column 'street_address' at row 1","time":"2025-02-01T14:03:30+08:00"}
+{"level":"error","msg":"KITEX: processing request error, remoteService=, remoteAddr=127.0.0.1:53560, error=biz error: Error 1366 (HY000): Incorrect string value: '\\xE5\\xA7\\x9A\\xE9\\x9B\\x86...' for column 'street_address' at row 1","time":"2025-02-01T14:07:18+08:00"}
+{"level":"error","msg":"KITEX: processing request error, remoteService=, remoteAddr=127.0.0.1:53584, error=biz error: Error 1366 (HY000): Incorrect string value: '\\xE5\\xA7\\x9A\\xE9\\x9B\\x86...' for column 'street_address' at row 1","time":"2025-02-01T14:09:36+08:00"}
+{"level":"error","msg":"KITEX: processing request error, remoteService=, remoteAddr=127.0.0.1:53646, error=biz error: Error 1366 (HY000): Incorrect string value: '\\xE5\\xA7\\x9A\\xE9\\x9B\\x86...' for column 'street_address' at row 1","time":"2025-02-01T14:22:04+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8885","time":"2025-02-01T14:25:05+08:00"}
+{"level":"info","msg":"start keepalive lease 694d94bf8458d0fd for etcd registry","time":"2025-02-01T14:25:06+08:00"}
+{"level":"error","msg":"KITEX: processing request error, remoteService=, remoteAddr=127.0.0.1:53684, error=biz error: Error 1366 (HY000): Incorrect string value: '\\xE5\\xA7\\x9A\\xE9\\x9B\\x86...' for column 'street_address' at row 1","time":"2025-02-01T14:25:17+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8885","time":"2025-02-02T11:02:08+08:00"}
+{"level":"info","msg":"start keepalive lease 694d94bf8458d42e for etcd registry","time":"2025-02-02T11:02:09+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8885","time":"2025-02-02T16:42:05+08:00"}
+{"level":"info","msg":"start keepalive lease 694d94c1cff1920d for etcd registry","time":"2025-02-02T16:42:06+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8885","time":"2025-02-02T17:18:30+08:00"}
+{"level":"info","msg":"start keepalive lease 694d94c1cff1927f for etcd registry","time":"2025-02-02T17:18:31+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8885","time":"2025-02-03T13:12:54+08:00"}
+{"level":"info","msg":"start keepalive lease 694d94c95414cf46 for etcd registry","time":"2025-02-03T13:12:55+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8085","time":"2025-02-03T14:27:34+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8085","time":"2025-02-03T14:30:49+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8085","time":"2025-02-03T15:24:30+08:00"}
+{"level":"info","msg":"start keepalive lease 694d94cab1c4d229 for etcd registry","time":"2025-02-03T15:24:31+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8085","time":"2025-02-03T15:55:47+08:00"}
+{"level":"info","msg":"start keepalive lease 694d94cab1c4d440 for etcd registry","time":"2025-02-03T15:55:48+08:00"}
