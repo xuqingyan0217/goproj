@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎页面-X-admin2.0</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- favicon-template.html -->
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/static/cms/css/font.css">
+    <link rel="stylesheet" href="/static/cms/css/xadmin.css">
+    <script type="text/javascript" src="/static/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/cms/lib/layui/layui.js" charset="utf-8"></script>
+    <script type="text/javascript" src="/static/cms/js/xadmin.js"></script>
+    <style>
+        .x-body {
+            margin-left: 20px; /* 这里的20px可以根据实际需要调整间距大小 */
+        }
+        .new_page li {
+            display: inline-block;
+        }
+
+        .layui-table td {
+            max-width: 200px;
+            min-width: 50px;
+            word-wrap: break-word;
+            white-space: normal;
+        }
+
+        @media (max-width: 768px) {
+            .layui-table th,
+            .layui-table td {
+                padding: 5px;
+                font-size: 12px;
+            }
+
+            .layui-table img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        /* 添加淡入淡出效果 */
+        .fade-in-out {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+        }
+
+        .fade-in-out.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* 封面图背景样式 */
+        .cover-image {
+            width: 100px; /* 设置容器宽度 */
+            height: 100px; /* 设置容器高度 */
+            background-size: contain; /* 图片按比例缩放，保证完整显示在容器内 */
+            background-position: center; /* 图片居中显示 */
+            background-repeat: no-repeat; /* 防止图片重复 */
+        }
+        @media (max-width: 768px) {
+            .cover-image {
+                width: 50px;
+                height: 50px;
+            }
+        }
+        .new_page li {
+            display: inline-block;
+        }
+
+        .layui-table td {
+            max-width: 200px;
+            min-width: 50px;
+            word-wrap: break-word;
+            white-space: normal;
+        }
+
+        @media (max-width: 768px) {
+            .layui-table th,
+            .layui-table td {
+                padding: 5px;
+                font-size: 12px;
+            }
+
+            .layui-table img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        /* 添加淡入淡出效果 */
+        .fade-in-out {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+        }
+
+        .fade-in-out.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* 封面图背景样式 */
+        .cover-img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover; /* 根据容器尺寸按比例缩放并覆盖，类似之前背景图片的 cover 效果 */
+            object-position: center; /* 图片居中显示 */
+        }
+        @media (max-width: 768px) {
+            .cover-img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+        /* 为表头添加背景色和文字颜色 */
+        table.layui-table thead tr {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        /* 鼠标悬停行变色效果 */
+        table.layui-table tbody tr:hover {
+            background-color: #e0e0e0;
+        }
+
+        /* 为表格添加边框和内边距，使结构更清晰 */
+        table.layui-table {
+            border-collapse: collapse;
+            border: 1px solid #ccc;
+        }
+        table.layui-table th,
+        table.layui-table td {
+            border: 1px solid #ccc;
+            padding: 8px;
+        }
+
+        /* 隔行变色效果 */
+        table.layui-table tbody tr:nth-child(even) {
+            background-color: #f5f5f5;
+        }
+
+        /* 为操作列的按钮添加样式，比如按钮间隔、颜色等 */
+        table.layui-table.td-manage a {
+            margin-right: 8px;
+            color: #01AAED;
+        }
+        table.layui-table.td-manage a:hover {
+            color: #0099CC;
+        }
+
+        /* 让表格宽度自适应容器 */
+        table.layui-table {
+            width: 100%;
+        }
+
+        /* 给表格添加阴影效果，使其更有立体感 */
+        table.layui-table {
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        table.layui-table {
+            border-radius: 10px; /* 设置表格四个角为圆角，半径为10px，可根据喜好调整数值改变圆角程度 */
+            background-color: rgba(255, 255, 255, 0.8); /* 设置表格整体背景色为白色且透明度为0.8，可按需修改透明度数值（取值范围0 - 1），数值越小越透明 */
+            backdrop-filter: blur(5px); /* 给表格添加模糊效果，数值越大模糊程度越高，使表格看起来更通透，可调整数值找到合适效果 */
+        }
+
+        table.layui-table tbody tr {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 为每行添加阴影，营造卡片悬浮感 */
+            margin-bottom: 15px; /* 行与行之间增加一定间距 */
+            border-radius: 8px; /* 行的四个角设为圆角 */
+            background-color: white; /* 行的背景色设为白色 */
+            transition: transform 0.2s ease-in-out; /* 添加过渡效果，用于鼠标悬停时的缩放动画 */
+        }
+
+        table.layui-table tbody tr:hover {
+            transform: scale(1.02); /* 鼠标悬停时，行略微放大，产生交互效果 */
+        }
+    </style>
+</head>
+
+<body>
+<div class="background"></div>
+<div class="x-nav">
+    <span class="layui-breadcrumb">
+        <a href="">首页</a>
+        <a href="">日记管理</a>
+        <a><cite>日记列表</cite></a>
+    </span>
+    <a class="layui-btn layui-btn-small" style="line-height:1.6em;margin-top:3px;float:right" href="javascript:location.replace(location.href);" title="刷新">
+        <i class="layui-icon" style="line-height:30px">ဂ</i></a>
+</div>
+<div class="x-body">
+    <div class="layui-row"></div>
+    <xblock>
+        {{/*<button class="layui-btn layui-btn-danger" onclick="delAll()"><i class="layui-icon"></i>批量删除</button>*/}}
+        {{if compare .Flag false}}
+        <button class="layui-btn" onclick="showCustomAlert('请先登录')"><i class="layui-icon"></i>添加</button>
+        {{else}}
+        <button class="layui-btn" onclick="x_admin_show('添加日记','{{urlfor "PostController.ToAdd"}}',650,600)"><i class="layui-icon"></i>添加</button>
+        {{end}}
+        <span class="x-right" style="line-height:40px">共有数据：{{.count}} 条</span>
+    </xblock>
+    <table class="layui-table layui-table-responsive fade-in-out show">
+        <thead>
+        <tr>
+            <th>
+                <div class="layui-unselect header layui-form-checkbox" lay-skin="primary"><i class="layui-icon">&#xe605;</i></div>
+            </th>
+            <!--            <th>ID</th>-->
+            <th>日记标题</th>
+            <th>日记描述</th>
+            <th>封面图</th>
+            <th>阅读数</th>
+            <th>点赞数</th>
+            <th>作者</th>
+            <th>创建时间</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody id="post-tbody">
+        {{range .posts}}
+        <tr>
+            <td>
+                <div class="layui-unselect layui-form-checkbox" lay-skin="primary" data-id='2'><i class="layui-icon">&#xe605;</i></div>
+            </td>
+            <!--            <td>{{.Id}}</td>-->
+            <td>{{.Title}}</td>
+            <td>{{.Desc}}</td>
+            <td>
+                <img class="cover-img" src="/{{.Cover}}" alt="封面图">
+            </td>
+            <td>{{.ReadNum}}</td>
+            <td>{{.StarNum}}</td>
+            <td>{{.Author.UserName}}</td>
+            <td>{{date .CreateTime "Y-m-d H:i:s"}}</td>
+            <td class="td-manage">
+                {{if compare $.Flag false}}
+                <a title="编辑" onclick="showCustomAlert('请先登录')" href="javascript:;">
+                    <i class="layui-icon">&#xe642;</i>
+                </a>
+                <a title="删除" onclick="showCustomAlert('请先登录')" href="javascript:;">
+                    <i class="layui-icon">&#xe640;</i>
+                </a>
+                {{else}}
+                <a title="编辑" onclick="x_admin_show('编辑','{{urlfor "PostController.ToEdit"}}?id={{.Id}}',650,600)" href="javascript:;">
+                <i class="layui-icon">&#xe642;</i>
+                </a>
+                <a title="删除" href='{{urlfor "PostController.PostDelete"}}?id={{.Id}}'>
+                    <i class="layui-icon">&#xe640;</i>
+                </a>
+                {{end}}
+            </td>
+        </tr>
+        {{end}}
+        </tbody>
+    </table>
+    <div class="page">
+        <div>
+            {{if .count}}
+            <div class="layui-box layui-laypage layui-laypage-default" id="layui-laypage-1">
+                <ul class="new_page">
+                    <li><a href='{{urlfor "PostController.Get"}}?pageIndex=1'>首页</a></li>
+                    {{if compare .FirstPage true}}
+                    <li>上一页</li>
+                    {{else}}
+                    <li><a class="pre" href='{{urlfor "PostController.Get"}}?pageIndex={{.pageIndex | ShowPrePage}}'>上一页</a></li>
+                    {{end}}
+                    {{if compare .EndPage true}}
+                    <li>下一页</li>
+                    {{else}}
+                    <li><a class="next" href='{{urlfor "PostController.Get"}}?pageIndex={{.pageIndex | ShowNextPage}}'>下一页</a></li>
+                    {{end}}
+                    <li><a href='{{urlfor "PostController.Get"}}?pageIndex={{.pageCount}}'>末页</a></li>
+                    <li>共{{.count}}条记录/共{{.pageCount}}页/当前{{.pageIndex}}页</li>
+                </ul>
+            </div>
+            {{end}}
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    function showCustomAlert(message) {
+        // 使用Layui的layer模块来显示弹框
+        layui.use('layer', function(){
+            var layer = layui.layer;
+
+            // 显示提示信息
+            layer.msg(message, {
+                time: 2000, // 自动关闭时间，单位毫秒
+                icon: 2 // 图标类型，2表示警告
+            });
+        });
+    }
+
+    $(document).ready(function() {
+        // 动态设置背景图像
+        $('.cover-image').each(function() {
+            var bgUrl = $(this).data('bg-url');
+            if (bgUrl) {
+                $(this).css('background-image', 'url(' + bgUrl + ')');
+            }
+        });
+
+        function fetchPosts(pageIndex) {
+            $.ajax({
+                url: '?pageIndex=' + pageIndex,
+                type: 'GET',
+                dataType: 'json',
+                beforeSend: function() {
+                    // 在请求开始前隐藏表格并准备淡入效果
+                    $('table.layui-table').removeClass('show');
+                },
+                success: function(data) {
+                    // 更新表格内容
+                    var tbody = '';
+                    data.posts.forEach(function(post) {
+                        tbody += `<tr>
+                            <td><div class="layui-unselect layui-form-checkbox" lay-skin="primary" data-id='${post.Id}'><i class="layui-icon">&#xe605;</i></div></td>
+<!--                            <td>${post.Id}</td>-->
+                            <td>${post.Title}</td>
+                            <td>${post.Desc}</td>
+                            <td class="cover-image" data-bg-url="/${post.Cover}"></td>
+                            <td>${post.ReadNum}</td>
+                            <td>${post.StarNum}</td>
+                            <td>${post.Author.UserName}</td>
+                            <td>${post.CreateTime}</td>
+                            <td class="td-manage">
+                                ${data.flag ? `
+                                    <a title="编辑" onclick="x_admin_show('编辑','{{urlfor "PostController.ToEdit"}}?id=${post.Id}',650,600)" href="javascript:;">
+                                        <i class="layui-icon">&#xe642;</i>
+                                    </a>
+                                    <a title="删除" href='{{urlfor "PostController.PostDelete"}}?id=${post.Id}'>
+                                        <i class="layui-icon">&#xe640;</i>
+                                    </a>` : '<a title="编辑" onclick="showCustomAlert(\'请先登录\')" href="javascript:;">'+
+                            '<i class="layui-icon">&#xe642;</i></a>'+
+                            '<a title="删除" onclick="showCustomAlert(\'请先登录\')" href="javascript:;">'+
+                            '<i class="layui-icon">&#xe640;</i></a>'}
+                            </td>
+                        </tr>`;
+                    });
+                    $('#post-tbody').html(tbody);
+
+                    // 应用淡入效果并显示表格
+                    requestAnimationFrame(() => {
+                        $('table.layui-table').addClass('show');
+                    });
+
+                    // 确保新加载的封面图应用背景样式
+                    $('.cover-image').each(function() {
+                        var bgUrl = $(this).data('bg-url');
+                        if (bgUrl) {
+                            $(this).css('background-image', 'url(' + bgUrl + ')');
+                        }
+                    });
+
+                    // 更新分页信息
+                    updatePagination(data);
+                }
+            });
+        }
+
+        function updatePagination(data) {
+            $('#layui-laypage-1 li:first-child').html(`<a href="?pageIndex=1">首页</a>`);
+            $('#layui-laypage-1 li:last-child').html(`<a href="?pageIndex=${data.pageCount}">末页</a>`);
+
+            // 设置首页、上一页、下一页、末页状态
+            $('#layui-laypage-1 li:first-child').next().html(data.FirstPage ? '上一页' : `<a class="pre" href="?pageIndex=${parseInt(data.pageIndex) - 1}">上一页</a>`);
+            $('#layui-laypage-1 li:last-child').prev().html(data.EndPage ? '下一页' : `<a class="next" href="?pageIndex=${parseInt(data.pageIndex) + 1}">下一页</a>`);
+
+            $('#layui-laypage-1 li:last-child').prev().prev().html(`共${data.count}条记录/共${data.pageCount}页/当前${data.pageIndex}页`);
+        }
+
+        // 绑定分页链接点击事件
+        $(document).on('click', '#layui-laypage-1 a', function(event) {
+            event.preventDefault();
+            var href = $(this).attr('href');
+            var pageIndex = href.split('=')[1];
+            fetchPosts(pageIndex);
+        });
+
+        // 初始化加载第一页数据
+        fetchPosts(1);
+    });
+    document.addEventListener("DOMContentLoaded", function() {
+        // 定义每个季度对应的背景图片路径
+        const backgroundImages = [
+            "/static/images/spring.jpg", // 第一季度 - 春季
+            "/static/images/summer.jpg", // 第二季度 - 夏季
+            "/static/images/autumn.jpg",   // 第三季度 - 秋季
+            "/static/images/winter.jpg"  // 第四季度 - 冬季
+        ];
+
+        // 获取当前日期并计算季度
+        const currentDate = new Date();
+        const currentMonth = currentDate.getMonth(); // 注意：getMonth() 返回的月份是从0开始计数的
+
+        let currentQuarter;
+        if (currentMonth < 3) {
+            currentQuarter = 0; // 第一季度：1月, 2月, 3月
+        } else if (currentMonth < 6) {
+            currentQuarter = 1; // 第二季度：4月, 5月, 6月
+        } else if (currentMonth < 9) {
+            currentQuarter = 2; // 第三季度：7月, 8月, 9月
+        } else {
+            currentQuarter = 3; // 第四季度：10月, 11月, 12月
+        }
+
+        // 获取.background元素
+        const backgroundElement = document.querySelector('.background');
+
+        // 设置新的背景图片，保留原有样式
+        backgroundElement.style.backgroundImage = `url(${backgroundImages[currentQuarter]})`;
+        // 确保其他样式属性保持不变
+        backgroundElement.style.backgroundSize = 'cover';
+        backgroundElement.style.backgroundPosition = 'center';
+        backgroundElement.style.backgroundRepeat = 'no-repeat';
+    });
+</script>
+</html>

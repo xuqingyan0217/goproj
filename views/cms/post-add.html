@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>添加日记</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <!-- favicon-template.html -->
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/static/cms/css/font.css">
+    <link rel="stylesheet" href="/static/cms/css/xadmin.css">
+    <script type="text/javascript" src="/static/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/cms/lib/layui/layui.js" charset="utf-8"></script>
+    <script type="text/javascript" src="/static/cms/js/xadmin.js"></script>
+    <!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
+    <!--[if lt IE 9]-->
+    <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+    <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+    <!--[endif]-->
+    <style>
+        /* 页面整体背景和字体设置 */
+        body {
+            min-height: 100vh;
+            /* 淡蓝色背景，修改原背景色 */
+            font-family: Arial, sans-serif;
+        }
+
+        /* 表单区域整体样式 */
+        .x-body {
+            min-height: 100vh;
+            background-color: #ffffff;
+            /* 淡蓝色边框，修改原边框颜色 */
+            border-radius: 10px;
+            padding: 30px;
+            /* 适当增加内边距 */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* 增强阴影效果 */
+            margin: 30px auto;
+            /* 适当增加外边距，使其在弹窗中位置更合适 */
+            width: 800px;
+            /* 增大宽度 */
+        }
+
+        /* 表单元素间距调整 */
+        .layui-form-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            /* 确保子元素均匀分布，可根据实际情况调整 */
+            margin-bottom: 20px;
+        }
+
+        .layui-form-label {
+            flex-basis: 150px;
+            /* 固定标签宽度，可根据实际调整 */
+        }
+
+        .layui-input-inline {
+            flex: 1;
+            /* 剩余空间占满 */
+        }
+
+        /* 输入框通用样式及聚焦效果 */
+        .layui-input {
+            border: 1px solid #b3d9ff;
+            border-radius: 5px;
+            transition: border-color 0.3s ease;
+            font-size: 16px;
+            /* 增大字体大小，新增 */
+            color: #333333;
+            /* 深灰色文字，新增 */
+            line-height: 1.5;
+            /* 合适的行高，新增 */
+        }
+
+        .layui-input:focus {
+            border-color: #007acc;
+            transform: scale(1.02);
+            /* 稍微放大，新增 */
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1) inset;
+            /* 淡入的内部阴影，新增 */
+            transition: all 0.3s ease;
+            /* 同时过渡多个属性变化，新增 */
+        }
+
+        /* 封面图展示样式及悬停效果 */
+        .layui-input-inline img {
+            border: 1px solid #b3d9ff;
+            border-radius: 3px;
+            /* 适当减小边框圆角半径，适配变小后的图片 */
+            box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+            /* 减轻阴影强度，适配变小后的图片 */
+            transition: transform 0.2s ease, opacity 0.2s ease, rotate 0.2s ease;
+            /* 添加多个过渡属性，新增 */
+            cursor: pointer;
+            /* 添加鼠标指针样式，使其可点击 */
+        }
+
+        .layui-input-inline img:hover {
+            transform: scale(1.05) rotate(2deg);
+            /* 放大并旋转一点，新增 */
+            opacity: 0.9;
+            /* 稍微降低透明度，新增 */
+        }
+
+        /* 自定义文件上传按钮样式（此按钮现在可移除，因为通过图片点击触发上传了） */
+        /*.custom-upload-btn {
+            display: inline-block;
+            padding: 6px 12px;
+            background-color: #007acc;
+            color: white;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+
+    .custom-upload-btn:hover {
+            background-color: #005c99;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+        } */
+
+        /* 日记内容文本框样式及滚动条样式 */
+        .layui-input textarea {
+            border: 1px solid #b3d9ff;
+            border-radius: 5px;
+            resize: vertical;
+            overflow-y: auto;
+            height: auto;
+            /* 由原来的固定max-height改为自动撑开高度 */
+            font-size: 16px;
+            color: #333333;
+            line-height: 1.5;
+        }
+
+        .layui-input textarea::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .layui-input textarea::-webkit-scrollbar-thumb {
+            background-color: #ccc;
+            border-radius: 4px;
+        }
+
+        .layui-input textarea::-webkit-scrollbar-track {
+            background-color: #f4f4f4;
+        }
+
+        /* 按钮通用样式及悬停效果 */
+        .layui-btn {
+            background: linear-gradient(to bottom, #007acc, #005c99);
+            /* 从上到下的线性渐变，新增 */
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .layui-btn:hover {
+            background-color: #005c99;
+            /* 按钮悬停颜色，修改原悬停颜色 */
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .custom-msg i {
+            margin-right: 10px;
+            /* 图标和文字间隔，新增 */
+            font-size: 18px;
+            /* 图标大小，新增 */
+        }
+
+        /* 页面加载动画（可选，若要使用需在HTML中合适位置添加对应元素），新增 */
+        @keyframes loading-spinner {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+<div class="x-body">
+    <form class="layui-form">
+        <div class="layui-form-item">
+            <label for="L_email" class="layui-form-label">
+                <span class="x-red">*</span>日记标题
+            </label>
+            <div class="layui-input-inline">
+                <input type="text" id="title" name="title" required="" lay-verify="title"
+                       autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label for="L_username" class="layui-form-label">
+                日记描述
+            </label>
+            <div class="layui-input-inline">
+                <input type="text" id="desc" name="desc" required="" lay-verify="nikename"
+                       autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label for="L_repass" class="layui-form-label">
+                封面图
+            </label>
+            <div class="layui-input-inline" style="width: 300px;">
+                <!-- 添加宽度限制，让这一块占比变小 -->
+                <img src="/static/upload/no_pic.jpg" alt="" id="coverImg" style="width: 150px;height: 100px;">
+                <div class="loading" style="display:none;">正在加载...</div> <!-- 新增加载状态显示元素 -->
+                <input type="file" id="cover" name="cover" autocomplete="off" class="layui-input"
+                       style="display: none;">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <label for="L_repass" class="layui-form-label">
+                <span class="x-red">*</span>日记内容
+            </label>
+            <div class="layui-input-inline">
+                    <textarea type="" id="content" name="content" required=""
+                              autocomplete="off" class="layui-input" style="width: 300px;height: 100px"></textarea>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label for="L_repass" class="layui-form-label">
+            </label>
+            <button type="button" class="layui-btn" lay-filter="add" lay-submit="">
+                添加
+            </button>
+        </div>
+    </form>
+</div>
+<script>
+    layui.use(['form', 'layer'], function () {
+        $ = layui.jquery;
+        var form = layui.form
+            , layer = layui.layer;
+
+        //自定义验证规则
+        form.verify({
+            title: function (value) {
+                if (value.length < 0) {
+                    return '日记标题不能为空';
+                }
+            },
+            content: function (value) {
+                if (value.length < 0) {
+                    return '日记内容不能为空';
+                }
+            }
+        });
+
+        // 为封面图片添加点击事件，触发文件选择框的点击
+        $('#coverImg').click(function () {
+            $('#cover').click();
+        });
+
+        // 监听文件选择变化，实时显示图片（新增代码部分）
+        $('#cover').on('change', function () {
+            var file = this.files[0];
+            if (file) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('#coverImg').attr('src', e.target.result);
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        // 监听提交
+        form.on('submit(add)', function (data) {
+
+            var formdata = new FormData();
+            var title = $("#title").val();
+            var desc = $("#desc").val();
+            var content = $("#content").val();
+            formdata.append("title", title);
+            formdata.append("desc", desc);
+            formdata.append("content", content);
+            if ($("#cover")[0].files.length > 0) {
+                formdata.append("cover", $("#cover")[0].files[0]);
+            }
+
+            // 显示加载状态
+            $('.loading').show();
+
+            $.ajax({
+                url: "{{urlfor "PostController.DoAdd"}}", //这里修改为添加日记对应的后端接口路由，需确保后端有对应处理逻辑
+                type: "POST",
+                data: formdata,
+                contentType: false,
+                processData: false,
+                success: function (data) {
+                    console.log(data);
+                    if (data["code"] == 200) {
+                        // 使用 layer.msg 显示成功信息
+                        layer.msg(data["msg"], {
+                            time: 1000, //1秒关闭（如果不配置，默认是3秒）
+                            end: function () {
+                                // 关闭当前窗口（如果是在弹窗等场景添加日记），这里假设是类似的关闭逻辑，可根据实际调整
+                                parent.layer.closeAll();
+                                // 刷新页面（如果需要更新列表等展示情况），同样可根据实际调整
+                                parent.location.reload();
+                            }
+                        });
+                    } else {
+                        // 使用 layer.open 创建一个自定义样式和内容的失败提示框
+                        layer.open({
+                            title: '错误',
+                            content: data["msg"],
+                            btn: '确定'
+                        });
+                    }
+                    // 隐藏加载状态
+                    $('.loading').hide();
+                },
+                error: function (data) {
+                    // 处理请求失败的情况
+                    layer.open({
+                        title: '错误',
+                        content: '请求发送失败，请检查网络或稍后再试。',
+                        btn: '确定'
+                    });
+                    // 隐藏加载状态
+                    $('.loading').hide();
+                }
+            });
+
+            return false; // 阻止表单默认提交行为
+        });
+    });
+</script>
+</body>
+</html>

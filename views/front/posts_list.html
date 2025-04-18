@@ -1,0 +1,17 @@
+{{range .posts}}
+<li>
+    <a href="{{urlfor "IndexController.PostDetail"}}?id={{.Id}}">
+    <i><img src="/{{.Cover}}" alt="标题图片"></i>
+    <h2>{{.Title}}</h2>
+    </a>
+    <p class="blog_smalltext">
+        {{.Desc}}
+    </p>
+    <p class="blog_info">
+        <span>{{date .CreateTime "Y-m-d H:i:s"}}</span>
+        <span>{{.Author.UserName}}</span>
+        <span>{{.ReadNum}}</span>
+        <span>{{.StarNum}}</span>
+    </p>
+</li>
+{{end}}

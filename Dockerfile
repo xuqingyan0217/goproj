@@ -1,0 +1,43 @@
+FROM alpine:3.14
+
+# 添加时区处理，确保服务之间的时间的统一
+RUN echo -e "https://mirrors.aliyun.com/alpine/v3.14/main\nhttps://mirrors.aliyun.com/alpine/v3.14/community" > /etc/apk/repositories && \
+    apk update &&\
+    apk --no-cache add tzdata && \
+    cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
+    echo "Asia/Shanghai" >  /etc/timezone
+ENV TZ=Asia/Shanghai
+
+# 声明两个只能在dockerfile中使用的变量，使用后就没了
+# 设立这两个变量是为了我们之后修改名称时更加容易
+# 日记-单体(架构)
+ARG SERVER_NAME=diary
+ARG SERVER_TYPE=monomer
+
+# 声明一个环境变量，在容器内
+# 仅有bin目录就行，单体架构不需要其它配置
+ENV RUN_BIN bin/${SERVER_NAME}-${SERVER_TYPE}
+
+
+# RUN mkdir /$SERVER_NAME && mkdir /$SERVER_NAME/bin
+# 创建相应的目录便于存储二进制文件
+RUN mkdir /$SERVER_NAME/ && mkdir /$SERVER_NAME/bin/
+
+# 复制编译后的二进制文件
+# 将由mk文件编译之后的二进制文件复制到我们新建的目录
+COPY ./bin/$SERVER_NAME-$SERVER_TYPE /$SERVER_NAME/bin/
+
+# 为二进制提供执行权限
+RUN chmod +x /$SERVER_NAME/bin/$SERVER_NAME-$SERVER_TYPE
+
+# 该命令指定容器会默认进入那个目录，如我们每次进入服务器的时候会自动进入root目录一样的作用
+# 容器内部就是/user目录下，
+WORKDIR /$SERVER_NAME
+
+# 这个命令可以让我们的docker容器在启动的时候就执行下面的命令
+# 与CMD不同之处是，在docker run 后跟的命令不能替换它，它仍然会启动的时候执行
+# ENTRYPOINT ["$RUN_BIN", "-f", "$RUN_CONF"] // 这种写法不支持对环境变量的解析，
+#您正在使用ENTRYPOINT 的exec形式。与shell表单不同，exec表单不会调用命令shell。这意味着正常的外壳处理不会发生。例如，ENTRYPOINT [ "echo", "$HOME" ]
+# 将不会在$ HOME上进行变量替换。如果要进行shell处理，则可以使用shell形式或直接执行shell，例如：ENTRYPOINT [ "sh", "-c", "echo $HOME" ]。
+#当使用exec表单并直接执行shell时（例如在shell表单中），是由shell进行环境变量扩展，而不是docker。（来自Dockerfile参考）
+ENTRYPOINT $RUN_BIN

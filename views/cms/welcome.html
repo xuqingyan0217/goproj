@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>欢迎页面-X-admin2.0</title>
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+        <!-- favicon-template.html -->
+        <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="/static/cms/css/font.css">
+        <link rel="stylesheet" href="/static/cms/css/xadmin.css">
+        <style>
+            blockquote.welcome-message {
+                background: #f9f9fb; /* 背景颜色 */
+                border-left: 10px solid #ddd; /* 左边框线 */
+                margin: 1.5em 10px; /* 外边距 */
+                padding: 0.5em 10px; /* 内边距 */
+                quotes: "“" "”" "‘" "’"; /* 引号样式 */
+                border-radius: 8px; /* 圆角 */
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+                max-width: 600px; /* 最大宽度 */
+                margin-left: auto;
+                margin-right: auto;
+                font-family: 'Georgia', serif; /* 字体 */
+            }
+
+            blockquote.welcome-message p {
+                display: block;
+                font-size: 24px;
+                text-align: center;
+                color: #92B8B1; /* 文字颜色 */
+                line-height: 1.5; /* 行高 */
+            }
+
+            blockquote.welcome-message p:first-child::before {
+                content: open-quote;
+                font-size: 3em;
+                vertical-align: -0.4em;
+                color: #ccc;
+            }
+
+            blockquote.welcome-message p:last-child::after {
+                content: close-quote;
+                font-size: 3em;
+                vertical-align: -0.4em;
+                color: #ccc;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="x-body">
+            <div class="background"></div>
+            <blockquote class="welcome-message" style="font-size: 24px; text-align: center;">
+
+                <p>“素笺” 寓意空白的纸张，承载着每日心情，</p>
+                <p>“拾光” 则有拾取时光碎片、留存记忆之意，</p>
+                <p>象征着通过日记捕捉生活中的点滴光芒，</p>
+                <p>点击左侧"日记管理"即可查看日记。</p>
+            </blockquote>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                // 定义每个季度对应的背景图片路径
+                const backgroundImages = [
+                    "/static/images/spring.jpg", // 第一季度 - 春季
+                    "/static/images/summer.jpg", // 第二季度 - 夏季
+                    "/static/images/autumn.jpg",   // 第三季度 - 秋季
+                    "/static/images/winter.jpg"  // 第四季度 - 冬季
+                ];
+
+                // 获取当前日期并计算季度
+                const currentDate = new Date();
+                const currentMonth = currentDate.getMonth(); // 注意：getMonth() 返回的月份是从0开始计数的
+
+                let currentQuarter;
+                if (currentMonth < 3) {
+                    currentQuarter = 0; // 第一季度：1月, 2月, 3月
+                } else if (currentMonth < 6) {
+                    currentQuarter = 1; // 第二季度：4月, 5月, 6月
+                } else if (currentMonth < 9) {
+                    currentQuarter = 2; // 第三季度：7月, 8月, 9月
+                } else {
+                    currentQuarter = 3; // 第四季度：10月, 11月, 12月
+                }
+
+                // 获取.background元素
+                const backgroundElement = document.querySelector('.background');
+
+                // 设置新的背景图片，保留原有样式
+                backgroundElement.style.backgroundImage = `url(${backgroundImages[currentQuarter]})`;
+                // 确保其他样式属性保持不变
+                backgroundElement.style.backgroundSize = 'cover';
+                backgroundElement.style.backgroundPosition = 'center';
+                backgroundElement.style.backgroundRepeat = 'no-repeat';
+            });
+        </script>
+    </body>
+</html>
