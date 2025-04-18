@@ -1,0 +1,27 @@
+host: 0.0.0.0
+imrpc:
+    etcd:
+        hosts:
+            - 10.0.0.17:3379
+        key: im.rpc
+jwtauth:
+    accesssecret: hxqy.fun
+name: social
+port: 8881
+redisx:
+    host: 10.0.0.17:16379
+    pass: easy-chat
+socialrpc:
+    etcd:
+        hosts:
+            - 10.0.0.17:3379
+        key: social.rpc
+telemetry:
+    batcher: jaeger
+    endpoint: http://10.0.0.17:14268/api/traces
+    name: social.api
+userrpc:
+    etcd:
+        hosts:
+            - 10.0.0.17:3379
+        key: user.rpc

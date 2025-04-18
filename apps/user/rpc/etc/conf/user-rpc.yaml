@@ -1,0 +1,28 @@
+cache:
+    - host: 10.0.0.17:16379
+      pass: easy-chat
+      type: node
+database: mysql
+etcd:
+    hosts:
+        - 10.0.0.17:3379
+    key: user.rpc
+jwt:
+    accessexpire: 8640000
+    accesssecret: hxqy.fun
+listenon: 0.0.0.0:10000
+mysql:
+    datasource: root:easy-chat@tcp(10.0.0.17:13306)/easy-chat?charset=utf8mb4
+name: user.rpc
+prometheus:
+    host: 0.0.0.0
+    path: /metrics
+    port: 10070
+redisx:
+    host: 10.0.0.17:16379
+    pass: easy-chat
+    type: node
+telemetry:
+    batcher: jaeger
+    endpoint: http://10.0.0.17:14268/api/traces
+    name: user.rpc

@@ -1,0 +1,13 @@
+etcd:
+    hosts:
+        - 10.0.0.17:3379
+    key: im.rpc
+listenon: 0.0.0.0:10002
+mongo:
+    db: easy-chat
+    url: mongodb://root:easy-chat@10.0.0.17:47017
+name: im.rpc
+telemetry:
+    batcher: jaeger
+    endpoint: http://10.0.0.17:14268/api/traces
+    name: im.rpc

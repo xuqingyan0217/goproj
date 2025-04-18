@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package verifyCode;
+
+option go_package = "./verifyCode";
+
+//枚举类型常量
+enum TYPE {
+  DEFAULT = 0;
+  DIGIT = 1;
+  LETTER = 2;
+  MIXED = 3;
+};
+//定义接口请求参数结构
+message GetVerifyCodeRequest {
+  //验证码的长度
+  uint32 length = 1;
+  //验证码类型，定义为枚举类型
+  TYPE type = 2;
+  // 验证码的存储涉及到唯一key，手机号必须要有
+  string phone = 3;
+}
+//定义接口返回值结构，返回结构是字符串
+message GetVerifyCodeReply {
+  //生成验证码
+  string code = 1;
+}
+
+service VerifyCode {
+  rpc GetVerifyCode (GetVerifyCodeRequest) returns (GetVerifyCodeReply);
+}

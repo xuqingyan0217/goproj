@@ -1,0 +1,31 @@
+Name: im
+Host: 0.0.0.0
+Port: 8882
+
+ImRpc:
+  Etcd:
+    Hosts:
+      - 10.0.0.17:3379
+    Key: im.rpc
+
+SocialRpc:
+  Etcd:
+    Hosts:
+      - 10.0.0.17:3379
+    Key: social.rpc
+
+UserRpc:
+  Etcd:
+    Hosts:
+      - 10.0.0.17:3379
+    Key: user.rpc
+
+JwtAuth:
+  AccessSecret: hxqy.fun
+
+Telemetry:
+  Name: im.api
+  Endpoint: http://10.0.0.17:14268/api/traces
+  Batcher: jaeger
+
+

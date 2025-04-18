@@ -1,0 +1,12 @@
+Name: verifycode.rpc
+ListenOn: 0.0.0.0:10010
+Etcd:
+  Hosts:
+  - 10.0.0.17:3379
+  Key: verifycode.rpc
+
+Redisx:
+  Host: 10.0.0.17:16379
+  Type: node
+  Pass: easy-chat
+

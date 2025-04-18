@@ -1,0 +1,23 @@
+database: redis11
+host: 0.0.0.0
+jwtauth:
+    accessexpire: 8640000
+    accesssecret: hxqy.fun
+name: user
+port: 8888
+prometheus:
+    host: 0.0.0.0
+    path: /metrics
+    port: 7888
+redisx:
+    host: 10.0.0.17:16379
+    pass: easy-chat
+telemetry:
+    batcher: jaeger
+    endpoint: http://10.0.0.17:14268/api/traces
+    name: user.api
+userrpc:
+    etcd:
+        hosts:
+            - 10.0.0.17:3379
+        key: user.rpc

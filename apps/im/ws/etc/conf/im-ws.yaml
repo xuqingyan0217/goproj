@@ -1,0 +1,22 @@
+jwtauth:
+    accesssecret: hxqy.fun
+listenon: 0.0.0.0:10090
+mongo:
+    db: easy-chat
+    url: mongodb://root:easy-chat@10.0.0.17:47017
+msgchattransfer:
+    addrs:
+        - 10.0.0.17:9092
+    topic: msgChatTransfer
+msgreadtransfer:
+    addrs:
+        - 10.0.0.17:9092
+    topic: msgReadTransfer
+name: im.ws
+redisx:
+    host: 10.0.0.17:16379
+    pass: easy-chat
+telemetry:
+    batcher: jaeger
+    endpoint: http://10.0.0.17:14268/api/traces
+    name: im.ws

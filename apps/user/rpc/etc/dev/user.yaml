@@ -1,0 +1,33 @@
+Name: user.rpc
+ListenOn: 0.0.0.0:10000
+Database: redis
+Etcd:
+  Hosts:
+  - 10.0.0.17:3379
+  Key: user.rpc
+
+Mysql:
+  DataSource: root:easy-chat@tcp(10.0.0.17:13306)/easy-chat?charset=utf8mb4
+
+Redisx:
+  Host: 10.0.0.17:16379
+  Type: node
+  Pass: easy-chat
+
+Prometheus:
+  Host: 0.0.0.0
+  Port: 10070
+  Path: /metrics
+Cache:
+  - Host: 10.0.0.17:16379
+    Type: node
+    Pass: easy-chat
+
+Jwt:
+  AccessSecret: hxqy.fun
+  AccessExpire: 8640000
+
+Telemetry:
+  Name: user.rpc
+  Endpoint: http://10.0.0.17:14268/api/traces
+  Batcher: jaeger

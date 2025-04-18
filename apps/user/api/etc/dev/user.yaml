@@ -1,0 +1,27 @@
+Name: user
+Host: 0.0.0.0
+Port: 8888
+Database: mysql
+UserRpc:
+  Etcd:
+    Hosts:
+      - 10.0.0.17:3379
+    Key: user.rpc
+
+Redisx:
+  Host: 10.0.0.17:16379
+  Pass: easy-chat
+
+Prometheus:
+  Host: 0.0.0.0
+  Port: 7888
+  Path: /metrics
+
+JwtAuth:
+  AccessSecret: hxqy.fun
+  AccessExpire: 8640000
+
+Telemetry:
+  Name: user.api
+  Endpoint: http://10.0.0.17:14268/api/traces
+  Batcher: jaeger

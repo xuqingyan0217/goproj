@@ -1,0 +1,16 @@
+cache:
+    - host: 10.0.0.17:16379
+      pass: easy-chat
+      type: node
+etcd:
+    hosts:
+        - 10.0.0.17:3379
+    key: social.rpc
+listenon: 0.0.0.0:10001
+mysql:
+    datasource: root:easy-chat@tcp(10.0.0.17:13306)/easy-chat?charset=utf8mb4&parseTime=true
+name: social.rpc
+telemetry:
+    batcher: jaeger
+    endpoint: http://10.0.0.17:14268/api/traces
+    name: social.rpc

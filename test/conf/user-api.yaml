@@ -1,0 +1,14 @@
+database: redis
+host: 0.0.0.0
+jwtauth:
+    accesssecret: hxqy.fun
+name: user
+port: 8888
+redisx:
+    host: 10.0.0.17:16379
+    pass: easy-chat
+userrpc:
+    etcd:
+        hosts:
+            - 10.0.0.17:3379
+        key: user.rpc

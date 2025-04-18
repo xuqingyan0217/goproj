@@ -1,0 +1,33 @@
+Name: social
+Host: 0.0.0.0
+Port: 8881
+
+SocialRpc:
+  Etcd:
+    Hosts:
+      - 10.0.0.17:3379
+    Key: social.rpc
+
+UserRpc:
+  Etcd:
+    Hosts:
+      - 10.0.0.17:3379
+    Key: user.rpc
+
+ImRpc:
+  Etcd:
+    Hosts:
+      - 10.0.0.17:3379
+    Key: im.rpc
+
+Redisx:
+  Host: 10.0.0.17:16379
+  Pass: easy-chat
+
+JwtAuth:
+  AccessSecret: hxqy.fun
+
+Telemetry:
+  Name: social.api
+  Endpoint: http://10.0.0.17:14268/api/traces
+  Batcher: jaeger

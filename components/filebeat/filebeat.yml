@@ -1,0 +1,30 @@
+# 输入
+filebeat.inputs:
+  - type: log
+    enabled: true
+    paths:
+      - /home/easy-chat/test/z_log/access.log
+    fields_under_root: true
+    fields:
+      type: zlog.file
+
+output.logstash:
+  hosts: ["10.0.0.17:5044"]
+
+# 输入
+#filebeat.inputs:
+#  - type: log
+#    enabled: true
+#    paths:
+#      - /home/easy-chat/components/apisix/logs/access.log
+#    fields_under_root: true
+#    fields:
+#      type: apisix
+#
+## 输出
+##output.console:
+##  pretty: true
+##  enable: true
+#output.logstash:
+#  hosts: ["10.0.0.17:5044"]
+
