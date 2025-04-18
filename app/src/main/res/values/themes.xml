@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Nutrition" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- 主要颜色 -->
+        <item name="colorPrimary">#2196F3</item>
+        <item name="colorPrimaryDark">#1976D2</item>
+        <item name="colorAccent">#4CAF50</item>
+        
+        <!-- 状态栏和导航栏配置 -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        
+        <!-- 窗口背景配置 -->
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        
+        <!-- 禁用默认的转场动画 -->
+        <item name="android:windowContentTransitions">false</item>
+        
+        <!-- Material Design 主题配置 -->
+        <item name="android:textColorPrimary">#212121</item>
+        <item name="android:textColorSecondary">#757575</item>
+    </style>
+</resources>

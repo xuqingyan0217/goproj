@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Nutrition</string>
+
+    <string name="home">&#xe600;</string>
+    <string name="me">&#xe647;</string>
+    <string name="scan">&#xe780;</string>
+    <string name="focus">&#xe737;</string>
+    <string name="photo">&#xe7be;</string>
+    <string name="camera">&#xe9f3;</string>
+    <string name="recommend">&#xec8c;</string>
+    <string name="call">&#xe645;</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="COZE_JWT_OAUTH_CLIENT_ID">1102787542744</string>
+    <string name="COZE_JWT_OAUTH_PRIVATE_KEY_FILE_PATH">private_key.pem</string>
+    <string name="COZE_JWT_OAUTH_PUBLIC_KEY_ID">xxxx</string>
+    <string name="COZE_API_BASE">https://api.coze.cn</string>
+    <string name="BOT_ID">7484813xxx</string>
+    <string name="VOICE_ID">7426720361xxx</string>
+    <string name="API_KEY">0a61c0dxxxx</string>
+    <string name="BASE_URL">https://ark.cn-beijing.volces.com/api/v3/chaxxxx</string>
+    <string name="MODEL">ep-202501xxxx6-vfv4c</string>
+
+</resources>

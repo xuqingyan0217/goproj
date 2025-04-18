@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>营养助手 - 您的健康伙伴</title>
+    <link rel="stylesheet" href="./main.css" />
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>营养助手</h1>
+        <p>您的个人健康与营养顾问</p>
+    </div>
+
+    <div class="content-section">
+        <h2>欢迎使用营养助手</h2>
+        <p>营养助手是您的智能健康伙伴，随时为您提供专业的营养建议和健康指导。无论您是想了解某种食物的营养价值，还是需要制定个性化的饮食计划，我们都能为您提供帮助。</p>
+    </div>
+
+    <div class="content-section">
+        <h2>主要功能</h2>
+        <ul class="feature-list">
+            <li>食物营养成分查询</li>
+            <li>个性化饮食建议</li>
+            <li>健康减重指导</li>
+            <li>营养知识科普</li>
+            <li>饮食记录与分析</li>
+        </ul>
+    </div>
+
+    <div class="content-section">
+        <h2>使用指南</h2>
+        <p>点击右下角的聊天图标，即可开始与营养助手对话。您可以直接询问任何与营养和健康相关的问题，我们将为您提供专业的解答。</p>
+        <p>示例问题：</p>
+        <ul class="feature-list">
+            <li>「苹果的营养价值是什么？」</li>
+            <li>「请推荐一些低热量的早餐选择」</li>
+            <li>「如何科学减重？」</li>
+        </ul>
+    </div>
+
+    <div id="chat-container"></div>
+</div>
+
+<!--下面的黄体的js文件，去到智能体的发布页面，找到sdk处，选择安装即可看到这个js文件，只要这一行-->
+<script src="https://lf-cdn.coze.cn/obj/unpkg/flow-platform/chat-app-sdk/1.2.0-beta.6/libs/cn/index.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
+<!--相关技术文档 https://www.coze.cn/open/docs/developer_guides/install_web_sdk -->

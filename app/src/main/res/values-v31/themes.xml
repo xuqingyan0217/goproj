@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Nutrition" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- 设置启动画面背景为透明 -->
+        <item name="android:windowSplashScreenBackground">@android:color/transparent</item>
+        <!-- 设置启动画面图标为透明 -->
+        <item name="android:windowSplashScreenAnimatedIcon">@android:color/transparent</item>
+        <!-- 设置启动画面动画持续时间为1毫秒(最小值) -->
+        <item name="android:windowSplashScreenAnimationDuration">0</item>
+        <!-- 设置窗口背景为透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 启用窗口内容过渡动画 -->
+        <item name="android:windowContentTransitions">false</item>
+    </style>
+</resources>
