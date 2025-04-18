@@ -1,0 +1,6 @@
+{"role":"user","content":"你好"}
+{"role":"assistant","content":"你好！有什么我可以帮助你的？","response_meta":{"finish_reason":"stop","usage":{"prompt_tokens":963,"completion_tokens":10,"total_tokens":973}},"extra":{"ark-request-id":"02174494271967372ae992e9e91f318f30f82a69752a156c0d09e"}}
+{"role":"user","content":"你好"}
+{"role":"assistant","content":"你好呀！请问你有什么具体问题或需求，尽管告诉我，我会尽力为你解答。  ","response_meta":{"finish_reason":"stop","usage":{"prompt_tokens":984,"completion_tokens":24,"total_tokens":1008}},"extra":{"ark-request-id":"021744943258038b0889cda1600b320505310edea9b62289195c0"}}
+{"role":"user","content":"你好啊"}
+{"role":"assistant","content":"你好！今天有什么新想法或者问题想和我交流吗？无论是日常琐事、专业知识，都可以说一说。  ","response_meta":{"finish_reason":"stop","usage":{"prompt_tokens":1021,"completion_tokens":28,"total_tokens":1049}},"extra":{"ark-request-id":"0217449437711034e22863254ac6907a82bc9983cc0388566677d"}}

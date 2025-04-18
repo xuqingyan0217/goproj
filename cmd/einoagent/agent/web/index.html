@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eino Agent Chat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uuid@latest/dist/umd/uuidv4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css/github-markdown.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .bg-gray-800 {
+            background: linear-gradient(90deg, #f8fafc 0%, #e0ecff 100%) !important;
+            color: #4b527a !important;
+        }
+        .bg-blue-500 {
+            background: linear-gradient(90deg, #a7bfff 0%, #fbc2eb 100%) !important;
+            color: #2d2e32 !important;
+            box-shadow: 0 2px 8px rgba(106,130,251,0.10);
+            border-radius: 12px !important;
+            border: none !important;
+        }
+        .bg-blue-500:hover {
+            background: linear-gradient(90deg, #e0ecff 0%, #fbc2eb 100%) !important;
+            color: #2d2e32 !important;
+        }
+        .text-white {
+            color: #2d2e32 !important;
+        }
+        .rounded-lg {
+            border-radius: 18px !important;
+        }
+        .shadow-lg {
+            box-shadow: 0 8px 32px rgba(106,130,251,0.10) !important;
+        }
+        .border-t {
+            border-top: 1.5px solid #e0ecff !important;
+        }
+        .panel .bg-gray-800 {
+            background: linear-gradient(90deg, #f8fafc 0%, #e0ecff 100%) !important;
+            color: #4b527a !important;
+        }
+        #new-chat {
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            transition: background 0.2s, color 0.2s;
+        }
+        #new-chat svg {
+            color: #6a82fb !important;
+        }
+        .bg-white { background: #f5f7ff !important; }
+        #chat-messages { background: #f5f7ff !important; }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="flex h-screen p-4 gap-4">
+        <!-- 左侧对话历史 -->
+        <div class="w-72 bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+            <div class="p-4 bg-gray-800 text-white">
+                <h2 class="text-lg font-semibold">Chat History</h2>
+            </div>
+            <div id="chat-history" class="flex-1 overflow-y-auto p-4">
+                <!-- 历史记录将在这里动态添加 -->
+            </div>
+            <div class="p-4 border-t">
+                <button id="new-chat" class="w-full bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors flex items-center justify-center gap-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+                    </svg>
+                    New Chat
+                </button>
+            </div>
+        </div>
+
+        <!-- 中间聊天主体 -->
+        <div class="flex-1 flex flex-col bg-white rounded-lg shadow-lg overflow-hidden">
+            <div id="chat-messages" class="flex-1 overflow-y-auto p-4 space-y-4">
+                <!-- 消息将在这里动态添加 -->
+            </div>
+            <div class="p-4 border-t">
+                <div class="flex flex-col gap-4">
+                    <div class="relative input-container">
+                        <span class="absolute left-4 top-1/2 -translate-y-1/2 text-blue-400">
+                            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h8m-4-4v8m8-8a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        </span>
+                        <div class="w-full flex flex-col gap-2">
+                            <textarea id="message-input"
+                               class="w-full rounded-2xl border border-blue-200 px-12 py-3 focus:outline-none focus:ring-2 focus:ring-blue-400 min-h-[100px] resize-y shadow-lg bg-white/60 backdrop-blur-md transition-all duration-200 placeholder:text-blue-300 text-base font-medium"
+                               placeholder="输入你的消息...（Ctrl+Enter发送）" maxlength="500"></textarea>
+                            <div class="flex items-center gap-3">
+                                <label for="file-input" class="cursor-pointer flex items-center gap-1 text-blue-500 hover:text-blue-700 text-sm">
+                                    <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.586-6.586a4 4 0 10-2.828-2.828z"/><path stroke-linecap="round" stroke-linejoin="round" d="M16 16v2a2 2 0 01-2 2H6a2 2 0 01-2-2V8a2 2 0 012-2h2"/></svg>
+                                    上传图片
+                                </label>
+                                <input id="file-input" type="file" accept="image/*" class="hidden" multiple />
+                                <span id="file-names" class="text-xs text-gray-400"></span>
+                            </div>
+                        </div>
+                        <span id="char-count" class="absolute right-4 bottom-3 text-xs text-gray-400 select-none">0/500</span>
+                    </div>
+                    <button id="send-button"
+                            class="self-end bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition-colors shadow-md font-semibold">
+                        发送
+                    </button>
+                </div>
+                <div class="text-xs text-gray-400 mt-2 flex items-center gap-2">
+                    <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8h2a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2v-8a2 2 0 012-2h2"></path><path stroke-linecap="round" stroke-linejoin="round" d="M12 12v.01"></path></svg>
+                    支持 Markdown 语法，Ctrl+Enter 快捷发送
+                </div>
+            </div>
+        </div>
+
+        <!-- 右侧面板 -->
+        <div id="right-panel" class="w-[500px] flex flex-col gap-4 transition-all duration-300">
+            <!-- Log Panel -->
+            <div class="panel flex-[1_1_300px] bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                <div class="p-4 bg-gray-800 text-white flex justify-between items-center">
+                    <h3 class="font-semibold">Log Output</h3>
+                    <button class="panel-toggle" data-target="log-content">
+                        <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                </div>
+                <div id="log-content" class="flex-1 min-h-0">
+                    <div id="log-messages" class="h-full overflow-y-auto p-4 font-mono text-sm text-gray-600 whitespace-pre-wrap"></div>
+                </div>
+            </div>
+
+            <!-- Panel Toggle Button -->
+            <button id="toggle-panel" class="absolute right-6 top-6 bg-gray-800 text-white p-2 rounded-lg">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
