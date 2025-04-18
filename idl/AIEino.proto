@@ -1,0 +1,31 @@
+syntax = "proto3";
+package AIEino;
+
+option go_package = "/AIEino";
+
+// AI 大模型服务
+service AIEinoService {
+  // 理解用户意图并发起预下单请求
+  rpc AIWithOrders(AIWithOrdersReq) returns (AIWithOrdersResp);
+  rpc AIWithPreCheckout(AIWithPreCheckoutReq) returns (AIWithPreCheckoutResp);
+}
+
+// 处理用户意图的请求消息
+message AIWithOrdersReq {
+  string user_input = 1; // 用户输入的文本
+  uint32 user_id = 2;    // 用户 ID
+}
+
+// 处理用户意图的响应消息
+message AIWithOrdersResp {
+  repeated string orders = 1;
+}
+
+message AIWithPreCheckoutReq {
+  string user_input = 1; // 用户输入的文本
+  uint32 user_id = 2;    // 用户 ID
+}
+
+message AIWithPreCheckoutResp {
+  repeated string pre_checkout_res = 1;
+}

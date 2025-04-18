@@ -1,0 +1,821 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: product
+spec:
+  selector:
+    matchLabels:
+      app: product
+  template:
+    metadata:
+      labels:
+        app: product
+    spec:
+      containers:
+        - name: product
+          image: "go-mall-product-dev:latest"
+          imagePullPolicy: IfNotPresent
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+          volumeMounts:
+            - name: product-config
+              mountPath: /product/conf/dev
+            - name: product-log
+              mountPath: /product/log
+          env:
+            - name: GO_ENV
+              value: "dev"
+            - name: MYSQL_HOST
+              value: "mysql-svc"
+            - name: MYSQL_USER
+              value: "root"
+            - name: OTEL_EXPORTER_OTLP_ENDPOINT
+              value: "jaeger-svc:4317"
+            - name: MYSQL_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: mysql-password
+                  key: password
+      volumes:
+        - name: product-config
+          configMap:
+            name: gomall-config
+            items:
+              - key: product-app-config
+                path: conf.yaml
+        - name: product-log
+          hostPath:
+            path: /home/logs/product
+            type: DirectoryOrCreate
+---
+# 为 product 服务创建 Service
+apiVersion: v1
+kind: Service
+metadata:
+  name: product-svc
+spec:
+  selector:
+    app: product
+  ports:
+    - protocol: TCP
+      port: 8081  # 服务端口
+      targetPort: 8081  # Pod 端口
+      name: "8081"
+    - protocol: TCP
+      port: 9991
+      targetPort: 9991
+      name: "9991"
+  type: ClusterIP
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend
+spec:
+  selector:
+    matchLabels:
+      app: frontend
+  template:
+    metadata:
+      labels:
+        app: frontend
+    spec:
+      containers:
+        - name: frontend
+          image: "go-mall-frontend-dev:latest"
+          imagePullPolicy: IfNotPresent
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+          ports:
+            - containerPort: 8080
+          volumeMounts:
+            - name: frontend-config
+              mountPath: /frontend/conf/dev
+            - name: frontend-log
+              mountPath: /frontend/log
+          env:
+            - name: GO_ENV
+              value: "dev"
+            - name: SESSION_SECRET
+              value: "secret"
+            - name: OTEL_EXPORTER_OTLP_ENDPOINT
+              value: "jaeger-svc:4317"
+            - name: OTEL_EXPORTER_OTLP_INSECURE
+              value: "true"
+      volumes:
+        - name: frontend-config
+          configMap:
+            name: gomall-config
+            items:
+              - key: frontend-app-config
+                path: conf.yaml
+        - name: frontend-log
+          hostPath:
+            path: /home/logs/frontend
+            type: DirectoryOrCreate
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: frontend-svc
+spec:
+  selector:
+    app: frontend
+  type: ClusterIP
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
+      name: "8080"
+    - protocol: TCP
+      port: 9998
+      targetPort: 9998
+      name: "9998"
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend-vue
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: frontend-vue
+  template:
+    metadata:
+      labels:
+        app: frontend-vue
+    spec:
+      containers:
+      - name: frontend-vue
+        image: "go-mall-frontend-vue-dev:latest"
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: frontend-vue-svc
+  namespace: default
+spec:
+  selector:
+    app: frontend-vue
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+      nodePort: 30080
+  type: NodePort
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cart
+spec:
+  selector:
+    matchLabels:
+      app: cart
+  template:
+    metadata:
+      labels:
+        app: cart
+    spec:
+      containers:
+        - name: cart
+          image: "go-mall-cart-dev:latest"
+          imagePullPolicy: IfNotPresent
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+          volumeMounts:
+            - name: cart-config
+              mountPath: /cart/conf/dev
+            - name: cart-log
+              mountPath: /cart/log
+          env:
+            - name: GO_ENV
+              value: "dev"
+            - name: MYSQL_HOST
+              value: "mysql-svc"
+            - name: MYSQL_USER
+              value: "root"
+            - name: OTEL_EXPORTER_OTLP_ENDPOINT
+              value: "jaeger-svc:4317"
+            - name: MYSQL_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: mysql-password
+                  key: password
+      volumes:
+        - name: cart-config
+          configMap:
+            name: gomall-config
+            items:
+              - key: cart-app-config
+                path: conf.yaml
+        - name: cart-log
+          hostPath:
+            path: /home/logs/cart
+            type: DirectoryOrCreate
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: cart-svc
+spec:
+  selector:
+    app: cart
+  ports:
+    - protocol: TCP
+      port: 8082  # 服务端口
+      targetPort: 8082  # Pod 端口
+      name: "8082"
+    - protocol: TCP
+      port: 9992
+      targetPort: 9992
+      name: "9992"
+  type: ClusterIP
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: checkout
+spec:
+  selector:
+    matchLabels:
+      app: checkout
+  template:
+    metadata:
+      labels:
+        app: checkout
+    spec:
+      containers:
+        - name: checkout
+          image: "go-mall-checkout-dev:latest"
+          imagePullPolicy: IfNotPresent
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+
+          volumeMounts:
+            - name: checkout-config
+              mountPath: /checkout/conf/dev
+            - name: checkout-log
+              mountPath: /checkout/log
+          env:
+            - name: GO_ENV
+              value: "dev"
+            - name: OTEL_EXPORTER_OTLP_ENDPOINT
+              value: "jaeger-svc:4317"
+            - name: OTEL_EXPORTER_OTLP_INSECURE
+              value: "true"
+            - name: NATS_URL
+              value: "nats://nats-svc:4222"
+      volumes:
+        - name: checkout-config
+          configMap:
+            name: gomall-config
+            items:
+              - key: checkout-app-config
+                path: conf.yaml
+        - name: checkout-log
+          hostPath:
+            path: /home/logs/checkout
+            type: DirectoryOrCreate
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: checkout-svc
+spec:
+  selector:
+    app: checkout
+  ports:
+    - protocol: TCP
+      port: 8084  # 服务端口
+      targetPort: 8084  # Pod 端口
+      name: "8084"
+    - protocol: TCP
+      port: 9994
+      targetPort: 9994
+      name: "9994"
+  type: ClusterIP
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: email
+spec:
+  selector:
+    matchLabels:
+      app: email
+  template:
+    metadata:
+      labels:
+        app: email
+    spec:
+      containers:
+        - name: email
+          image: "go-mall-email-dev:latest"
+          imagePullPolicy: IfNotPresent
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+          volumeMounts:
+            - name: email-config
+              mountPath: /email/conf/dev
+            - name: email-log
+              mountPath: /email/log
+          env:
+            - name: GO_ENV
+              value: "dev"
+            - name: NATS_URL
+              value: "nats://nats-svc:4222"
+            - name: OTEL_EXPORTER_OTLP_ENDPOINT
+              value: "jaeger-svc:4317"
+      volumes:
+        - name: email-config
+          configMap:
+            name: gomall-config
+            items:
+              - key: email-app-config
+                path: conf.yaml
+        - name: email-log
+          hostPath:
+            path: /home/logs/email
+            type: DirectoryOrCreate
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: email-svc
+spec:
+  selector:
+    app: email
+  ports:
+    - protocol: TCP
+      port: 8086  # 服务端口
+      targetPort: 8086  # Pod 端口
+      name: "8086"
+    - protocol: TCP
+      port: 9996
+      targetPort: 9996
+      name: "9996"
+  type: ClusterIP
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: order
+spec:
+  selector:
+    matchLabels:
+      app: order
+  template:
+    metadata:
+      labels:
+        app: order
+    spec:
+      containers:
+        - name: order
+          image: "go-mall-order-dev:latest"
+          imagePullPolicy: IfNotPresent
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+          volumeMounts:
+            - name: order-config
+              mountPath: /order/conf/dev
+            - name: order-log
+              mountPath: /order/log
+          env:
+            - name: GO_ENV
+              value: "dev"
+            - name: MYSQL_HOST
+              value: "mysql-svc"
+            - name: MYSQL_USER
+              value: "root"
+            - name: OTEL_EXPORTER_OTLP_ENDPOINT
+              value: "jaeger-svc:4317"
+            - name: MYSQL_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: mysql-password
+                  key: password
+      volumes:
+        - name: order-config
+          configMap:
+            name: gomall-config
+            items:
+              - key: order-app-config
+                path: conf.yaml
+        - name: order-log
+          hostPath:
+            path: /home/logs/order
+            type: DirectoryOrCreate
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: order-svc
+spec:
+  selector:
+    app: order
+  ports:
+    - protocol: TCP
+      port: 8085  # 服务端口
+      targetPort: 8085  # Pod 端口
+      name: "8085"
+    - protocol: TCP
+      port: 9995
+      targetPort: 9995
+      name: "9995"
+  type: ClusterIP
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: payment
+spec:
+  selector:
+    matchLabels:
+      app: payment
+  template:
+    metadata:
+      labels:
+        app: payment
+    spec:
+      containers:
+        - name: payment
+          image: "go-mall-payment-dev:latest"
+          imagePullPolicy: IfNotPresent
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+          volumeMounts:
+            - name: payment-config
+              mountPath: /payment/conf/dev
+            - name: payment-log
+              mountPath: /payment/log
+          env:
+            - name: GO_ENV
+              value: "dev"
+            - name: MYSQL_HOST
+              value: "mysql-svc"
+            - name: MYSQL_USER
+              value: "root"
+            - name: OTEL_EXPORTER_OTLP_ENDPOINT
+              value: "jaeger-svc:4317"
+            - name: MYSQL_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: mysql-password
+                  key: password
+      volumes:
+        - name: payment-config
+          configMap:
+            name: gomall-config
+            items:
+              - key: payment-app-config
+                path: conf.yaml
+        - name: payment-log
+          hostPath:
+            path: /home/logs/payment
+            type: DirectoryOrCreate
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: payment-svc
+spec:
+  selector:
+    app: payment
+  ports:
+    - protocol: TCP
+      port: 8083  # 服务端口
+      targetPort: 8083  # Pod 端口
+      name: "8083"
+    - protocol: TCP
+      port: 9993
+      targetPort: 9993
+      name: "9993"
+  type: ClusterIP
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: user
+spec:
+  selector:
+    matchLabels:
+      app: user
+  template:
+    metadata:
+      labels:
+        app: user
+    spec:
+      containers:
+        - name: user
+          image: "go-mall-user-dev:latest"
+          imagePullPolicy: IfNotPresent
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+          volumeMounts:
+            - name: user-config
+              mountPath: /user/conf/dev
+            - name: user-log
+              mountPath: /user/log
+          env:
+            - name: GO_ENV
+              value: "dev"
+            - name: MYSQL_HOST
+              value: "mysql-svc"
+            - name: MYSQL_USER
+              value: "root"
+            - name: OTEL_EXPORTER_OTLP_ENDPOINT
+              value: "jaeger-svc:4317"
+            - name: MYSQL_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: mysql-password
+                  key: password
+      volumes:
+        - name: user-config
+          configMap:
+            name: gomall-config
+            items:
+              - key: user-app-config
+                path: conf.yaml
+        - name: user-log
+          hostPath:
+            path: /home/logs/user
+            type: DirectoryOrCreate
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: user-svc
+spec:
+  selector:
+    app: user
+  ports:
+    - protocol: TCP
+      port: 8880  # 服务端口
+      targetPort: 8880  # Pod 端口
+      name: "8880"
+    - protocol: TCP
+      port: 9990
+      targetPort: 9990
+      name: "9990"
+  type: ClusterIP
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aieino
+spec:
+  selector:
+    matchLabels:
+      app: aieino
+  template:
+    metadata:
+      labels:
+        app: aieino
+    spec:
+      containers:
+        - name: aieino
+          image: "go-mall-aieino-dev:latest"
+          imagePullPolicy: IfNotPresent
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "300m"
+
+          volumeMounts:
+            - name: ai-config
+              mountPath: /AIEino/conf/dev
+            - name: ai-log
+              mountPath: /AIEino/log
+          env:
+            - name: GO_ENV
+              value: "dev"
+            - name: OTEL_EXPORTER_OTLP_ENDPOINT
+              value: "jaeger-svc:4317"
+            - name: OTEL_EXPORTER_OTLP_INSECURE
+              value: "true"
+            - name: NATS_URL
+              value: "nats://nats-svc:4222"
+      volumes:
+        - name: ai-config
+          configMap:
+            name: gomall-config
+            items:
+              - key: ai-app-config
+                path: conf.yaml
+        - name: ai-log
+          hostPath:
+            path: /home/logs/aieino
+            type: DirectoryOrCreate
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: aieino-svc
+spec:
+  selector:
+    app: aieino
+  ports:
+    - protocol: TCP
+      port: 8087  # 服务端口
+      targetPort: 8087  # Pod 端口
+      name: "8087"
+    - protocol: TCP
+      port: 9997
+      targetPort: 9997
+      name: "9997"
+  type: ClusterIP
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: gomall-config
+data:
+  product-app-config: |
+    kitex:
+      service: "product"
+      address: "0.0.0.0:8081"
+      metrics_port: "0.0.0.0:9991"
+      log_level: info
+      log_file_name: 
+      log_max_size: 10
+      log_max_age: 3
+      log_max_backups: 50
+    registry:
+      registry_address:
+        - etcd-svc:2379
+    mysql:
+      dsn: "%s:%s@tcp(%s:3306)/%s?charset=utf8mb4&parseTime=True&loc=Local"
+    redis:
+      address: "redis-svc:6379"
+      db: 0
+  frontend-app-config: |
+    hertz:
+      service: "frontend"
+      address: "0.0.0.0:8080"
+      metrics_port: "0.0.0.0:9998"
+      enable_pprof: true
+      enable_gzip: true
+      enable_access_log: true
+      log_level: info
+      log_file_name: "log/hertz.log"
+      log_max_size: 10
+      log_max_age: 3
+      log_max_backups: 50
+      registry_addr:
+        - etcd-svc:2379
+    mysql:
+      dsn: "%s:%s@tcp(%s:3306)/%s?charset=utf8mb4&parseTime=True&loc=Local"
+    redis:
+      address: "redis-svc:6379"
+      db: 0
+  cart-app-config: |
+    kitex:
+      service: "cart"
+      address: "0.0.0.0:8082"
+      metrics_port: "0.0.0.0:9992"
+      log_level: info
+      log_file_name: "log/kitex.log"
+      log_max_size: 15
+      log_max_age: 3
+      log_max_backups: 50
+    registry:
+      registry_address:
+        - etcd-svc:2379
+    mysql:
+      dsn: "%s:%s@tcp(%s:3306)/%s?charset=utf8mb4&parseTime=True&loc=Local"
+    redis:
+      address: "redis-svc:6379"
+      db: 0
+  checkout-app-config: |
+    kitex:
+      service: "checkout"
+      address: "0.0.0.0:8084"
+      metrics_port: "0.0.0.0:9994"
+      log_level: info
+      log_file_name: "log/kitex.log"
+      log_max_size: 10
+      log_max_age: 3
+      log_max_backups: 50
+    registry:
+      registry_address:
+        - etcd-svc:2379
+    mysql:
+      dsn: "%s:%s@tcp(%s:3306)/%s?charset=utf8mb4&parseTime=True&loc=Local"
+    redis:
+      address: "redis-svc:6379"
+      db: 0
+  email-app-config: |
+    kitex:
+      service: "email"
+      address: "0.0.0.0:8086"
+      metrics_port: "0.0.0.0:9996"
+      log_level: info
+      log_file_name: "log/kitex.log"
+      log_max_size: 10
+      log_max_age: 3
+      log_max_backups: 50
+    registry:
+      registry_address:
+        - etcd-svc:2379
+    mysql:
+      dsn: "%s:%s@tcp(%s:3306)/%s?charset=utf8mb4&parseTime=True&loc=Local"
+    redis:
+      address: "redis-svc:6379"
+      db: 0
+  order-app-config: |
+    kitex:
+      service: "order"
+      address: "0.0.0.0:8085"
+      metrics_port: "0.0.0.0:9995"
+      log_level: info
+      log_file_name: "log/kitex.log"
+      log_max_size: 10
+      log_max_age: 3
+      log_max_backups: 50
+    registry:
+      registry_address:
+        - etcd-svc:2379
+    mysql:
+      dsn: "%s:%s@tcp(%s:3306)/%s?charset=utf8mb4&parseTime=True&loc=Local"
+    redis:
+      address: "redis-svc:6379"
+      db: 0
+  payment-app-config: |
+    kitex:
+      service: "payment"
+      address: "0.0.0.0:8083"
+      metrics_port: "0.0.0.0:9993"
+      log_level: info
+      log_file_name: "log/kitex.log"
+      log_max_size: 10
+      log_max_age: 3
+      log_max_backups: 50
+    registry:
+      registry_address:
+        - etcd-svc:2379
+    mysql:
+      dsn: "%s:%s@tcp(%s:3306)/%s?charset=utf8mb4&parseTime=True&loc=Local"
+    redis:
+      address: "redis-svc:6379"
+      db: 0
+  user-app-config: |
+    kitex:
+      service: "user"
+      address: "0.0.0.0:8880"
+      metrics_port: "0.0.0.0:9990"
+      log_level: info
+      log_file_name: "log/kitex.log"
+      log_max_size: 10
+      log_max_age: 3
+      log_max_backups: 50
+    registry:
+      registry_address:
+        - etcd-svc:2379
+    mysql:
+      dsn: "%s:%s@tcp(%s:3306)/%s?charset=utf8mb4&parseTime=True&loc=Local"
+    redis:
+      address: "redis-svc:6379"
+      db: 0
+  ai-app-config: |
+    kitex:
+      service: "aieino"
+      address: "0.0.0.0:8087"
+      metrics_port: "0.0.0.0:9997"
+      log_level: info
+      log_file_name: "log/kitex.log"
+      log_max_size: 15
+      log_max_age: 3
+      log_max_backups: 50
+    registry:
+      registry_address:
+        - etcd-svc:2379
+    mysql:
+      dsn: "%s:%s@tcp(%s:3306)/%s?charset=utf8mb4&parseTime=True&loc=Local"
+    redis:
+      address: "redis-svc:6379"
+      db: 0

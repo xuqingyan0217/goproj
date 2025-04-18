@@ -1,0 +1,58 @@
+syntax = "proto3";
+
+package frontend.product;
+
+import "api.proto";
+import "common.proto";
+
+option go_package = "/frontend/product";
+
+service ProductService {
+  rpc GetProduct(ProductReq) returns (common.Empty) {
+    option (api.get) = "/product";
+  }
+  rpc SearchProducts(SearchProductsReq) returns (common.Empty) {
+    option (api.get) = "/search";
+  }
+  rpc CreateProduct(CreateProductReq) returns (common.Empty) {
+    option (api.post) = "/product/api/create";
+  }
+  rpc Update(UpdateProductReq) returns (common.Empty) {
+    option (api.post) = "/product/api/update";
+  }
+  rpc DeleteProduct(DeleteProductReq) returns (common.Empty) {
+    option (api.delete) = "/product/api/delete";
+  }
+}
+
+message ProductReq {
+  uint32 id = 1 [(api.query) = "id"];
+}
+
+message SearchProductsReq {
+  string q = 1 [(api.query) = "q"];
+}
+
+message CreateProductReq {
+  string name = 1 [(api.form) = "name"];
+  string description = 2 [(api.form) = "description"];
+  float price = 3 [(api.form) = "price"];
+  string picture = 4 [(api.form) = "picture"];
+  repeated string categories = 5 [(api.form) = "categories"];
+}
+
+message UpdateProductReq {
+  uint32 id = 1 [(api.form) = "id"];
+  string name = 2 [(api.form) = "name"];
+  string description = 3 [(api.form) = "description"];
+  float price = 4 [(api.form) = "price"];
+  string picture = 5 [(api.form) = "picture"];
+  repeated string categories = 6 [(api.form) = "categories"];
+}
+
+message DeleteProductReq {
+  uint32 id = 1 [(api.query) = "id"];
+}
+
+
+

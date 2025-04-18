@@ -55,3 +55,84 @@
 {"level":"info","msg":"start keepalive lease 694d94cab1c4d229 for etcd registry","time":"2025-02-03T15:24:31+08:00"}
 {"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8085","time":"2025-02-03T15:55:47+08:00"}
 {"level":"info","msg":"start keepalive lease 694d94cab1c4d440 for etcd registry","time":"2025-02-03T15:55:48+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8085","time":"2025-02-23T14:15:34+08:00"}
+{"level":"info","msg":"start keepalive lease 694d9530623d35fa for etcd registry","time":"2025-02-23T14:15:35+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8085","time":"2025-02-23T14:25:36+08:00"}
+{"level":"info","msg":"start keepalive lease 694d9530623d3722 for etcd registry","time":"2025-02-23T14:25:37+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8085","time":"2025-02-23T17:39:07+08:00"}
+{"level":"info","msg":"start keepalive lease 694d95321bbb4240 for etcd registry","time":"2025-02-23T17:39:08+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8085","time":"2025-02-23T18:08:12+08:00"}
+{"level":"info","msg":"start keepalive lease 694d95321bbb437e for etcd registry","time":"2025-02-23T18:08:13+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8085","time":"2025-02-23T19:02:16+08:00"}
+{"level":"info","msg":"start keepalive lease 694d95321bbb4887 for etcd registry","time":"2025-02-23T19:02:17+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8085","time":"2025-02-24T08:16:17+08:00"}
+{"level":"info","msg":"start keepalive lease 694d95354d87211d for etcd registry","time":"2025-02-24T08:16:18+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8085","time":"2025-02-24T19:47:12+08:00"}
+{"level":"info","msg":"start keepalive lease 694d953781ef852f for etcd registry","time":"2025-02-24T19:47:13+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8085","time":"2025-02-24T20:09:58+08:00"}
+{"level":"info","msg":"start keepalive lease 694d953781ef87d5 for etcd registry","time":"2025-02-24T20:09:59+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8085","time":"2025-02-24T20:11:16+08:00"}
+{"level":"info","msg":"start keepalive lease 694d953781ef8812 for etcd registry","time":"2025-02-24T20:11:17+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8085","time":"2025-02-24T22:58:02+08:00"}
+{"level":"info","msg":"start keepalive lease 694d95387649570e for etcd registry","time":"2025-02-24T22:58:03+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8085","time":"2025-02-25T07:58:59+08:00"}
+{"level":"info","msg":"start keepalive lease 694d953a64fdad12 for etcd registry","time":"2025-02-25T07:59:01+08:00"}
+{"level":"warning","msg":"keep register get kitex/registry-etcd/order/127.0.0.1:8085 failed with err: context deadline exceeded","time":"2025-02-25T09:55:10+08:00"}
+{"level":"warning","msg":"keep register get kitex/registry-etcd/prometheus/127.0.0.1:9995 failed with err: context deadline exceeded","time":"2025-02-25T09:55:10+08:00"}
+{"level":"info","msg":"keep register service kitex/registry-etcd/order/127.0.0.1:8085","time":"2025-02-25T09:55:53+08:00"}
+{"level":"info","msg":"start keepalive lease 694d953a64fdb269 for etcd registry","time":"2025-02-25T09:55:53+08:00"}
+{"level":"info","msg":"keep register service kitex/registry-etcd/prometheus/127.0.0.1:9995","time":"2025-02-25T09:56:03+08:00"}
+{"level":"info","msg":"start keepalive lease 694d953a64fdb272 for etcd registry","time":"2025-02-25T09:56:03+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8085","time":"2025-02-25T12:59:07+08:00"}
+{"level":"info","msg":"start keepalive lease 694d953b6ff72d0e for etcd registry","time":"2025-02-25T12:59:08+08:00"}
+{"level":"warning","msg":"keep register get kitex/registry-etcd/prometheus/127.0.0.1:9995 failed with err: context deadline exceeded","time":"2025-02-25T13:30:10+08:00"}
+{"level":"warning","msg":"keep register get kitex/registry-etcd/order/127.0.0.1:8085 failed with err: context deadline exceeded","time":"2025-02-25T13:30:11+08:00"}
+{"level":"warning","msg":"keep register get kitex/registry-etcd/prometheus/127.0.0.1:9995 failed with err: context deadline exceeded","time":"2025-02-25T14:32:16+08:00"}
+{"level":"warning","msg":"keep register get kitex/registry-etcd/order/127.0.0.1:8085 failed with err: context deadline exceeded","time":"2025-02-25T14:32:17+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8085","time":"2025-02-25T15:02:14+08:00"}
+{"level":"info","msg":"start keepalive lease 694d953b6ff73613 for etcd registry","time":"2025-02-25T15:02:15+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8085","time":"2025-03-01T13:38:59+08:00"}
+{"level":"info","msg":"start keepalive lease 694d954afd02f1a9 for etcd registry","time":"2025-03-01T13:39:00+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8085","time":"2025-03-01T14:51:40+08:00"}
+{"level":"info","msg":"start keepalive lease 694d9550747c5b38 for etcd registry","time":"2025-03-01T14:51:41+08:00"}
+{"level":"warning","msg":"keep register get kitex/registry-etcd/prometheus/127.0.0.1:9995 failed with err: context deadline exceeded","time":"2025-03-01T15:56:14+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8085","time":"2025-03-01T16:50:48+08:00"}
+{"level":"info","msg":"start keepalive lease 694d9550747c6b75 for etcd registry","time":"2025-03-01T16:50:49+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8085","time":"2025-03-01T21:57:04+08:00"}
+{"level":"info","msg":"start keepalive lease 694d9550747c896a for etcd registry","time":"2025-03-01T21:57:05+08:00"}
+{"level":"warning","msg":"keep register get kitex/registry-etcd/order/127.0.0.1:8085 failed with err: context deadline exceeded","time":"2025-03-01T22:30:43+08:00"}
+{"level":"warning","msg":"keep register get kitex/registry-etcd/prometheus/127.0.0.1:9995 failed with err: context deadline exceeded","time":"2025-03-01T22:30:43+08:00"}
+{"level":"info","msg":"keep register service kitex/registry-etcd/prometheus/127.0.0.1:9995","time":"2025-03-01T22:31:34+08:00"}
+{"level":"info","msg":"start keepalive lease 694d9550747c8d89 for etcd registry","time":"2025-03-01T22:31:34+08:00"}
+{"level":"info","msg":"keep register service kitex/registry-etcd/order/127.0.0.1:8085","time":"2025-03-01T22:31:34+08:00"}
+{"level":"info","msg":"start keepalive lease 694d9550747c8da3 for etcd registry","time":"2025-03-01T22:31:34+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8085","time":"2025-03-01T22:32:34+08:00"}
+{"level":"info","msg":"start keepalive lease 694d9550747c8de5 for etcd registry","time":"2025-03-01T22:32:36+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8085","time":"2025-03-02T00:12:01+08:00"}
+{"level":"info","msg":"start keepalive lease 694d9550747c9ce3 for etcd registry","time":"2025-03-02T00:12:02+08:00"}
+{"level":"warning","msg":"keep register get kitex/registry-etcd/prometheus/127.0.0.1:9995 failed with err: context deadline exceeded","time":"2025-03-02T00:38:37+08:00"}
+{"level":"warning","msg":"keep register get kitex/registry-etcd/order/127.0.0.1:8085 failed with err: context deadline exceeded","time":"2025-03-02T00:38:40+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8085","time":"2025-03-02T00:43:36+08:00"}
+{"level":"info","msg":"start keepalive lease 694d9550747ca30c for etcd registry","time":"2025-03-02T00:43:37+08:00"}
+{"level":"warning","msg":"keep register get kitex/registry-etcd/prometheus/127.0.0.1:9995 failed with err: context deadline exceeded","time":"2025-03-02T00:57:11+08:00"}
+{"level":"warning","msg":"keep register get kitex/registry-etcd/order/127.0.0.1:8085 failed with err: context deadline exceeded","time":"2025-03-02T00:57:11+08:00"}
+{"level":"warning","msg":"keep register get kitex/registry-etcd/prometheus/127.0.0.1:9995 failed with err: context deadline exceeded","time":"2025-03-02T00:57:44+08:00"}
+{"level":"warning","msg":"keep register get kitex/registry-etcd/order/127.0.0.1:8085 failed with err: context deadline exceeded","time":"2025-03-02T00:57:44+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8085","time":"2025-03-02T00:58:22+08:00"}
+{"level":"info","msg":"start keepalive lease 694d9550747ca7e5 for etcd registry","time":"2025-03-02T00:58:23+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8085","time":"2025-03-02T01:05:14+08:00"}
+{"level":"info","msg":"start keepalive lease 694d9550747caa08 for etcd registry","time":"2025-03-02T01:05:15+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8085","time":"2025-03-02T01:17:19+08:00"}
+{"level":"info","msg":"start keepalive lease 694d9550747cae24 for etcd registry","time":"2025-03-02T01:17:20+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8085","time":"2025-03-02T01:21:12+08:00"}
+{"level":"info","msg":"start keepalive lease 694d9550747caf38 for etcd registry","time":"2025-03-02T01:21:13+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8085","time":"2025-03-02T10:59:26+08:00"}
+{"level":"info","msg":"start keepalive lease 694d95546f577533 for etcd registry","time":"2025-03-02T10:59:27+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8085","time":"2025-03-02T11:35:19+08:00"}
+{"level":"info","msg":"start keepalive lease 694d95546f577ba0 for etcd registry","time":"2025-03-02T11:35:20+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8085","time":"2025-03-02T13:41:23+08:00"}
+{"level":"info","msg":"start keepalive lease 694d95546f57922b for etcd registry","time":"2025-03-02T13:41:24+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8085","time":"2025-03-02T15:10:06+08:00"}
+{"level":"info","msg":"start keepalive lease 694d95546f57a24b for etcd registry","time":"2025-03-02T15:10:07+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8085","time":"2025-03-02T15:14:21+08:00"}
+{"level":"info","msg":"start keepalive lease 694d95546f57a31a for etcd registry","time":"2025-03-02T15:14:22+08:00"}

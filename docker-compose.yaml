@@ -1,0 +1,149 @@
+version: '3'
+
+services:
+  etcd:
+    image: etcd:v3.5.5
+    container_name: etcd
+    ports:
+      - "2379:2379"
+      - "2380:2380"
+    environment:
+      - ETCD_ENABLE_V2=true
+      - ALLOW_NONE_AUTHENTICATION=yes
+      - ETCD_ADVERTISE_CLIENT_URLS=http://192.168.10.16:2379
+      - ETCD_LISTEN_CLIENT_URLS=http://0.0.0.0:2379
+      - ETCD_NAME=etcd
+    volumes:
+      - ./components/etcd/data:/bitnami/etcd/data
+      - ./components/etcd/logs:/bitnami/etcd/logs
+#    restart: always
+    networks:
+      go_mall:
+
+  mysql:
+    image: mysql:5.7
+    ports:
+      - 3306:3306
+    container_name: mysql
+    volumes:
+      - ./db/sql/ini:/docker-entrypoint-initdb.d
+      - ./components/mysql/data:/var/lib/mysql
+      - /etc/localtime:/etc/localtime
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-proot"]
+      interval: 15s
+      timeout: 10s
+      retries: 5
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+#    restart: always
+    networks:
+      go_mall:
+  redis:
+    image: redis:7.2.5
+    ports:
+      - 6379:6379
+    container_name: redis
+    volumes:
+      - ./components/redis/data:/data
+      - ./components/redis/config/redis.conf:/usr/local/redis/config/redis.conf
+    environment:
+      TZ: Asia/Shanghai
+#    restart: always
+    networks:
+      go_mall:
+    # command: redis-server --requirepass easy-chat --appendonly yes
+
+  nats:
+    image: nats:2.10.19
+    container_name: nats
+    ports:
+      - 4222:4222
+      - 8222:8222
+#    restart: always
+    volumes:
+      - ./components/nats:/etc/nats/nats.conf
+    networks:
+      go_mall:
+
+  prometheus:
+    image: prometheus:v2.34.0
+    container_name: prometheus
+    environment:
+      TZ: Asia/Shanghai
+    volumes:
+      - ./components/prometheus/config/prometheus.yml:/etc/prometheus/prometheus.yml
+      - ./components/prometheus/config/alert_rules.yml:/etc/prometheus/alert_rules.yml
+      - ./components/prometheus/data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+#    restart: always
+    user: root
+    ports:
+      - 9090:9090
+    networks:
+      go_mall:
+
+  grafana:
+    image: grafana:8.3.3
+    container_name: grafana
+    volumes:
+      - ./components/grafana/config/datasource.yaml:/etc/grafana/provisioning/datasources/datasource.yaml
+      - ./components/grafana/data:/var/lib/grafana
+    ports:
+      - "3000:3000"
+      - "10007:10007"
+    depends_on:
+      - prometheus
+    privileged: true
+    user: root
+    networks:
+      go_mall:
+
+  loki:
+    image: grafana/loki:2.9.2
+    container_name: loki
+    volumes:
+      - ./components/loki/config/loki.yml:/etc/loki/local-config.yaml
+      - ./components/loki/data:/tmp/loki
+    command:
+      - -config.file=/etc/loki/local-config.yaml
+    ports:
+      - "3100:3100"
+      - "9096:9096"
+    networks:
+      go_mall:
+
+  promtail:
+    image: grafana/promtail:2.9.2
+    container_name: promtail
+    volumes:
+      - ./components/promtail/config/promtail.yml:/etc/promtail/promtail.yaml
+      - /home/logs/:/logs/
+    command:
+      - -config.file=/etc/promtail/promtail.yaml
+    networks:
+      go_mall:
+
+  jaeger-all-in-one:
+    container_name: jaeger-all-in-one
+    image: jaegertracing/all-in-one:1.62.0
+    ports:
+      - "16686:16686"
+      - "4317:4317"
+      - "4318:4318"
+    networks:
+      go_mall:
+
+  consul:
+    image: consul:1.8.8
+    container_name: consul
+    ports:
+      - "8500:8500"
+    networks:
+      go_mall:
+
+networks:
+  go_mall:
+    driver: bridge

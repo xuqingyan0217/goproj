@@ -1,0 +1,23 @@
+hertz:
+  service: "frontend"
+  address: "0.0.0.0:8080"
+  metrics_port: "0.0.0.0:9998"
+  enable_pprof: true
+  enable_gzip: true
+  enable_access_log: true
+  log_level: info
+  log_file_name: "log/hertz.log"
+  log_max_size: 10
+  log_max_age: 3
+  log_max_backups: 50
+  registry_addr:
+    - etcd-svc:2379
+
+mysql:
+  dsn: "%s:%s@tcp(%s:3306)/%s?charset=utf8mb4&parseTime=True&loc=Local"
+
+redis:
+  address: "redis-svc:6379"
+  username: ""
+  password: ""
+  db: 0

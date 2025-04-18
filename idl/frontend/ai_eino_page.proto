@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package frontend.aieino;
+
+import "api.proto";
+import "common.proto";
+
+option go_package = "/frontend/aieino";
+
+service AIService {
+  rpc AIListOrder(common.Empty) returns (common.Empty) {
+    option (api.post) = "/ai/ailists";
+  }
+  rpc AISetOrder(common.Empty) returns (common.Empty) {
+    option (api.post) = "/ai/aiorder";
+  }
+}
+

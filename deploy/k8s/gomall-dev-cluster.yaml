@@ -1,0 +1,79 @@
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+name: gomall-dev
+nodes:
+  - role: control-plane
+    image: registry.cn-hangzhou.aliyuncs.com/kindest/node:v1.30.0
+    extraPortMappings:
+      - containerPort: 30850
+        hostPort: 30850
+        listenAddress: "0.0.0.0" # 可选，默认为 0.0.0.0
+        protocol: tcp # 可选，默认为 tcp
+      - containerPort: 30080
+        hostPort: 30080
+        # 备用
+      - containerPort: 30081
+        hostPort: 30081
+      - containerPort: 30082
+        hostPort: 30082
+      - containerPort: 30083
+        hostPort: 30083
+      - containerPort: 30237
+        hostPort: 30237
+      - containerPort: 30238
+        hostPort: 30238
+      - containerPort: 30300
+        hostPort: 30300
+      - containerPort: 31007
+        hostPort: 31007
+      - containerPort: 31668
+        hostPort: 31668
+      - containerPort: 30431
+        hostPort: 30431
+      - containerPort: 30432
+        hostPort: 30432
+      - containerPort: 30310
+        hostPort: 30310
+      - containerPort: 30906
+        hostPort: 30906
+      - containerPort: 30006
+        hostPort: 30006
+      - containerPort: 30422
+        hostPort: 30422
+      - containerPort: 30822
+        hostPort: 30822
+      - containerPort: 30909
+        hostPort: 30909
+      - containerPort: 30637
+        hostPort: 30637
+    extraMounts:
+      - hostPath: ./db/sql/ini
+        containerPath: /gomall/db/sql/ini
+      - hostPath: ./components/
+        containerPath: /gomall/components/
+
+  - role: worker
+    image: registry.cn-hangzhou.aliyuncs.com/kindest/node:v1.30.0
+    extraMounts:
+      - hostPath: ./db/sql/ini
+        containerPath: /gomall/db/sql/ini
+      - hostPath: ./components/
+        containerPath: /gomall/components/
+
+  - role: worker
+    image: registry.cn-hangzhou.aliyuncs.com/kindest/node:v1.30.0
+    extraMounts:
+      - hostPath: ./db/sql/ini
+        containerPath: /gomall/db/sql/ini
+      - hostPath: ./components/
+        containerPath: /gomall/components/
+
+  - role: worker
+    image: registry.cn-hangzhou.aliyuncs.com/kindest/node:v1.30.0
+    extraMounts:
+      - hostPath: ./db/sql/ini
+        containerPath: /gomall/db/sql/ini
+      - hostPath: ./components/
+        containerPath: /gomall/components/
+
+

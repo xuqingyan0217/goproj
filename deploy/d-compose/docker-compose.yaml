@@ -1,0 +1,40 @@
+version: '3'
+services:
+  frontend:
+    image: crpi-lofehqrjus1z8ldt.cn-beijing.personal.cr.aliyuncs.com/xqy_go/frontend:latest
+    container_name: frontend
+    ports:
+      - "8080:8080"
+      - "9998:9998"
+    depends_on:
+      - etcd
+      - redis
+    volumes:
+      - /home/logs/frontend:/frontend/log
+    networks:
+      go_mall:
+
+  product:
+    image: crpi-lofehqrjus1z8ldt.cn-beijing.personal.cr.aliyuncs.com/xqy_go/product:latest
+    container_name: product
+    ports:
+      - "8081:8081"
+      - "9991:9991"
+    environment:
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=root
+      - MYSQL_HOST=mysql
+      - GO_ENV=dev
+    depends_on:
+      etcd:
+        - condition: service_started
+      mysql:
+        - condition: service_healthy
+    volumes:
+      - /home/logs/product:/product/log
+    networks:
+      go_mall:
+
+networks:
+  go_mall:
+    driver: bridge

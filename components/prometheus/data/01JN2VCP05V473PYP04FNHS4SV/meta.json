@@ -1,0 +1,17 @@
+{
+	"ulid": "01JN2VCP05V473PYP04FNHS4SV",
+	"minTime": 1740614919353,
+	"maxTime": 1740621600000,
+	"stats": {
+		"numSamples": 16638,
+		"numSeries": 431,
+		"numChunks": 431
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01JN2VCP05V473PYP04FNHS4SV"
+		]
+	},
+	"version": 1
+}

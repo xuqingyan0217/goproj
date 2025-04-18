@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package frontend.order;
+
+import "api.proto";
+import "common.proto";
+
+option go_package = "/frontend/order";
+
+service OrderService {
+  rpc OrderList(common.Empty) returns (common.Empty) {
+    option (api.get) = "/order";
+  }
+  rpc CancelOrder(CancelOrderReq) returns (common.Empty) {
+    option (api.post) = "/order/cancel";
+  }
+}
+
+message CancelOrderReq {
+  string order_id = 1;
+}

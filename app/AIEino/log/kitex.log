@@ -10,3 +10,141 @@
 {"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8887","time":"2025-02-02T17:50:19+08:00"}
 {"level":"info","msg":"start keepalive lease 694d94c1cff193b8 for etcd registry","time":"2025-02-02T17:50:20+08:00"}
 {"level":"warning","msg":"keep register get kitex/registry-etcd/ai_checkout/127.0.0.1:8887 failed with err: context deadline exceeded","time":"2025-02-02T19:00:24+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-02-23T20:28:05+08:00"}
+{"level":"info","msg":"start keepalive lease 694d95321bbb56a7 for etcd registry","time":"2025-02-23T20:28:06+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-02-23T20:30:00+08:00"}
+{"level":"info","msg":"start keepalive lease 694d95321bbb5706 for etcd registry","time":"2025-02-23T20:30:01+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-02-23T20:56:18+08:00"}
+{"level":"info","msg":"start keepalive lease 694d95321bbb5bb4 for etcd registry","time":"2025-02-23T20:56:19+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-02-24T08:17:54+08:00"}
+{"level":"info","msg":"start keepalive lease 694d95354d87215a for etcd registry","time":"2025-02-24T08:17:55+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-02-24T21:12:15+08:00"}
+{"level":"info","msg":"start keepalive lease 694d953781ef904d for etcd registry","time":"2025-02-24T21:12:16+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-02-24T22:54:39+08:00"}
+{"level":"error","msg":"KITEX: received error and exit: error=context deadline exceeded","time":"2025-02-24T22:54:43+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-02-24T22:57:25+08:00"}
+{"level":"info","msg":"start keepalive lease 694d953876495704 for etcd registry","time":"2025-02-24T22:57:27+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-02-24T23:05:18+08:00"}
+{"level":"info","msg":"start keepalive lease 694d953876495767 for etcd registry","time":"2025-02-24T23:05:19+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-02-24T23:09:21+08:00"}
+{"level":"info","msg":"start keepalive lease 694d95387649579c for etcd registry","time":"2025-02-24T23:09:22+08:00"}
+{"level":"error","msg":"KITEX: processing gRPC request error, remoteAddr=127.0.0.1:51150, error=biz error: start node not set","time":"2025-02-24T23:09:32+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-02-24T23:16:40+08:00"}
+{"level":"info","msg":"start keepalive lease 694d9538764957fc for etcd registry","time":"2025-02-24T23:16:41+08:00"}
+{"level":"error","msg":"KITEX: processing gRPC request error, remoteAddr=127.0.0.1:56180, error=biz error: end node not set","time":"2025-02-24T23:16:45+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-02-24T23:17:40+08:00"}
+{"level":"info","msg":"start keepalive lease 694d953876495810 for etcd registry","time":"2025-02-24T23:17:41+08:00"}
+{"level":"error","msg":"KITEX: processing gRPC request error, remoteAddr=127.0.0.1:56280, error=biz error: graph edge[optimize_model]-[end]: start node's output type[*schema.Message] and end node's input type[[]*schema.Message] mismatch","time":"2025-02-24T23:17:45+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-02-24T23:20:06+08:00"}
+{"level":"info","msg":"start keepalive lease 694d953876495836 for etcd registry","time":"2025-02-24T23:20:07+08:00"}
+{"level":"error","msg":"KITEX: processing gRPC request error, remoteAddr=127.0.0.1:56546, error=biz error: graph edge[optimize_model]-[end]: start node's output type[*schema.Message] and end node's input type[[]*schema.Message] mismatch","time":"2025-02-24T23:20:16+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-02-24T23:31:54+08:00"}
+{"level":"info","msg":"start keepalive lease 694d9538764958ca for etcd registry","time":"2025-02-24T23:31:55+08:00"}
+{"level":"error","msg":"KITEX: processing gRPC request error, remoteAddr=127.0.0.1:52970, error=biz error: graph edge[optimize_model]-[end]: start node's output type[*schema.Message] and end node's input type[[]*schema.Message] mismatch","time":"2025-02-24T23:31:58+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-02-24T23:47:29+08:00"}
+{"level":"info","msg":"start keepalive lease 694d95387649598d for etcd registry","time":"2025-02-24T23:47:30+08:00"}
+{"level":"error","msg":"KITEX: processing gRPC request error, remoteAddr=127.0.0.1:53727, error=biz error: tool convert_tool is not invokable or streamable","time":"2025-02-24T23:47:33+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-02-24T23:49:12+08:00"}
+{"level":"info","msg":"start keepalive lease 694d9538764959ad for etcd registry","time":"2025-02-24T23:49:14+08:00"}
+{"level":"error","msg":"KITEX: processing gRPC request error, remoteAddr=127.0.0.1:53807, error=biz error: tool convert_tool is not invokable or streamable","time":"2025-02-24T23:49:16+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-02-24T23:52:44+08:00"}
+{"level":"info","msg":"start keepalive lease 694d9538764959df for etcd registry","time":"2025-02-24T23:52:45+08:00"}
+{"level":"error","msg":"KITEX: processing gRPC request error, remoteAddr=127.0.0.1:53986, error=biz error: tool convert_tool is not invokable or streamable","time":"2025-02-24T23:52:52+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-02-24T23:54:57+08:00"}
+{"level":"info","msg":"start keepalive lease 694d953876495a01 for etcd registry","time":"2025-02-24T23:54:58+08:00"}
+{"level":"error","msg":"KITEX: processing gRPC request error, remoteAddr=127.0.0.1:54099, error=biz error: graph edge[optimize_model]-[end]: start node's output type[*schema.Message] and end node's input type[[]*schema.Message] mismatch","time":"2025-02-24T23:55:00+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-02-24T23:58:36+08:00"}
+{"level":"info","msg":"start keepalive lease 694d953876495a39 for etcd registry","time":"2025-02-24T23:58:37+08:00"}
+{"level":"error","msg":"KITEX: processing gRPC request error, remoteAddr=127.0.0.1:54446, error=biz error: graph edge[optimize_model]-[end]: start node's output type[*schema.Message] and end node's input type[[]*schema.Message] mismatch","time":"2025-02-24T23:58:38+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-02-25T00:05:18+08:00"}
+{"level":"info","msg":"start keepalive lease 694d953876495a91 for etcd registry","time":"2025-02-25T00:05:19+08:00"}
+{"level":"error","msg":"KITEX: processing gRPC request error, remoteAddr=127.0.0.1:56947, error=biz error: failed to wait for tasks: execute node[tools] fail: no tool call found in input message","time":"2025-02-25T00:05:23+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-02-25T00:07:07+08:00"}
+{"level":"info","msg":"start keepalive lease 694d953876495ab1 for etcd registry","time":"2025-02-25T00:07:08+08:00"}
+{"level":"error","msg":"KITEX: processing gRPC request error, remoteAddr=127.0.0.1:57177, error=biz error: failed to wait for tasks: execute node[tools] fail: no tool call found in input message","time":"2025-02-25T00:07:11+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-02-25T00:10:52+08:00"}
+{"level":"info","msg":"start keepalive lease 694d953876495ae5 for etcd registry","time":"2025-02-25T00:10:53+08:00"}
+{"level":"error","msg":"KITEX: processing gRPC request error, remoteAddr=127.0.0.1:57439, error=biz error: failed to wait for tasks: execute node[optimize_model] fail: failed to create chat completion: Error code: 400 - {\"code\":\"InvalidParameter\",\"message\":\"One or more parameters specified in the request are not valid. Request id: 021740413456422e813f1ae04a9dbe968ed035d0bf7af6ca6a8cb\",\"param\":\"\",\"type\":\"BadRequest\",\"request_id\":\"202502250010550000FE1F241A9B647056\"}","time":"2025-02-25T00:10:56+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-02-25T00:12:48+08:00"}
+{"level":"info","msg":"start keepalive lease 694d953876495b0b for etcd registry","time":"2025-02-25T00:12:49+08:00"}
+{"level":"error","msg":"KITEX: processing gRPC request error, remoteAddr=127.0.0.1:57723, error=biz error: failed to wait for tasks: execute node[tools] fail: no tool call found in input message","time":"2025-02-25T00:12:52+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-02-25T00:13:09+08:00"}
+{"level":"info","msg":"start keepalive lease 694d953876495b17 for etcd registry","time":"2025-02-25T00:13:10+08:00"}
+{"level":"error","msg":"KITEX: processing gRPC request error, remoteAddr=127.0.0.1:57759, error=biz error: failed to wait for tasks: execute node[optimize_model] fail: failed to create chat completion: Error code: 400 - {\"code\":\"InvalidParameter\",\"message\":\"One or more parameters specified in the request are not valid. Request id: 021740413593105370b8d11e9b71a0c7a716cd4835ee83aab2507\",\"param\":\"\",\"type\":\"BadRequest\",\"request_id\":\"20250225001312000020A168BA41B62383\"}","time":"2025-02-25T00:13:12+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-02-25T00:20:04+08:00"}
+{"level":"info","msg":"start keepalive lease 694d953876495b7a for etcd registry","time":"2025-02-25T00:20:05+08:00"}
+{"level":"error","msg":"KITEX: processing gRPC request error, remoteAddr=127.0.0.1:58142, error=biz error: failed to wait for tasks: execute node[optimize_model] fail: failed to create chat completion: Error code: 400 - {\"code\":\"InvalidParameter\",\"message\":\"One or more parameters specified in the request are not valid. Request id: 021740414008528409fb9fe586706ad74dc3a1dfc5d59ec1dad39\",\"param\":\"\",\"type\":\"BadRequest\",\"request_id\":\"2025022500200800001FFFB572106CD64E\"}","time":"2025-02-25T00:20:08+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-02-25T07:59:09+08:00"}
+{"level":"info","msg":"start keepalive lease 694d953a64fdad19 for etcd registry","time":"2025-02-25T07:59:11+08:00"}
+{"level":"error","msg":"KITEX: processing gRPC request error, remoteAddr=127.0.0.1:53006, error=biz error: failed to wait for tasks: execute node[optimize_model] fail: failed to create chat completion: Error code: 400 - {\"code\":\"InvalidParameter\",\"message\":\"One or more parameters specified in the request are not valid. Request id: 02174044157767381acda4e6d5a88bcea27b6a19720688446a616\",\"param\":\"\",\"type\":\"BadRequest\",\"request_id\":\"20250225075936000028EA44E45E409B78\"}","time":"2025-02-25T07:59:36+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-02-25T08:06:44+08:00"}
+{"level":"info","msg":"start keepalive lease 694d953a64fdad7b for etcd registry","time":"2025-02-25T08:06:45+08:00"}
+{"level":"error","msg":"KITEX: processing gRPC request error, remoteAddr=127.0.0.1:53648, error=biz error: failed to wait for tasks: execute node[optimize_model] fail: failed to create chat completion: Error code: 400 - {\"code\":\"InvalidParameter\",\"message\":\"One or more parameters specified in the request are not valid. Request id: 0217404420120493daa81c628f99f4952e49422ec5c552d827e30\",\"param\":\"\",\"type\":\"BadRequest\",\"request_id\":\"2025022508065100000B26E7B95D2C641F\"}","time":"2025-02-25T08:06:51+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-02-25T08:21:25+08:00"}
+{"level":"info","msg":"start keepalive lease 694d953a64fdae37 for etcd registry","time":"2025-02-25T08:21:26+08:00"}
+{"level":"error","msg":"KITEX: processing gRPC request error, remoteAddr=127.0.0.1:54668, error=biz error: graph edge[optimize_model]-[end]: start node's output type[*schema.Message] and end node's input type[[]*schema.Message] mismatch","time":"2025-02-25T08:21:31+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-02-25T08:24:27+08:00"}
+{"level":"info","msg":"start keepalive lease 694d953a64fdae64 for etcd registry","time":"2025-02-25T08:24:28+08:00"}
+{"level":"error","msg":"KITEX: processing gRPC request error, remoteAddr=127.0.0.1:54901, error=biz error: failed to wait for tasks: execute node[optimize_model] fail: failed to create chat completion: Error code: 400 - {\"code\":\"InvalidParameter\",\"message\":\"One or more parameters specified in the request are not valid. Request id: 02174044307273755aa8e1a18ab51fc4adfd8dcf0d2a4d5974973\",\"param\":\"\",\"type\":\"BadRequest\",\"request_id\":\"202502250824310000A5C65F7DCB840E9C\"}","time":"2025-02-25T08:24:32+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-02-25T08:28:31+08:00"}
+{"level":"info","msg":"start keepalive lease 694d953a64fdaea4 for etcd registry","time":"2025-02-25T08:28:32+08:00"}
+{"level":"error","msg":"KITEX: processing gRPC request error, remoteAddr=127.0.0.1:56273, error=biz error: failed to wait for tasks: execute node[optimize_model] fail: failed to create chat completion: Error code: 400 - {\"code\":\"InvalidParameter\",\"message\":\"One or more parameters specified in the request are not valid. Request id: 02174044331856823855ba639c8b7146973e7b6d17a6f3528e82e\",\"param\":\"\",\"type\":\"BadRequest\",\"request_id\":\"2025022508283700009595CCA3A584FDB0\"}","time":"2025-02-25T08:28:37+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-02-25T08:32:19+08:00"}
+{"level":"info","msg":"start keepalive lease 694d953a64fdaedd for etcd registry","time":"2025-02-25T08:32:20+08:00"}
+{"level":"error","msg":"KITEX: processing gRPC request error, remoteAddr=127.0.0.1:58405, error=biz error: failed to wait for tasks: execute node[optimize_model] fail: failed to create chat completion: Error code: 400 - {\"code\":\"InvalidParameter\",\"message\":\"One or more parameters specified in the request are not valid. Request id: 0217404435463401e708cb3af483f153a6edbddcddff377dcf023\",\"param\":\"\",\"type\":\"BadRequest\",\"request_id\":\"20250225083225000052F4D0AD20429DD3\"}","time":"2025-02-25T08:32:25+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-02-25T08:53:05+08:00"}
+{"level":"info","msg":"start keepalive lease 694d953a64fdafe6 for etcd registry","time":"2025-02-25T08:53:06+08:00"}
+{"level":"error","msg":"KITEX: processing gRPC request error, remoteAddr=127.0.0.1:59511, error=biz error: graph edge[tools]-[message_converter]: start node's output type[[]*schema.Message] and end node's input type[*schema.Message] mismatch","time":"2025-02-25T08:53:13+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-02-25T09:04:12+08:00"}
+{"level":"info","msg":"start keepalive lease 694d953a64fdb074 for etcd registry","time":"2025-02-25T09:04:13+08:00"}
+{"level":"error","msg":"KITEX: processing gRPC request error, remoteAddr=127.0.0.1:62475, error=biz error: failed to wait for tasks: execute node[query_model] fail: failed to create chat completion: Error code: 400 - {\"code\":\"InvalidParameter\",\"message\":\"One or more parameters specified in the request are not valid. Request id: 021740445456937b7ee99fbe101a4eed1609bae0a5f48e17ff755\",\"param\":\"\",\"type\":\"BadRequest\",\"request_id\":\"2025022509041600009748CBA0B89CF113\"}","time":"2025-02-25T09:04:16+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-02-25T09:08:41+08:00"}
+{"level":"info","msg":"start keepalive lease 694d953a64fdb0b2 for etcd registry","time":"2025-02-25T09:08:42+08:00"}
+{"level":"error","msg":"KITEX: processing gRPC request error, remoteAddr=127.0.0.1:62775, error=biz error: graph edge[tools]-[optimize]: start node's output type[[]*schema.Message] and end node's input type[*schema.Message] mismatch","time":"2025-02-25T09:08:49+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-02-25T09:10:52+08:00"}
+{"level":"info","msg":"start keepalive lease 694d953a64fdb0d4 for etcd registry","time":"2025-02-25T09:10:53+08:00"}
+{"level":"error","msg":"KITEX: processing gRPC request error, remoteAddr=127.0.0.1:62943, error=biz error: graph edge[tools]-[optimize]: start node's output type[[]*schema.Message] and end node's input type[*schema.Message] mismatch","time":"2025-02-25T09:10:55+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-02-25T09:12:22+08:00"}
+{"level":"info","msg":"start keepalive lease 694d953a64fdb0ee for etcd registry","time":"2025-02-25T09:12:23+08:00"}
+{"level":"error","msg":"KITEX: processing gRPC request error, remoteAddr=127.0.0.1:63095, error=biz error: graph edge[tools]-[optimize]: start node's output type[[]*schema.Message] and end node's input type[*schema.Message] mismatch","time":"2025-02-25T09:12:25+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-02-25T09:22:09+08:00"}
+{"level":"info","msg":"start keepalive lease 694d953a64fdb163 for etcd registry","time":"2025-02-25T09:22:11+08:00"}
+{"level":"error","msg":"KITEX: processing gRPC request error, remoteAddr=127.0.0.1:63603, error=biz error: graph edge[tools]-[optimize]: start node's output type[[]*schema.Message] and end node's input type[*schema.Message] mismatch","time":"2025-02-25T09:22:21+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-02-25T09:23:46+08:00"}
+{"level":"info","msg":"start keepalive lease 694d953a64fdb179 for etcd registry","time":"2025-02-25T09:23:47+08:00"}
+{"level":"error","msg":"KITEX: processing gRPC request error, remoteAddr=127.0.0.1:63749, error=biz error: graph edge[tools]-[array_converter]: start node's output type[[]*schema.Message] and end node's input type[*schema.Message] mismatch","time":"2025-02-25T09:23:52+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-02-25T09:28:04+08:00"}
+{"level":"info","msg":"start keepalive lease 694d953a64fdb1b5 for etcd registry","time":"2025-02-25T09:28:05+08:00"}
+{"level":"error","msg":"KITEX: processing gRPC request error, remoteAddr=127.0.0.1:63981, error=biz error: graph edge[tools]-[optimize]: start node's output type[[]*schema.Message] and end node's input type[*schema.Message] mismatch","time":"2025-02-25T09:28:08+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-02-25T09:30:41+08:00"}
+{"level":"info","msg":"start keepalive lease 694d953a64fdb1dd for etcd registry","time":"2025-02-25T09:30:42+08:00"}
+{"level":"error","msg":"KITEX: processing gRPC request error, remoteAddr=127.0.0.1:64166, error=biz error: graph edge[tools]-[optimize]: start node's output type[[]*schema.Message] and end node's input type[*schema.Message] mismatch","time":"2025-02-25T09:30:45+08:00"}
+{"level":"error","msg":"KITEX: processing gRPC request error, remoteAddr=127.0.0.1:64166, error=biz error: graph edge[tools]-[optimize]: start node's output type[[]*schema.Message] and end node's input type[*schema.Message] mismatch","time":"2025-02-25T09:34:34+08:00"}
+{"level":"warning","msg":"keep register get kitex/registry-etcd/aieino/127.0.0.1:8087 failed with err: context deadline exceeded","time":"2025-02-25T09:55:10+08:00"}
+{"level":"warning","msg":"keep register get kitex/registry-etcd/prometheus/127.0.0.1:9997 failed with err: context deadline exceeded","time":"2025-02-25T09:55:10+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-02-25T09:59:42+08:00"}
+{"level":"info","msg":"start keepalive lease 694d953a64fdb2a7 for etcd registry","time":"2025-02-25T09:59:43+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-02-25T13:42:57+08:00"}
+{"level":"info","msg":"start keepalive lease 694d953b6ff72f4d for etcd registry","time":"2025-02-25T13:42:58+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-02-25T13:46:23+08:00"}
+{"level":"info","msg":"start keepalive lease 694d953b6ff72fad for etcd registry","time":"2025-02-25T13:46:24+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-02-25T13:49:34+08:00"}
+{"level":"info","msg":"start keepalive lease 694d953b6ff73017 for etcd registry","time":"2025-02-25T13:49:35+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-02-25T13:54:29+08:00"}
+{"level":"info","msg":"start keepalive lease 694d953b6ff730ab for etcd registry","time":"2025-02-25T13:54:30+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-02-25T14:04:14+08:00"}
+{"level":"info","msg":"start keepalive lease 694d953b6ff731cd for etcd registry","time":"2025-02-25T14:04:15+08:00"}
+{"level":"warning","msg":"keep register get kitex/registry-etcd/prometheus/127.0.0.1:9997 failed with err: context deadline exceeded","time":"2025-02-25T14:32:17+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-02-25T15:03:05+08:00"}
+{"level":"info","msg":"start keepalive lease 694d953b6ff7363b for etcd registry","time":"2025-02-25T15:03:06+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-03-01T14:52:35+08:00"}
+{"level":"info","msg":"start keepalive lease 694d9550747c5b5b for etcd registry","time":"2025-03-01T14:52:36+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-03-01T15:11:10+08:00"}
+{"level":"info","msg":"start keepalive lease 694d9550747c5eb4 for etcd registry","time":"2025-03-01T15:11:11+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-03-01T15:14:27+08:00"}
+{"level":"info","msg":"start keepalive lease 694d9550747c5f61 for etcd registry","time":"2025-03-01T15:14:28+08:00"}
+{"level":"warning","msg":"keep register get kitex/registry-etcd/aieino/127.0.0.1:8087 failed with err: context deadline exceeded","time":"2025-03-01T15:56:02+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-03-01T16:52:14+08:00"}
+{"level":"info","msg":"start keepalive lease 694d9550747c6bba for etcd registry","time":"2025-03-01T16:52:15+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8087","time":"2025-03-02T11:01:14+08:00"}
+{"level":"info","msg":"start keepalive lease 694d95546f577572 for etcd registry","time":"2025-03-02T11:01:15+08:00"}

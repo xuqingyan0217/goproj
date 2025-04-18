@@ -1,0 +1,44 @@
+# 记得提前下载 alpine镜像
+FROM alpine:3.14
+
+# 添加时区处理，确保服务之间的时间的统一
+RUN echo -e "https://mirrors.aliyun.com/alpine/v3.14/main\nhttps://mirrors.aliyun.com/alpine/v3.14/community" > /etc/apk/repositories && \
+    apk update &&\
+    apk --no-cache add tzdata && \
+    cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
+    echo "Asia/Shanghai" >  /etc/timezone
+ENV TZ=Asia/Shanghai
+
+# 声明两个只能在dockerfile中使用的变量，使用后就没了
+# 设立这两个变量是为了我们之后修改名称时更加容易
+ARG SERVER_NAME=cart
+ARG SERVER_TYPE=dev
+
+#声明两个环境变量，在容器内
+ENV RUN_BIN bin/${SERVER_NAME}-${SERVER_TYPE}
+# ENV RUN_CONF /${SERVER_NAME}/conf/${SERVER_NAME}.yaml
+ENV RUN_ETC /${SERVER_NAME}/conf/${SERVER_TYPE}/conf.yaml
+
+# RUN mkdir /$SERVER_NAME && mkdir /$SERVER_NAME/bin && mkdir /$SERVER_NAME/conf
+RUN mkdir /$SERVER_NAME/ && mkdir /$SERVER_NAME/bin/ && mkdir -p /$SERVER_NAME/conf/$SERVER_TYPE/ && \
+    mkdir /$SERVER_NAME/log/
+# 复制编译后的二进制文件
+# 将由mk文件编译之后的二进制文件复制到我们新建的目录
+COPY ./bin/$SERVER_NAME-$SERVER_TYPE /$SERVER_NAME/bin/
+# 复制配置文件
+COPY ./app/$SERVER_NAME/conf/$SERVER_TYPE/conf.yaml /$SERVER_NAME/conf/$SERVER_TYPE/
+COPY ./app/$SERVER_NAME/.env /$SERVER_NAME/.env
+# 复制日志文件
+COPY ./app/$SERVER_NAME/log/kitex.log /$SERVER_NAME/log/
+
+# 为二进制提供执行权限
+RUN chmod +x /$SERVER_NAME/bin/$SERVER_NAME-$SERVER_TYPE
+
+# 该命令指定容器会默认进入那个目录，如我们每次进入服务器的时候会自动进入root目录一样的作用
+WORKDIR /$SERVER_NAME
+
+# 这个命令可以让我们的docker容器在启动的时候就执行下面的命令
+ENTRYPOINT $RUN_BIN -f $RUN_ETC
+
+
+

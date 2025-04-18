@@ -1,0 +1,23 @@
+FROM alpine:3.14
+
+RUN echo -e "https://mirrors.aliyun.com/alpine/v3.14/main\nhttps://mirrors.aliyun.com/alpine/v3.14/community" > /etc/apk/repositories && \
+    apk update &&\
+    apk --no-cache add tzdata && \
+    cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
+    echo "Asia/Shanghai" >  /etc/timezone
+ENV TZ=Asia/Shanghai
+
+ARG SERVER_NAME=blackbox
+
+COPY ./blackbox /$SERVER_NAME
+
+# 为二进制提供执行权限
+RUN chmod +x /$SERVER_NAME/blackbox_exporter
+
+WORKDIR /$SERVER_NAME
+
+# 这个命令可以让我们的docker容器在启动的时候就执行下面的命令
+ENTRYPOINT ["./blackbox_exporter", "--config.file=blackbox.yml"]
+
+
+

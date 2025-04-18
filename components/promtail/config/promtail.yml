@@ -1,0 +1,37 @@
+# config.yml
+server:
+  http_listen_port: 9080
+  grpc_listen_port: 0
+
+positions:
+  filename: /tmp/positions.yaml
+
+clients:
+  - url: http://loki-svc:3100/loki/api/v1/push
+
+scrape_configs:
+  - job_name: hertz
+    pipeline_stages:
+      - json:
+          expressions:
+            level: level
+      - labels:
+          level:
+    static_configs:
+      - targets:
+          - frontend-svc
+        labels:
+          app: frontend
+          __path__: /logs/frontend/hertz.log
+
+      - targets:
+          - checkout-svc
+        labels:
+          app: checkout
+          __path__: /logs/checkout/kitex.log
+
+      - targets:
+          - email-svc
+        labels:
+          app: email
+          __path__: /logs/email/kitex.log

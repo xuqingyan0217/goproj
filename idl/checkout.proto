@@ -1,0 +1,76 @@
+syntax = "proto3";
+package checkout;
+
+import "payment.proto";
+option go_package = "/checkout";
+
+service CheckoutService {
+  // 原有的下单方法
+  rpc Checkout(CheckoutReq) returns (CheckoutResp);
+  // 新增的预下单方法
+  rpc PreCheckout(PreCheckoutReq) returns (PreCheckoutResp);
+  // 新增二次支付下单
+  rpc ContinueCheckout(ContinueCheckoutReq) returns (ContinueCheckoutResp);
+}
+
+// 原有的下单请求消息
+message CheckoutReq {
+  uint32 flag = 1;
+  uint32 user_id = 2;
+  string firstname = 3;
+  string lastname = 4;
+  string email = 5;
+  Address address = 6;
+  payment.CreditCardInfo credit_card = 7;
+}
+
+// 预下单请求消息
+message PreCheckoutReq {
+  uint32 user_id = 1;
+  string firstname = 2;
+  string lastname = 3;
+  string email = 4;
+  Address address = 5;
+  // 新增商品信息列表，由 AI 大模型处理后传递
+  repeated ProductInfo product_info_list = 6;
+}
+
+// 商品信息消息
+message ProductInfo {
+  uint32 product_id = 1;
+  uint32 quantity = 2;
+}
+
+message Address {
+  string street_address = 1;
+  string city = 2;
+  string state = 3;
+  string country = 4;
+  string zip_code = 5;
+}
+
+// 原有的下单响应消息
+message CheckoutResp {
+  string order_id = 1;
+  string transaction_id = 2;
+}
+
+// 预下单响应消息
+message PreCheckoutResp {
+  string pre_order_id = 1; // 预订单 ID
+  float total_amount = 2;  // 预订单总额
+  // 可以添加预订单的有效期等其他信息
+  int64 valid_until = 3;  // 预订单有效期
+}
+
+message ContinueCheckoutReq {
+  string order_id = 1;
+  payment.CreditCardInfo credit_card = 2;
+  uint32 user_id = 3;
+  string email = 4;
+  float total = 5;
+}
+
+message ContinueCheckoutResp {
+  string transaction_id = 2;
+}

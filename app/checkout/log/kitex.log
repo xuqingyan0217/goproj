@@ -34,3 +34,100 @@
 {"level":"info","msg":"paymentResult:","time":"2025-02-03T15:35:11+08:00"}
 {"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8084","time":"2025-02-03T15:55:43+08:00"}
 {"level":"info","msg":"start keepalive lease 694d94cab1c4d43a for etcd registry","time":"2025-02-03T15:55:44+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8084","time":"2025-02-23T15:53:23+08:00"}
+{"level":"info","msg":"start keepalive lease 694d9530623d3fab for etcd registry","time":"2025-02-23T15:53:24+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8084","time":"2025-02-23T15:58:44+08:00"}
+{"level":"info","msg":"start keepalive lease 694d9530623d4056 for etcd registry","time":"2025-02-23T15:58:45+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8084","time":"2025-02-23T16:39:39+08:00"}
+{"level":"info","msg":"start keepalive lease 694d9530623d4668 for etcd registry","time":"2025-02-23T16:39:40+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8084","time":"2025-02-23T17:39:07+08:00"}
+{"level":"info","msg":"start keepalive lease 694d95321bbb4233 for etcd registry","time":"2025-02-23T17:39:08+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8084","time":"2025-02-23T18:08:33+08:00"}
+{"level":"info","msg":"start keepalive lease 694d95321bbb4396 for etcd registry","time":"2025-02-23T18:08:34+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8084","time":"2025-02-23T19:02:44+08:00"}
+{"level":"info","msg":"start keepalive lease 694d95321bbb489f for etcd registry","time":"2025-02-23T19:02:45+08:00"}
+{"level":"info","msg":"paymentResult:transaction_id:\"8b9e6301-a2bf-4683-9675-22368de93787\"","time":"2025-02-23T19:39:11+08:00"}
+{"level":"info","msg":"paymentResult:transaction_id:\"077ebbbf-381d-47d4-8028-6ff528a4ae58\"","time":"2025-02-23T19:41:21+08:00"}
+{"level":"info","msg":"paymentResult:transaction_id:\"c1c06ee5-59f1-478b-9fc7-724f8b2e3fa9\"","time":"2025-02-23T19:44:37+08:00"}
+{"level":"info","msg":"paymentResult:transaction_id:\"325ca00f-89d1-4081-9d6a-ffcbfdc434e1\"","time":"2025-02-23T19:46:40+08:00"}
+{"level":"info","msg":"paymentResult:transaction_id:\"20e37e98-d9c4-40c9-a5e8-0cae7ff5be99\"","time":"2025-02-23T19:49:45+08:00"}
+{"level":"info","msg":"paymentResult:transaction_id:\"160d2e10-d5ea-4315-8f00-59c8b5523368\"","time":"2025-02-23T19:58:35+08:00"}
+{"level":"info","msg":"paymentResult:transaction_id:\"25cd8635-945e-45fd-8137-21eec64294f3\"","time":"2025-02-23T20:03:23+08:00"}
+{"level":"info","msg":"paymentResult:transaction_id:\"101e338f-3043-4f90-8f37-1291aee9f55f\"","time":"2025-02-23T20:10:47+08:00"}
+{"level":"info","msg":"paymentResult:transaction_id:\"7f7e066b-57b9-4bb0-9f84-73d7587ea7d0\"","time":"2025-02-23T20:26:45+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8084","time":"2025-02-24T08:17:12+08:00"}
+{"level":"info","msg":"start keepalive lease 694d95354d87213f for etcd registry","time":"2025-02-24T08:17:13+08:00"}
+{"level":"info","msg":"paymentResult:transaction_id:\"b29b3433-4eb7-4771-88b4-be6533e01e22\"","time":"2025-02-24T08:18:53+08:00"}
+{"level":"info","msg":"paymentResult:transaction_id:\"8809ff17-dd25-4586-bf99-3c86d75a814d\"","time":"2025-02-24T08:37:36+08:00"}
+{"level":"info","msg":"paymentResult:transaction_id:\"46ac89ee-bb45-4120-87ab-488b102f1e88\"","time":"2025-02-24T08:39:41+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8084","time":"2025-02-24T20:39:45+08:00"}
+{"level":"info","msg":"start keepalive lease 694d953781ef8b39 for etcd registry","time":"2025-02-24T20:39:46+08:00"}
+{"level":"info","msg":"paymentResult:transaction_id:\"b6a91ac0-0c18-4f64-bcce-8839854dd754\"","time":"2025-02-24T20:45:29+08:00"}
+{"level":"info","msg":"paymentResult:transaction_id:\"31f0bb14-1b00-4ea3-80de-59ee965ebb96\"","time":"2025-02-24T20:47:51+08:00"}
+{"level":"info","msg":"paymentResult:transaction_id:\"e58b23b5-db9d-4ab6-b4f2-b9b72955d5dc\"","time":"2025-02-24T20:53:14+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8084","time":"2025-02-25T15:02:49+08:00"}
+{"level":"info","msg":"start keepalive lease 694d953b6ff7362f for etcd registry","time":"2025-02-25T15:02:50+08:00"}
+{"level":"info","msg":"paymentResult:transaction_id:\"fed055fb-a1b1-415c-89cc-2a08d0e062e8\"","time":"2025-02-25T15:07:42+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8084","time":"2025-03-01T13:40:15+08:00"}
+{"level":"info","msg":"start keepalive lease 694d954afd02f1d2 for etcd registry","time":"2025-03-01T13:40:16+08:00"}
+{"level":"info","msg":"paymentResult:transaction_id:\"bd3dae3a-9564-4fdc-a96d-37e676b08fa4\"","time":"2025-03-01T13:50:51+08:00"}
+{"level":"info","msg":"paymentResult:transaction_id:\"0f22bba8-9422-414e-847d-f8869605e767\"","time":"2025-03-01T13:52:16+08:00"}
+{"level":"info","msg":"paymentResult:transaction_id:\"71cea152-4f37-45ec-92fa-7a3f8d638ea6\"","time":"2025-03-01T13:54:29+08:00"}
+{"level":"info","msg":"paymentResult:transaction_id:\"c65fbbbf-753b-4401-8b5e-77cfcc925467\"","time":"2025-03-01T13:58:02+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8084","time":"2025-03-01T14:52:05+08:00"}
+{"level":"info","msg":"start keepalive lease 694d9550747c5b44 for etcd registry","time":"2025-03-01T14:52:06+08:00"}
+{"level":"info","msg":"paymentResult:transaction_id:\"2a149b96-a553-4897-9eca-57421525ed2a\"","time":"2025-03-01T14:53:57+08:00"}
+{"level":"info","msg":"paymentResult:transaction_id:\"aa505a75-56d2-4f08-ae7b-c6763134b8ca\"","time":"2025-03-01T15:22:55+08:00"}
+{"level":"warning","msg":"keep register get kitex/registry-etcd/checkout/127.0.0.1:8084 failed with err: context deadline exceeded","time":"2025-03-01T15:56:10+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8084","time":"2025-03-01T16:51:15+08:00"}
+{"level":"info","msg":"start keepalive lease 694d9550747c6b86 for etcd registry","time":"2025-03-01T16:51:16+08:00"}
+{"level":"info","msg":"paymentResult:transaction_id:\"947152df-07e8-4ac5-8c2a-80d063bbce78\"","time":"2025-03-01T18:07:22+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8084","time":"2025-03-01T21:57:28+08:00"}
+{"level":"info","msg":"start keepalive lease 694d9550747c8980 for etcd registry","time":"2025-03-01T21:57:29+08:00"}
+{"level":"warning","msg":"keep register get kitex/registry-etcd/checkout/127.0.0.1:8084 failed with err: context deadline exceeded","time":"2025-03-01T22:30:43+08:00"}
+{"level":"warning","msg":"keep register get kitex/registry-etcd/prometheus/127.0.0.1:9994 failed with err: context deadline exceeded","time":"2025-03-01T22:30:43+08:00"}
+{"level":"info","msg":"keep register service kitex/registry-etcd/prometheus/127.0.0.1:9994","time":"2025-03-01T22:31:44+08:00"}
+{"level":"info","msg":"start keepalive lease 694d9550747c8dbe for etcd registry","time":"2025-03-01T22:31:44+08:00"}
+{"level":"info","msg":"keep register service kitex/registry-etcd/checkout/127.0.0.1:8084","time":"2025-03-01T22:31:44+08:00"}
+{"level":"info","msg":"start keepalive lease 694d9550747c8dc2 for etcd registry","time":"2025-03-01T22:31:44+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8084","time":"2025-03-01T23:32:30+08:00"}
+{"level":"info","msg":"start keepalive lease 694d9550747c96b0 for etcd registry","time":"2025-03-01T23:32:31+08:00"}
+{"level":"info","msg":"paymentResult:transaction_id:\"38a871d5-393f-4b2f-84c3-529663c3aa11\"","time":"2025-03-01T23:37:11+08:00"}
+{"level":"info","msg":"paymentResult:transaction_id:\"1dd42986-0ef8-4a1a-b8d6-3dc59515bf8f\"","time":"2025-03-01T23:42:27+08:00"}
+{"level":"warning","msg":"keep register get kitex/registry-etcd/prometheus/127.0.0.1:9994 failed with err: context deadline exceeded","time":"2025-03-02T00:31:09+08:00"}
+{"level":"warning","msg":"keep register get kitex/registry-etcd/checkout/127.0.0.1:8084 failed with err: context deadline exceeded","time":"2025-03-02T00:31:09+08:00"}
+{"level":"warning","msg":"keep register get kitex/registry-etcd/prometheus/127.0.0.1:9994 failed with err: context deadline exceeded","time":"2025-03-02T00:33:22+08:00"}
+{"level":"warning","msg":"keep register get kitex/registry-etcd/checkout/127.0.0.1:8084 failed with err: context deadline exceeded","time":"2025-03-02T00:33:22+08:00"}
+{"level":"warning","msg":"keep register get kitex/registry-etcd/checkout/127.0.0.1:8084 failed with err: context deadline exceeded","time":"2025-03-02T00:38:29+08:00"}
+{"level":"warning","msg":"keep register get kitex/registry-etcd/prometheus/127.0.0.1:9994 failed with err: context deadline exceeded","time":"2025-03-02T00:38:29+08:00"}
+{"level":"warning","msg":"keep register get kitex/registry-etcd/checkout/127.0.0.1:8084 failed with err: context deadline exceeded","time":"2025-03-02T00:38:42+08:00"}
+{"level":"warning","msg":"keep register get kitex/registry-etcd/prometheus/127.0.0.1:9994 failed with err: context deadline exceeded","time":"2025-03-02T00:38:42+08:00"}
+{"level":"warning","msg":"keep register get kitex/registry-etcd/checkout/127.0.0.1:8084 failed with err: context deadline exceeded","time":"2025-03-02T00:57:44+08:00"}
+{"level":"warning","msg":"keep register get kitex/registry-etcd/prometheus/127.0.0.1:9994 failed with err: context deadline exceeded","time":"2025-03-02T01:03:05+08:00"}
+{"level":"warning","msg":"keep register get kitex/registry-etcd/checkout/127.0.0.1:8084 failed with err: context deadline exceeded","time":"2025-03-02T01:20:40+08:00"}
+{"level":"warning","msg":"keep register get kitex/registry-etcd/prometheus/127.0.0.1:9994 failed with err: context deadline exceeded","time":"2025-03-02T01:20:41+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8084","time":"2025-03-02T10:59:51+08:00"}
+{"level":"info","msg":"start keepalive lease 694d95546f577540 for etcd registry","time":"2025-03-02T10:59:52+08:00"}
+{"level":"info","msg":"paymentResult:transaction_id:\"ce73995b-666c-4dd2-b86b-3e73f05738e6\"","time":"2025-03-02T11:14:19+08:00"}
+{"level":"info","msg":"paymentResult:transaction_id:\"c272103c-3a68-46d9-9a8a-38ab4d34dfc4\"","time":"2025-03-02T11:30:07+08:00"}
+{"level":"info","msg":"paymentResult:transaction_id:\"dc7ee941-5c39-42fe-a7da-014abb4f23be\"","time":"2025-03-02T12:16:18+08:00"}
+{"level":"info","msg":"paymentResult:transaction_id:\"7650b496-794a-4799-aff6-72a92f0a6c81\"","time":"2025-03-02T12:45:22+08:00"}
+{"level":"info","msg":"paymentResult:transaction_id:\"cc773ab6-289b-460a-9c41-4b64c501279d\"","time":"2025-03-02T12:45:32+08:00"}
+{"level":"info","msg":"paymentResult:transaction_id:\"1794bd75-9b64-4a4a-aa40-6c25c9157b6f\"","time":"2025-03-02T12:48:57+08:00"}
+{"level":"info","msg":"paymentResult:transaction_id:\"6528ff64-0916-422b-b3e3-e1656c300ae0\"","time":"2025-03-02T12:51:45+08:00"}
+{"level":"info","msg":"paymentResult:transaction_id:\"7fb0fd4c-119b-41f2-b283-71e881735b2c\"","time":"2025-03-02T12:55:03+08:00"}
+{"level":"info","msg":"paymentResult:transaction_id:\"15022b5b-e105-4ceb-84e1-da04b08b20cb\"","time":"2025-03-02T13:05:17+08:00"}
+{"level":"info","msg":"paymentResult:transaction_id:\"b2390221-37b0-4e59-8614-f34c8c50526f\"","time":"2025-03-02T13:09:52+08:00"}
+{"level":"info","msg":"paymentResult:transaction_id:\"773ded5f-a8f1-4766-becd-1b40d6fb7776\"","time":"2025-03-02T13:12:01+08:00"}
+{"level":"info","msg":"paymentResult:transaction_id:\"b3fe0a3e-fcc7-4631-8e99-e377066f67ec\"","time":"2025-03-02T13:12:14+08:00"}
+{"level":"info","msg":"paymentResult:transaction_id:\"ce06d53c-5ff1-40f9-a174-8791402fdbc7\"","time":"2025-03-02T13:16:47+08:00"}
+{"level":"info","msg":"paymentResult:transaction_id:\"4b3c4d2a-66e5-4b00-9766-c7d1fc25ca82\"","time":"2025-03-02T13:37:55+08:00"}
+{"level":"info","msg":"paymentResult:transaction_id:\"c73175e9-172a-4519-ba19-161acdd50c17\"","time":"2025-03-02T14:23:03+08:00"}
+{"level":"info","msg":"paymentResult:transaction_id:\"c596ebec-c194-4e99-861d-b6df8e62395b\"","time":"2025-03-02T14:49:34+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8084","time":"2025-03-02T14:58:06+08:00"}
+{"level":"info","msg":"start keepalive lease 694d95546f57a019 for etcd registry","time":"2025-03-02T14:58:07+08:00"}
+{"level":"info","msg":"KITEX: server listen at addr=127.0.0.1:8084","time":"2025-03-02T15:10:08+08:00"}
+{"level":"info","msg":"start keepalive lease 694d95546f57a252 for etcd registry","time":"2025-03-02T15:10:09+08:00"}
+{"level":"info","msg":"paymentResult:transaction_id:\"1b0269de-2a6f-4f13-a23b-189777a5579d\"","time":"2025-03-02T15:16:05+08:00"}
+{"level":"info","msg":"paymentResult:transaction_id:\"4bd0918d-e5ff-4803-a54c-50310d96b9b2\"","time":"2025-03-02T15:16:39+08:00"}
+{"level":"info","msg":"paymentResult:transaction_id:\"32dbfd30-4104-4f69-bff1-9f65e20d5e93\"","time":"2025-03-02T15:18:01+08:00"}
